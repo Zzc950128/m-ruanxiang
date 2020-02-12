@@ -10,11 +10,13 @@ var homeHandler = {
             pagination: {
                 el: '.home-mode-swiper-pagination',
             },
-            navigation: {
-                nextEl: '.home-mode-swiper-button-next',
-                prevEl: '.home-mode-swiper-button-prev',
+        })    
+        var homeAdvantageSwiper = new Swiper('.home-advantage-swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.home-advantage-swiper-pagination',
             },
-        })        
+        })       
     },
     initAction: function() {},
 }

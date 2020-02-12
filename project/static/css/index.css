@@ -1,10 +1,58 @@
 .home-banner {
     height: 4rem;
     background: green;
-    margin-top: -1rem;;
+    margin-top: -1rem;
+    padding-top: 1rem;
     position: relative;
     z-index: 1;
 }
+.home-banner-btn-group {
+    margin: 0 auto;
+}
+.home-banner-btn {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
 .home-mode-swiper-container {
     height: 4rem;
+}
+.home-advantage-swiper-container {
+    height: 4rem;
+}
+.home-case-item-image {
+    float: left;
+    width: 40%;
+}
+.home-case-item-content {
+    float: left;
+    margin-left: 10%;
+    width: 40%;
+}
+.home-case-item-author {
+    text-align: right;
+}
+.home-advice  {
+    background: red;
+}
+.home-function-item-image {
+    float: left;
+    width: 40%;
+}
+.home-function-item-wrap {
+    float: left;
+    margin-left: 10%;
+    width: 40%;
+}
+.home-help-trends-content {
+    width: 70%;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+.home-help-trends-date {
+    float: left;
+    text-align: right;
+    width: 30%;
 }
