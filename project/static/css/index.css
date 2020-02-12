@@ -44,6 +44,11 @@
     margin-left: 10%;
     width: 40%;
 }
+.home-help-question-item {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
 .home-help-trends-content {
     width: 70%;
     float: left;

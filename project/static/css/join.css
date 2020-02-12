@@ -1,0 +1,42 @@
+.join-banner {
+    height: 4rem;
+    background: green;
+    margin-top: -1rem;
+    padding-top: 1rem;
+    position: relative;
+    z-index: 1;
+}
+.join-banner-btn {
+    margin: 0 auto;
+}
+.join-cooperate-icon-wrap {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	overflow: visible;
+}
+.join-cooperate-icon {
+	width: 15%;
+	position: relative;
+}
+.join-cooperate-icon img {
+	width: 100%;
+}
+.join-cooperate-point {
+	width: 4px;
+	height: 4px;
+	border-radius: 4px;
+	background: green;
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+}
+.join-cooperate-line {
+	border-bottom: 1px dashed red;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+

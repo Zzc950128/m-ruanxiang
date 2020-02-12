@@ -38,10 +38,3 @@ loadPage($("#footer"), "../component/footer.html", function() {
 
 });
 
-// 载入menu
-loadPage($("#menu"), "../component/menu.html", function() {
-
-});
-
-var isMenuFold = false
-

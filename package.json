@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Zzc950128/m-ruanxiang/issues"
   },
-  "homepage": "https://github.com/Zzc950128/m-ruanxiang#readme"
+  "homepage": "https://github.com/Zzc950128/m-ruanxiang#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

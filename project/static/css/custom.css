@@ -1,0 +1,25 @@
+.custom-banner {
+    height: 4rem;
+    background: green;
+    margin-top: -1rem;
+    padding-top: 1rem;
+    position: relative;
+    z-index: 1;
+}
+.custom-banner-btn {
+    margin: 0 auto;
+}
+.custom-service-wrap {
+	width: 50%;
+	float: left;
+}
+.custom-case-item-icon {
+	float: left;
+}
+.custom-case-item-wrap {
+	float: left;
+	width: 50%;
+}
+.custom-case-item-tip {
+	text-align: right;
+}
