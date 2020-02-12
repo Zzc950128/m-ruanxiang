@@ -1,6 +1,51 @@
-/* 
-* @Author: anchen
-* @Date:   2020-02-12 15:23:23
-* @Last Modified by:   anchen
-* @Last Modified time: 2020-02-12 15:23:24
-*/
+.price-category-btn {
+	float: left;
+	height: 0.5rem;
+	margin-right: 0.5rem;
+}
+.price-category-btn.active {
+	color: red;
+}
+.price-card-wrap {
+	height: 1rem;
+	background: green;
+}
+.price-card-title {
+	float: left;
+	line-height: 1rem;
+}
+.price-card-tip {
+	float: right;
+	line-height: 0.5rem;
+}
+.price-purchase {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.price-purchase-item {
+	flex: 0 0 40%;
+}
+.price-table-border {
+	width: 80%;
+	margin: 0 auto;
+	border-top: 1px solid red;
+	border-left: 1px solid red;
+	border-right: 1px solid red;
+}
+.price-table-title {
+	border-bottom: 1px solid red;
+}
+.price-table-content {
+	float: left;
+	width: calc(50% - 1px);
+	border-right: 1px solid red;
+	border-bottom: 1px solid red;
+}
+.price-table-result {
+	float: left;
+	width: 50%;
+	border-bottom: 1px solid red;
+}
