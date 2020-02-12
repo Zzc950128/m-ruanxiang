@@ -1,0 +1,10 @@
+.home-banner {
+    height: 4rem;
+    background: green;
+    margin-top: -1rem;;
+    position: relative;
+    z-index: 1;
+}
+.home-mode-swiper-container {
+    height: 4rem;
+}
