@@ -1,63 +1,241 @@
 .home-banner {
-    height: 4rem;
+    height: 13.34rem;
     background: green;
-    margin-top: -1rem;
-    padding-top: 1rem;
+    margin-top: -0.7rem;
+    padding-top: 0.7rem;
     position: relative;
     z-index: 1;
 }
-.home-banner-btn-group {
-    margin: 0 auto;
-}
-.home-banner-btn {
-    width: 50%;
-    float: left;
+.home-banner-title {
+    margin-top: 2.47rem;
+    margin-bottom: 0.54rem;
+    font-size: 0.48rem;
+    color: #fff;
     text-align: center;
 }
+.home-banner-desc {
+    margin-bottom: 0.9rem;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    color: #fff;
+    text-align: center;  
+}
+.home-banner-desc p {
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    color: #fff;
+}
+.home-banner-btn-group {
+    margin: 0 1.13rem;
+}
+.home-banner-btn {
+    width: 2.52rem;
+    height: 0.8rem;    
+    line-height: 0.8rem;
+    font-size: 0.28rem;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 0.1rem;
+    cursor: pointer;
+}
+.home-banner-btn:nth-child(1) {
+    float: left;
+    background: #fff;
+    color: #4381FD;
+}
+.home-banner-btn:nth-child(2) {
+    float: right;
+    color: #fff;
+}
+.home-mode {
+    padding-bottom: 0.8rem;
+}
 .home-mode-swiper-container {
-    height: 4rem;
+    margin: 0 0.3rem;
+    height: 5rem;
+    padding-bottom: 1rem;
+}
+.home-mode-swiper-pagination {
+    position: relative;
+    top: 0.5rem;
+}
+.swiper-slide-title {
+    font-size: 0.28rem;
+    margin-bottom: 0.3rem;
+    text-align: center;
+}   
+.swiper-slide-content {
+    margin: 0 auto;
+    width: 5.3rem;
+    line-height: 0.36rem;
+    font-size: 0.24rem;
+    color: #666666;
+    text-align: center;
+    margin-bottom: 0.4rem;
+}
+.home-advantage {
+    padding-bottom: 0.8rem;
 }
 .home-advantage-swiper-container {
-    height: 4rem;
+    margin: 0 0.3rem;
+    height: 12.57rem;
+    padding-bottom: 1rem;
+}
+.home-advantage-swiper-pagination {
+    position: relative;
+    top: 0.5rem;
+}
+.home-case {
+    padding-bottom: 0.8rem;
+}
+.home-case-item {
+    margin: 0 0.3rem 0.5rem;
+    padding: 0.45rem 0.3rem 0.4rem;
+    height: 3.37rem;
+    box-shadow: -0.1rem 0rem 0.1rem 0rem rgba(0, 0, 0, 0.06);
 }
 .home-case-item-image {
     float: left;
-    width: 40%;
+    width: 2.01rem;
+}
+.home-case-item-image img {
+    width: 100%;
 }
 .home-case-item-content {
     float: left;
-    margin-left: 10%;
-    width: 40%;
+    width: 4.07rem;
+    margin-left: 0.2rem;
+    font-size: 0.24rem;
+    line-height:0.36rem;
+    color: #666666;
+}
+.home-case-item-content p {
+    font-size: 0.24rem;
+    line-height:0.36rem;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
 }
 .home-case-item-author {
     text-align: right;
+    width: 4.07rem;
+    margin-top: 0.2rem;
+    font-size: 0.22rem;
+    color: #999999;
 }
-.home-advice  {
-    background: red;
+.home-function {
+    padding-bottom: 0.8rem;
+}
+.home-function-item {
+    margin: 0 0.3rem 0.4rem;
+    box-shadow: -0.1rem 0rem 0.1rem 0rem rgba(0, 0, 0, 0.06);
+    height: 1.92rem;
+    padding: 0rem 0.3rem 0rem 0rem;
 }
 .home-function-item-image {
     float: left;
-    width: 40%;
+    width: 1.93rem;
+    height: 1.93rem;
+    position: relative;
+}
+.home-function-item-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
 }
 .home-function-item-wrap {
     float: left;
-    margin-left: 10%;
-    width: 40%;
+    margin-top: 0.45rem;
+    width: 4.45rem;
+}
+.home-function-item-title {
+    color: #333333;
+    font-size: 0.28rem;
+    margin-bottom: 0.24rem;
+}
+.home-function-item-content {
+    color: #999999;
+    font-size: 0.22rem;
+    line-height: 0.36rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.home-help-question-title, .home-help-trends-title {
+    font-size: 0.28rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.home-help-question-title span, .home-help-trends-title span {
+    color: #ddd;
+}
+.home-help-question-content {
+    margin: 0 0.3rem 0.6rem;
 }
 .home-help-question-item {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    color: #666666;
+    font-size: 0.28rem;
+    line-height: 0.82rem;
+    border-bottom: 1px solid #F3F3F3;
+}
+.home-help-trends-content-wrap {
+    margin: 0 0.3rem;
+    border-bottom: 1px solid #F3F3F3;
 }
 .home-help-trends-content {
-    width: 70%;
+    color: #666666;
+    width: 4.8rem;
+    height: 0.87rem;
+    line-height: 0.87rem;
+    font-size: 0.28rem;
     float: left;
     text-overflow: ellipsis;
     white-space: nowrap; 
     overflow: hidden;
 }
 .home-help-trends-date {
-    float: left;
-    text-align: right;
-    width: 30%;
+    float: right;
+    font-size: 0.22rem;
+    line-height: 0.87rem;
+    color: #999999;
+    width: 1.5rem;
+}
+.home-help-more-btn {
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+    color: #00A4FF;
+    font-size: 0.28rem;
+    text-align: center;
+    cursor: pointer;
+}
+.home-advice  {
+    background: #00A3FF;
+    height: 3.37rem;
+}
+.home-advice-title {
+    padding-top: 0.8rem;
+    margin-bottom: 0.6rem;
+    color: #fff;   
+    text-align: center;
+}
+.home-advice-btn {
+    width: 2.6rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: #fff;
+    margin: 0 auto;
+    color: #00A4FF;
+    text-align: center;
+    border-radius: 0.1rem;
 }

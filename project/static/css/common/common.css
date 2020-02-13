@@ -2,15 +2,73 @@
 header {
     position: relative;
     z-index: 10;
-    height: 1rem;
+    height: 0.7rem;
 }
-.menu-btn {
-    border: 1px solid red;
+.header-icon {
+    position: relative;
+    float: left;
+    margin-left: 0.32rem;
+    width: 1.35rem;
+    height: 0.7rem;
+}
+.header-icon img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.header-menu {
+    float: right;
+    position: relative;
+    margin-right: 0.32rem;
+    width: 0.48rem;
+    height: 0.7rem;
     cursor: pointer;
+}
+.header-menu img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 /* footer样式 */
 footer {
     text-align: center;
+}
+.footer-content-wrap {
+    background: #4B4B4B;
+    height: 5.5rem;
+}
+.footer-content-item-wrap {
+    margin: 0 0.3rem;
+    height: 1rem;
+    border-bottom: 1px solid #999999;
+    color: #999999;
+    font-size: 0.22rem;
+}
+.footer-content-item {
+    float: left;
+    width: 50%;
+    line-height: 1rem;
+}
+.footer-content-item img {
+    width: auto;
+    margin-right: 0.1rem;
+    vertical-align: middle;
+}
+.footer-content-title {
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+}
+.footer-content-wechat {
+    width: 1.9rem;
+    margin: 0 auto 0.4rem;
+}
+.footer-content-addr {
+    margin-bottom: 0.2rem;
+}
+.footer-content-copyright {
+    margin: 0 0.3rem;
 }
 .footer-btn-group {
     width: 100%;
@@ -18,6 +76,21 @@ footer {
 .footer-btn {
     float: left;
     width: 50%;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.28rem;
+    color: #fff;
+}
+.footer-btn:nth-child(1) {
+    background: #00A3FF;
+}
+.footer-btn:nth-child(2) {
+    background: #185ABD;
+}
+.footer-btn img {
+    width: auto;
+    margin-right: 0.14rem;
+    vertical-align: middle;
 }
 /* menu样式 */
 .menu {
@@ -29,23 +102,43 @@ footer {
     width: 0rem;
     opacity: 0;
     color: #333333;
+    padding-left: 0.37rem;
+    padding-top: 0.1rem;
 }
 .menu.active {
-    width: 4rem;
+    width: 3.47rem;
     opacity: 1;
 }
-.menu ul li.active {
-    font-weight: bold;
+.menu ul li {
+    height: 1.1rem;
+    line-height: 1.1rem;
+    border-bottom: 1px solid #EEEEEE;
+}
+.menu ul li.menu-second-title {
+    color: #999999;
+}
+.menu ul li.menu-second-grade {
+    height: 0.75rem;
+    line-height: 0.75rem;
+    padding-left: 0.39rem;
+    border: none;
+}
+.menu ul li.active a {
+    color: #00A4FF;
 }
 /* 公共样式 */
 * {
     outline: none;
+    color: #333333;
 }
 a, a:link, a:visited, a:hover, a:active {
     color: #333333;
 }
 a, li {
     text-decoration: none;
+}
+img {
+    width: 100%;
 }
 .clearfix {
     overflow: hidden;
@@ -58,4 +151,22 @@ a, li {
 }
 .main-wrap.is-menu-flod {
     margin-left: -4rem;
+}
+.common-title {
+    margin-top: 0.8rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.34rem;
+    text-align: center;
+}
+.common-btn {
+    width: 2.6rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0 auto;
+    font-size: 0.28rem;
+    color: #fff;
+    border-radius: 0.1rem;
+    background: #00A4FF;
+    margin-top: 0.6rem;
+    text-align: center;
 }

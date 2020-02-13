@@ -18,7 +18,7 @@
 
 // 载入header
 loadPage($("#header"), "../component/header.html", function() {
-    $(".menu-btn").click(function() {
+    $(".header-menu").click(function() {
         console.log("menuClick")
         if($(".menu").hasClass("active")) {
             $(".menu").removeClass("active")
