@@ -1,5 +1,5 @@
 .custom-banner {
-    height: 4rem;
+    height: 8.78rem;
     background: green;
     margin-top: -1rem;
     padding-top: 1rem;
@@ -8,18 +8,123 @@
 }
 .custom-banner-btn {
     margin: 0 auto;
+    width: 2.52rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 0.1rem;
+    color: #411D45;
+}
+.custom-banner-title {
+    margin-top: 3.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.48rem;
+    color: #fff;
+    text-align: center;
+}
+.custom-banner-desc {
+    width: 5rem;
+    margin: 0 auto 1.2rem;
+    font-size: 0.28rem;
+    line-height: 0.42rem;
+    color: #fff;
+    text-align: center; 
+}
+.custom-demand {
+    padding-bottom: 0.6rem;
+}
+.custom-demand-desc {
+    color: #666666;
+    text-align: center;
+    margin-bottom: 0.48rem;
+}
+.custom-demand-img {
+    margin: 0 0.3rem;
+}
+.custom-custom-wrap {
+    text-align: center;
+}
+.custom-custom-icon {
+    width: 2.1rem;
+    margin: 0 auto 0.4rem;
+}
+.custom-custom-title {
+    margin-bottom: 0.28rem;
+    color: #333333;
+    font-size: 0.28rem;
+}
+.custom-custom-content {
+    width: 5.75rem;
+    color: #666666;
+    font-size: 0.24rem;
+    margin: 0 auto 0.57rem;
+}
+.custom-service {
+    padding-bottom: 0.8rem;
 }
 .custom-service-wrap {
-	width: 50%;
-	float: left;
+    margin: 0 0.3rem;
+}
+.custom-service-item {
+    width: 3.3rem;
+    height: 2.82rem;
+    padding: 0.4rem 0.4rem 0.4rem;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+}
+.custom-service-icon {
+    margin-bottom: 0.35rem;
+}
+.custom-service-icon img {
+    width: auto;
+}
+.custom-service-title {
+    margin-bottom: 0.1rem;
+    color: #333333;
+    font-size: 0.28rem;
+}
+.custom-service-content {
+    font-size: 0.24rem;
+    line-height: 0.36rem;
+    color: #666666;
+}
+.custom-case {
+    padding-bottom: 0.3rem;
+}
+.custom-case-item {
+    margin: 0 0.3rem 0.5rem;
+    padding: 0.45rem 0.3rem 0.45rem;
+    box-shadow: -0.1rem 0rem 0.1rem 0rem rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
 }
 .custom-case-item-icon {
-	float: left;
+    float: left;
+    width: 2.01rem;
 }
-.custom-case-item-wrap {
-	float: left;
-	width: 50%;
+.custom-case-item-content {
+    float: left;
+    width: 4.07rem;
+    margin-left: 0.2rem;
+    font-size: 0.24rem;
+    line-height:0.36rem;
+    color: #666666;
+}
+.custom-case-item-content p {
+    font-size: 0.24rem;
+    line-height:0.36rem;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
 }
 .custom-case-item-tip {
-	text-align: right;
+    text-align: right;
+    width: 4.07rem;
+    margin-top: 0.2rem;
+    font-size: 0.22rem;
+    color: #999999;
 }
