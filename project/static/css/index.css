@@ -127,6 +127,11 @@
 }
 .home-function {
     padding-bottom: 0.8rem;
+    background: #FBFBFB;
+}
+.home-function-title {
+    margin-top: 0px;
+    padding-top: 0.8rem;
 }
 .home-function-item {
     margin: 0 0.3rem 0.4rem;

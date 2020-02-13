@@ -11,12 +11,18 @@ var homeHandler = {
         });
         var homeModeSwiper = new Swiper('.home-mode-swiper-container', {
             loop: true,
+            autoplay: {
+                delay: 2000,
+            },
             pagination: {
                 el: '.home-mode-swiper-pagination',
             },
         })
         var homeAdvantageSwiper = new Swiper('.home-advantage-swiper-container', {
             loop: true,
+            autoplay: {
+                delay: 2000,
+            },
             pagination: {
                 el: '.home-advantage-swiper-pagination',
             },

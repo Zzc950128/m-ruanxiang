@@ -1,10 +1,12 @@
 .custom-banner {
-    height: 8.78rem;
+    height: 8.08rem;
     background: green;
     margin-top: -1rem;
     padding-top: 1rem;
     position: relative;
     z-index: 1;
+    background: url("../images/custom/customBanner.png") no-repeat;
+    background-size: 100% auto;
 }
 .custom-banner-btn {
     margin: 0 auto;
@@ -17,7 +19,7 @@
     color: #411D45;
 }
 .custom-banner-title {
-    margin-top: 3.2rem;
+    margin-top: 2.3rem;
     margin-bottom: 0.5rem;
     font-size: 0.48rem;
     color: #fff;
@@ -42,6 +44,14 @@
 .custom-demand-img {
     margin: 0 0.3rem;
 }
+.custom-custom {
+    background: #FBFBFB;
+    padding-bottom: 0.8rem;
+}
+.custom-common-title {
+    padding-top: 0.8rem;
+    margin-top: 0rem;
+}
 .custom-custom-wrap {
     text-align: center;
 }
@@ -60,28 +70,34 @@
     font-size: 0.24rem;
     margin: 0 auto 0.57rem;
 }
-.custom-service {
-    padding-bottom: 0.8rem;
-}
 .custom-service-wrap {
+    overflow: visible;
     margin: 0 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    text-align: center;
 }
 .custom-service-item {
-    width: 3.3rem;
-    height: 2.82rem;
-    padding: 0.4rem 0.4rem 0.4rem;
-    text-align: center;
-    box-sizing: border-box;
-    float: left;
+    flex: 0 0 3.3rem;
+    box-shadow: 0rem 0.01rem 0.1rem 0rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.3rem;
 }
 .custom-service-icon {
-    margin-bottom: 0.35rem;
+    width: 0.66rem;
+    height: 0.66rem;
+    position: relative;
+    margin: 0.4rem auto 0.35rem;
 }
 .custom-service-icon img {
-    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .custom-service-title {
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.18rem;
     color: #333333;
     font-size: 0.28rem;
 }
@@ -89,14 +105,21 @@
     font-size: 0.24rem;
     line-height: 0.36rem;
     color: #666666;
+    width: 2.4rem;
+    margin: 0 auto 0.39rem;
 }
 .custom-case {
     padding-bottom: 0.3rem;
+    background: #FBFBFB;
+}
+.custom-case-title {
+    padding-top: 0.8rem;
+    margin-top: 0rem;
 }
 .custom-case-item {
     margin: 0 0.3rem 0.5rem;
     padding: 0.45rem 0.3rem 0.45rem;
-    box-shadow: -0.1rem 0rem 0.1rem 0rem rgba(0, 0, 0, 0.06);
+    box-shadow: 0rem 0.01rem 0.1rem 0rem rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 }
 .custom-case-item-icon {

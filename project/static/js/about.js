@@ -11,6 +11,9 @@ var aboutHandler = {
         });
         var aboutAdvantageSwiper = new Swiper('.about-quality-swiper-container', {
             loop: true,
+            autoplay: {
+                delay: 2000,
+            },
             pagination: {
                 el: '.about-quality-swiper-pagination',
             },

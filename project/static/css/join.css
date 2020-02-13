@@ -1,10 +1,11 @@
 .join-banner {
-    height: 8.68rem;
-    background: green;
+    height: 7.98rem;
     margin-top: -0.7rem;
     padding-top: 0.7rem;
     position: relative;
     z-index: 1;
+    background: url("../images/join/joinBanner.png") no-repeat;
+    background-size: 100% auto;
 }
 .join-banner-btn {
     margin: 0 auto;
@@ -40,7 +41,7 @@
     margin-bottom: 0.3rem;
 }
 .join-basic-icon img {
-    width: auto;
+    width: 1rem;
 }
 .join-basic-title {
     margin-bottom: 0.28rem;
@@ -55,12 +56,15 @@
     line-height: 0.36rem;
 }
 .join-advantage {
+    background: #FBFBFB;
+    padding-top: 0.8rem;
     padding-bottom: 0.8rem;
 }
 .join-advantage-swiper-container {
     margin: 0 0.3rem;
-    height: 5.89rem;
+    height: 7.49rem;
     padding-bottom: 1rem;
+    background: #FBFBFB;
 }
 .join-advantage-swiper-pagination {
     position: relative;
@@ -98,6 +102,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 60%;
 }
 .join-cooperate-title {
     color: #333333;

@@ -11,6 +11,9 @@ var joinHandler = {
         });
         var joinadvantageSwiper = new Swiper('.join-advantage-swiper-container', {
             loop: true,
+            autoplay: {
+                delay: 2000,
+            },
             pagination: {
                 el: '.join-advantage-swiper-pagination',
             },
