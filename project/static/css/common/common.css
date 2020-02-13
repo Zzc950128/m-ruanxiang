@@ -50,15 +50,21 @@ footer {
     float: left;
     width: 50%;
     line-height: 1rem;
+    color: #999999;
+    font-size: 0.22rem;
 }
 .footer-content-item img {
-    width: auto;
+    width: 0.21rem;
     margin-right: 0.1rem;
     vertical-align: middle;
+    position: relative;
+    top: -1px;
 }
 .footer-content-title {
-    margin-top: 0.4rem;
+    margin-top: 0.3rem;
     margin-bottom: 0.2rem;
+    color: #999999;
+    font-size: 0.22rem;
 }
 .footer-content-wechat {
     width: 1.9rem;
@@ -66,10 +72,14 @@ footer {
 }
 .footer-content-addr {
     margin-bottom: 0.2rem;
+    color: #999999;
+    font-size: 0.22rem;
 }
 .footer-content-copyright {
     margin: 0 0.3rem;
     line-height: 0.36rem;
+    color: #999999;
+    font-size: 0.22rem;
 }
 .footer-btn-group {
     width: 100%;
@@ -89,9 +99,11 @@ footer {
     background: #185ABD;
 }
 .footer-btn img {
-    width: auto;
+    width: 0.22rem;
     margin-right: 0.14rem;
     vertical-align: middle;
+    position: relative;
+    top: -1px;
 }
 /* menu样式 */
 .menu {
