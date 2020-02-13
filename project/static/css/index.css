@@ -76,15 +76,98 @@
 }
 .home-advantage {
     padding-bottom: 0.8rem;
+    background: #FBFBFB;
+}
+.home-advantage-title {
+    padding-top: 0.8rem;
+    margin-top: 0rem;
 }
 .home-advantage-swiper-container {
     margin: 0 0.3rem;
-    height: 12.57rem;
+    height: 13.57rem;
     padding-bottom: 1rem;
 }
 .home-advantage-swiper-pagination {
     position: relative;
     top: 0.5rem;
+}
+.home-advantage-wrap {
+    margin: 0.1rem 0.3rem 0rem;
+    box-shadow: 0rem 0rem 0.1rem 0rem rgba(0, 0, 0, 0.06);
+}
+.home-advantage-item {
+    float: left;
+    width: calc(50% - 0.2rem);
+    height: 3.28rem;
+    border-bottom: 1px solid #F3F3F3;
+}
+.home-advantage-item-desc {
+    font-size: 0.22rem;
+    line-height: 0.36rem;
+    color: #fff;
+    padding: 0.4rem 0.2rem 0rem;
+    display: none;
+}
+.home-advantage-item:nth-child(odd) {
+    margin-left: 0.2rem;
+    border-right: 1px solid #F3F3F3;
+    width: calc(50% - 0.2rem - 1px);
+}
+.home-advantage-item:nth-child(even) {
+    margin-right: 0.2rem;
+}
+.home-advantage-item-icon {
+    margin: 0.4rem auto 0.2rem;
+    width: 1.14rem;
+    height: 1.14rem;
+    border-radius: 50%;
+    position: relative;
+}
+.home-advantage-item-icon1 {
+    background: linear-gradient(133deg,rgba(9,153,255,1),rgba(171,220,255,1));
+}
+.home-advantage-item-icon2 {
+    background: linear-gradient(133deg,rgba(255,104,102,1),rgba(254,182,146,1));
+}
+.home-advantage-item-icon3 {
+    background: linear-gradient(133deg,rgba(255,175,64,1),rgba(255,234,161,1));
+}
+.home-advantage-item-icon4 {
+    background: linear-gradient(133deg,rgba(81,218,204,1),rgba(170,255,246,1));
+}
+.home-advantage-item-icon5 {
+    background: linear-gradient(133deg,rgba(52,206,121,1),rgba(129,251,184,1));
+}
+.home-advantage-item-icon6 {
+    background: linear-gradient(133deg,rgba(165,77,215,1),rgba(226,176,255,1));
+}
+.home-advantage-item-icon7 {
+    background: linear-gradient(133deg,rgba(246,82,115,1),rgba(255,246,183,1));
+}
+.home-advantage-item-icon8 {
+    background: linear-gradient(133deg,rgba(128,111,242,1),rgba(206,159,252,1));
+}
+.home-advantage-item-icon img {
+    max-width: 0.46rem;
+    max-height: 0.46rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.home-advantage-item-title {
+    color: #333333;
+    font-size: 0.28rem;
+    text-align: center;
+    margin-bottom: 0.21rem;
+}
+.home-advantage-item-content {
+    color: #999999;
+    font-size: 0.22rem;
+    line-height: 0.32rem;
+    text-align: center;
+    width: 2.8rem;
+    margin: 0 auto 0.4rem;
 }
 .home-case {
     padding-bottom: 0.8rem;

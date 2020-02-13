@@ -28,8 +28,33 @@ var homeHandler = {
             },
         })
     },
-    initAction: function() {},
+    initAction: function() {
+        $(".home-advantage-item").click(function() {
+            return
+            let that = $(this)
+            that.find(".home-advantage-item-desc").toggle()
+            that.find(".home-advantage-item-icon").toggle()
+            that.find(".home-advantage-item-title").toggle()
+            that.find(".home-advantage-item-content").toggle()
+            if(that.hasClass("active")) {
+                that.removeClass("active")
+                that.css("background", "#fff")
+            }else {
+                that.addClass("active")
+                that.css("background", that.find(".home-advantage-item-icon").css("background"))
+                setTimeout(function() {
+                    that.removeClass("active")
+                    that.css("background", "#fff")
+                    that.find(".home-advantage-item-desc").toggle()
+                    that.find(".home-advantage-item-icon").toggle()
+                    that.find(".home-advantage-item-title").toggle()
+                    that.find(".home-advantage-item-content").toggle()
+                }, 4000);
+            }
+        })
+    },
 }
 $(function() {
     homeHandler.init();
+    homeHandler.initAction();
 })
