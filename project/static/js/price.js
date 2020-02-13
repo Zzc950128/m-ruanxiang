@@ -5,116 +5,116 @@ var priceHandler = {
     args: {
     	tableData: [
     		{
-    			cardTitle: "11111",
-    			cardTip: ["1", "1"],
-    			cardList: ["111", "111", "111"],
+    			cardTitle: "自选版",
+    			cardTip: ["多终端自由搭配", "部分加密授权"],
+    			cardList: ["原生IOS端APP", "原生安卓端APP", "公众号、分销体系、H5"],
     			cardTable: [
     				{
-    					type: "title", content: "title1",
+    					type: "title", content: "内容管理",
     				}, {
-    					type: "content", content: "title1", result: "123"
+    					type: "content", content: "小说、漫画管理", result: "true"
     				}, {
-    					type: "content", content: "title1", result: "123"
+    					type: "content", content: "男女双频切换", result: "true"
     				}, {
-    					type: "title", content: "title2", result: "12"
+    					type: "title", content: "运营管理"
     				}, {
-    					type: "content", content: "title2", result: "123"
+    					type: "content", content: "阅读付费", result: "true"
     				}, {
-    					type: "content", content: "title2", result: "123"
+    					type: "content", content: "章节试读", result: "true"
     				}, {
-    					type: "content", content: "title2", result: "12"
+    					type: "content", content: "ASO", result: "联系销售"
     				}, {
-    					type: "content", content: "title2", result: "123"
+    					type: "content", content: "其他定制需求", result: "联系销售"
     				}
     			]
     		},{
-    			cardTitle: "22222",
-    			cardTip: ["2", "2"],
-    			cardList: ["222", "222", "222"],
+    			cardTitle: "APP版",
+    			cardTip: ["多终端自由搭配", "部分加密授权"],
+    			cardList: ["原生IOS端APP", "原生安卓端APP", "公众号、分销体系、H5"],
     			cardTable: [
     				{
-    					type: "title", content: "title1",
+    					type: "title", content: "内容管理",
     				}, {
-    					type: "content", content: "title1", result: "123"
+    					type: "content", content: "小说、漫画管理", result: ""
     				}, {
-    					type: "content", content: "title1", result: "123"
+    					type: "content", content: "男女双频切换", result: "true"
     				}, {
-    					type: "title", content: "title2"
+    					type: "title", content: "运营管理"
     				}, {
-    					type: "content", content: "title2", result: "123"
+    					type: "content", content: "阅读付费", result: "true"
     				}, {
-    					type: "content", content: "title2", result: "123"
+    					type: "content", content: "章节试读", result: ""
     				}, {
-    					type: "content", content: "title2", result: "12"
+    					type: "content", content: "ASO", result: "联系销售"
     				}, {
-    					type: "content", content: "title2", result: "123"
+    					type: "content", content: "其他定制需求", result: "联系销售"
     				}
     			]
     		},{
-    			cardTitle: "33333",
-    			cardTip: ["3", "3"],
-    			cardList: ["333", "333", "333"],
+    			cardTitle: "旗舰版",
+    			cardTip: ["多终端自由搭配", "部分加密授权"],
+    			cardList: ["原生IOS端APP", "原生安卓端APP", "公众号、分销体系、H5"],
     			cardTable: [
     				{
-    					type: "title", content: "324",
+    					type: "title", content: "内容管理",
     				}, {
-    					type: "content", content: "tit14le1", result: ""
+    					type: "content", content: "小说、漫画管理", result: ""
     				}, {
-    					type: "content", content: "tit32143le1", result: ""
+    					type: "content", content: "男女双频切换", result: "true"
     				}, {
-    					type: "title", content: "tit324le2"
+    					type: "title", content: "运营管理"
     				}, {
-    					type: "content", content: "tit324le2", result: ""
+    					type: "content", content: "阅读付费", result: "true"
     				}, {
-    					type: "content", content: "tit32432le2", result: "123"
+    					type: "content", content: "章节试读", result: "true"
     				}, {
-    					type: "content", content: "3534", result: "12"
+    					type: "content", content: "ASO", result: "联系销售"
     				}, {
-    					type: "content", content: "tit345le2", result: "123"
+    					type: "content", content: "其他定制需求", result: "联系销售"
     				}
     			]
     		},{
-    			cardTitle: "44444",
-    			cardTip: ["4", "4"],
-    			cardList: ["444", "444", "444"],
+    			cardTitle: "企业源码版",
+    			cardTip: ["多终端自由搭配", "部分加密授权"],
+    			cardList: ["原生IOS端APP", "原生安卓端APP", "公众号、分销体系、H5"],
     			cardTable: [
     				{
-    					type: "title", content: "title1",
+    					type: "title", content: "内容管理",
     				}, {
-    					type: "content", content: "title1", result: "123"
+    					type: "content", content: "小说、漫画管理", result: "true"
     				}, {
-    					type: "content", content: "title1", result: "123"
+    					type: "content", content: "男女双频切换", result: "true"
     				}, {
-    					type: "title", content: "title2"
+    					type: "title", content: "运营管理"
     				}, {
-    					type: "content", content: "title2", result: "123"
+    					type: "content", content: "阅读付费", result: "联系销售"
     				}, {
-    					type: "content", content: "title2", result: ""
+    					type: "content", content: "章节试读", result: ""
     				}, {
-    					type: "content", content: "title2", result: "12"
+    					type: "content", content: "其他定制需求", result: "联系销售"
     				}, {
-    					type: "title", content: "title2"
+    					type: "title", content: "阅读付费"
     				}
     			]
     		},{
-    			cardTitle: "55555",
-    			cardTip: ["5", "5"],
+    			cardTitle: "源码定制版",
+    			cardTip: ["多终端自由搭配", "部分加密授权"],
     			cardList: ["555", "555", "555"],
     			cardTable: [
     				{
-    					type: "title", content: "title1",
+    					type: "title", content: "内容管理",
     				}, {
-    					type: "content", content: "title1", result: "123"
+    					type: "content", content: "阅读付费", result: ""
     				}, {
-    					type: "content", content: "title1", result: "123"
+    					type: "content", content: "其他定制需求", result: ""
     				}, {
-    					type: "content", content: "title2", result: "123"
+    					type: "content", content: "阅读付费", result: "true"
     				}, {
-    					type: "content", content: "title2", result: "123"
+    					type: "content", content: "章节试读", result: "true"
     				}, {
-    					type: "content", content: "title2", result: "12"
+    					type: "content", content: "运营管理", result: "联系销售"
     				}, {
-    					type: "content", content: "title2", result: "123"
+    					type: "content", content: "运营管理", result: "联系销售"
     				}
     			]
     		}
@@ -130,33 +130,36 @@ var priceHandler = {
     initAction: function() {
     	$(".price-category-btn").click(function() {
     		var that = this
-    		var index = $(".price-category-btn").index(that)
-    		$(".price-category-btn").removeClass("active")
-    		$(".price-category-btn").eq(index).addClass("active")
-    		$(".price-card-title").html(priceHandler.args.tableData[index].cardTitle)
-    		var tips = priceHandler.args.tableData[index].cardTip
-    		var tipHtml = ""
-    		tips.forEach(function(item) {
-    			tipHtml += "<p>"+item+"</p>"
-    		})
-    		$(".price-card-tip").html(tipHtml)
-    		var lists = priceHandler.args.tableData[index].cardList
-    		var listHtml = ""
-    		lists.forEach(function(item) {
-    			listHtml += '<div class="price-card-item">'+item+'</div>'
-    		})
-    		$(".price-card-list-wrap").html(listHtml)
-    		var tables = priceHandler.args.tableData[index].cardTable
-    		var tableHtml = ""
-    		tables.forEach(function(item) {
-    			if(item.type == "title") {
-    				tableHtml += '<div class="price-table-title">'+item.content+'</div>'
-    			}else {
-    				tableHtml += '<div class="price-table-content">'+item.content+'</div>'
-    				tableHtml += '<div class="price-table-result">'+(item.result?item.result:"+")+'</div>'
-    			}
-    		})
-    		$(".price-table-border").html(tableHtml)
+            var index = $(".price-category-btn").index(that)
+            $(".price-category-btn").removeClass("active")
+            $(".price-category-btn").eq(index).addClass("active")
+            $(".price-card-title").html(priceHandler.args.tableData[index].cardTitle)
+            $(".price-table-title").html(priceHandler.args.tableData[index].cardTitle)
+            var tips = priceHandler.args.tableData[index].cardTip
+            var tipHtml = ""
+            tips.forEach(function(item) {
+                tipHtml += "<p>"+item+"</p>"
+            })
+            $(".price-card-tip").html(tipHtml)
+            var lists = priceHandler.args.tableData[index].cardList
+            var listHtml = ""
+            listHtml += "<ul>"
+            lists.forEach(function(item) {
+                listHtml += '<li class="price-card-item">'+item+'</li>'
+            })
+            listHtml += "</ul>"
+            $(".price-card-list-wrap").html(listHtml)
+            var tables = priceHandler.args.tableData[index].cardTable
+            var tableHtml = ""
+            tables.forEach(function(item) {
+                if(item.type == "title") {
+                    tableHtml += '<div class="price-table-title">'+item.content+'</div>'
+                }else {
+                    tableHtml += '<div class="price-table-content">'+item.content+'</div>'
+                    tableHtml += '<div class="price-table-result '+(item.result==="true"?"active":"")+'">'+(item.result?item.result=="true"?"&#10003":item.result:" ")+'</div>'
+                }
+            })
+            $(".price-table-border").html(tableHtml)
     	})
     },
 }
