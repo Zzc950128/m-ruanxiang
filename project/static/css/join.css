@@ -18,7 +18,7 @@
     border-radius: 0.1rem;
 }
 .join-banner-title {
-    margin-top: 3.1rem;
+    margin-top: 2.5rem;
     margin-bottom: 0.5rem;
     font-size: 0.48rem;
     color: #fff;
@@ -35,7 +35,7 @@
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
     text-align: center;
-    box-shadow: -0.1rem 0rem 0.1rem 0rem rgba(0, 0, 0, 0.06);
+    box-shadow: 0rem 0.02rem 0.14rem 0rem rgba(0, 0, 0, 0.14);
 }
 .join-basic-icon {
     margin-bottom: 0.3rem;

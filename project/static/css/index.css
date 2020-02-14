@@ -8,7 +8,7 @@
     background-size: 100% auto;
 }
 .home-banner-title {
-    margin-top: 2.47rem;
+    margin-top: 1.77rem;
     margin-bottom: 0.54rem;
     font-size: 0.48rem;
     color: #fff;
@@ -48,6 +48,13 @@
     float: right;
     color: #fff;
 }
+.home-banner-img {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 5.2rem;
+}
 .home-mode {
     padding-bottom: 0.8rem;
 }
@@ -68,6 +75,7 @@
 .swiper-slide-content {
     margin: 0 auto;
     width: 5.3rem;
+    height: 1.44rem;
     line-height: 0.36rem;
     font-size: 0.24rem;
     color: #666666;
@@ -93,7 +101,8 @@
 }
 .home-advantage-wrap {
     margin: 0.1rem 0.3rem 0rem;
-    box-shadow: 0rem 0rem 0.1rem 0rem rgba(0, 0, 0, 0.06);
+    box-shadow: 0rem 0.02rem 0.2rem 0rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.06rem;
 }
 .home-advantage-item {
     float: left;
@@ -176,7 +185,7 @@
     margin: 0 0.3rem 0.5rem;
     padding: 0.45rem 0.3rem 0.4rem;
     height: 3.37rem;
-    box-shadow: -0.1rem 0rem 0.1rem 0rem rgba(0, 0, 0, 0.06);
+    box-shadow: -0.06rem 0.04rem 0.14rem 0rem rgba(0, 0, 0, 0.06);
     box-sizing: border-box;
 }
 .home-case-item-image {
@@ -218,7 +227,7 @@
 }
 .home-function-item {
     margin: 0 0.3rem 0.4rem;
-    box-shadow: -0.1rem 0rem 0.1rem 0rem rgba(0, 0, 0, 0.06);
+    box-shadow: -0.06rem 0.06rem 0.14rem 0rem rgba(0, 0, 0, 0.06);
     padding: 0rem 0.3rem 0rem 0rem;
     box-sizing: border-box;
 }

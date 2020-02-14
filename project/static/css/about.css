@@ -37,8 +37,8 @@
 	top: -1.37rem;
 	z-index: 10;
     background: #fff;
-    border-radius: 0.1rem;
-    box-shadow: 0rem 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.06);
+    box-shadow: 0rem 0.02rem 0.19rem 0.01rem rgba(0, 0, 0, 0.16);
+    border-radius: 0.06rem;
 }
 .about-desc-title {
     height: 1.7rem;
