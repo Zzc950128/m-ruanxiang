@@ -126,13 +126,21 @@ var priceHandler = {
         loadPage($("#menu"), "../component/menu.html", function() {
             $(".menu li").eq(6).addClass("active")
         });
+        setTimeout(function() {
+            $(".header-wrap").hide()
+            $(".header-reverse-wrap").show()
+        }, 0)
     },
     initAction: function() {
     	$(".price-category-btn").click(function() {
-    		var that = this
-            var index = $(".price-category-btn").index(that)
+    		var that = $(this)
+            var index = that.attr("data-index")
             $(".price-category-btn").removeClass("active")
-            $(".price-category-btn").eq(index).addClass("active")
+            $(".price-category-btn").each(function(i, item) {
+                if($(this).attr("data-index") == index) {
+                    $(this).addClass("active")
+                }
+            })
             $(".price-card-title").html(priceHandler.args.tableData[index].cardTitle)
             $(".price-table-title").html(priceHandler.args.tableData[index].cardTitle)
             var tips = priceHandler.args.tableData[index].cardTip

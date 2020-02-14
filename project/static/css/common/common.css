@@ -4,6 +4,17 @@ header {
     z-index: 10;
     height: 0.7rem;
 }
+.header-reverse {
+    background: #fff;
+    box-shadow: 0rem 0.02rem 0.1rem 0rem rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.header-reverse.is-menu-flod {
+    left: -3.8rem;
+}
 .header-icon {
     position: relative;
     float: left;
@@ -111,12 +122,13 @@ footer {
     top: 0;
     right: 0;
     font-size: 0.32rem;
-    transition: width 0.6s ease-out, opacity 0.2s ease-in;
+    transition: width 0.4s ease-out, opacity 0.2s ease-in;
     width: 0rem;
     opacity: 0;
     color: #333333;
     padding-left: 0.37rem;
     padding-top: 0.1rem;
+    /*z-index: 100;*/
 }
 .menu.active {
     width: 3.47rem;
@@ -150,6 +162,9 @@ a, a:link, a:visited, a:hover, a:active {
 a, li {
     text-decoration: none;
 }
+body {
+    background: #fff;
+}
 img {
     width: 100%;
 }
@@ -163,7 +178,7 @@ img {
     color: #333333;
 }
 .main-wrap.is-menu-flod {
-    margin-left: -4rem;
+    margin-left: -3.8rem;
 }
 .common-title {
     margin-top: 0.8rem;

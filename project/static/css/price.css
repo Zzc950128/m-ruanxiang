@@ -1,8 +1,26 @@
+.price-fixed {
+	width: 100%;
+	padding-top: 0.36rem;
+	position: fixed;
+	top: 0.7rem;
+	left: 0rem;
+	box-shadow: 0rem 0.02rem 0.1rem 0rem rgba(0, 0, 0, 0.1);
+	background: #fff;
+	z-index: 20;
+	opacity: 0;
+}
+.price-fixed.active {
+	opacity: 1;
+}
+.price-fixed.is-menu-flod {
+    left: -3.8rem;
+}
 .price-desc-title {
 	font-size: 0.48rem;
 	width: 5.76rem;
 	margin: 0.8rem auto 0.6rem;
-	line-height:0.72rem;
+	line-height: 0.72rem;
+	margin-top: 1.5rem;
 }
 .price-desc-content {
 	margin-bottom: 0.8rem;
@@ -21,7 +39,8 @@
 	border-radius: 0.1rem;
 }
 .price-category-btn-group {
-	margin: 0 1rem 0.2rem;
+	padding: 0 1.2rem;
+	box-sizing: border-box;
 }
 .price-category-btn {
 	width: 1.5rem;
@@ -44,7 +63,7 @@
 	color: #fff;
 }
 .price-card {
-	margin: 0 0.3rem;
+	margin: 0.2rem 0.3rem 0rem;
 	box-shadow: 0rem 0.01rem 0.1rem 0rem rgba(0, 0, 0, 0.1);
 	border-radius: 0.1rem;
 }
@@ -151,7 +170,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 70%;
 }
 .price-purchse-item-content {
 	text-align: center;

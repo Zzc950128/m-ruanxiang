@@ -17,19 +17,33 @@
 })(document, window);
 
 // 载入header
-loadPage($("#header"), "../component/header.html", function() {
-    $(".header-menu").click(function() {
+loadPage($("#header"), window.headerReverseFlag?"../component/headerReverse.html":"../component/header.html", function() {
+    $(".header-menu, .header-menu-reverse").click(function() {
         console.log("menuClick")
+        // menu展开标识
         if($(".menu").hasClass("active")) {
             $(".menu").removeClass("active")
-       }else {
+        }else {
             $(".menu").addClass("active")
-       }
-       if($(".main-wrap").hasClass("is-menu-flod")) {
+        }
+        // 移动main
+        if($(".main-wrap").hasClass("is-menu-flod")) {
             $(".main-wrap").removeClass("is-menu-flod")
-       }else {
+        }else {
             $(".main-wrap").addClass("is-menu-flod")
-       }
+        }
+        // 固定header
+        if($(".header-reverse").hasClass("is-menu-flod")) {
+            $(".header-reverse").removeClass("is-menu-flod")
+        }else {
+            $(".header-reverse").addClass("is-menu-flod")
+        }
+        // 价格种类
+        if($(".price-fixed").hasClass("is-menu-flod")) {
+            $(".price-fixed").removeClass("is-menu-flod")
+        }else {
+            $(".price-fixed").addClass("is-menu-flod")
+        }
     })
 });
 
@@ -37,4 +51,3 @@ loadPage($("#header"), "../component/header.html", function() {
 loadPage($("#footer"), "../component/footer.html", function() {
 
 });
-
