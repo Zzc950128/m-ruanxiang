@@ -117,6 +117,7 @@
     position: relative;
     left: 50%;
     transform: translate(-0.04rem, 0);
+    z-index: 2;
 }
 .join-cooperate-line {
 	border-bottom: 1px dashed #CCCCCC;

@@ -169,6 +169,16 @@ var priceHandler = {
             })
             $(".price-table-border").html(tableHtml)
     	})
+        // 分类固定 
+        $(window).scroll(function() {
+            // 达到按钮组切换固定
+            var h = $(this).scrollTop();
+            if(h + $(".price-category-btn-group").height() - $(".header").height() > $(".price-category").offset().top){
+                $(".price-fixed").css("opacity", "1")
+            }else {
+                $(".price-fixed").css("opacity", "0")
+            }
+        });
     },
 }
 $(function() {
