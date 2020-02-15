@@ -18,6 +18,7 @@ var freeHandler = {
             },
             pagination: {
                 el: '.free-system-swiper-pagination',
+                clickable: true,
             },
         })
     },

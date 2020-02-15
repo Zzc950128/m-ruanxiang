@@ -18,6 +18,7 @@ var aboutHandler = {
             },
             pagination: {
                 el: '.about-quality-swiper-pagination',
+                clickable: true,
             },
         })
     },

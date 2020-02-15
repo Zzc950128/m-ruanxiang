@@ -18,6 +18,7 @@ var homeHandler = {
             },
             pagination: {
                 el: '.home-mode-swiper-pagination',
+                clickable: true,
             },
         })
         var homeAdvantageSwiper = new Swiper('.home-advantage-swiper-container', {
@@ -28,6 +29,7 @@ var homeHandler = {
             },
             pagination: {
                 el: '.home-advantage-swiper-pagination',
+                clickable: true,
             },
         })
     },

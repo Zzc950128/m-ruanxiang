@@ -18,6 +18,7 @@ var payReadHandler = {
             },
             pagination: {
                 el: '.pay-system-swiper-pagination',
+                clickable: true,
             },
         })
         var payReadFunctionSwiper = new Swiper('.pay-function-swiper-container', {
@@ -28,6 +29,7 @@ var payReadHandler = {
             },
             pagination: {
                 el: '.pay-function-swiper-pagination',
+                clickable: true,
             },
         })
     },

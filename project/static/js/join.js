@@ -18,6 +18,7 @@ var joinHandler = {
             },
             pagination: {
                 el: '.join-advantage-swiper-pagination',
+                clickable: true,
             },
         })
     },

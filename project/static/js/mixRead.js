@@ -18,6 +18,7 @@ var mixHandler = {
             },
             pagination: {
                 el: '.mix-form-swiper-pagination',
+                clickable: true,
             },
         })
     },
