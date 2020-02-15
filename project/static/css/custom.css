@@ -1,7 +1,7 @@
 .custom-banner {
-    height: 8.08rem;
-    margin-top: -1rem;
-    padding-top: 1rem;
+    height: 8.18rem;
+    margin-top: -0.9rem;
+    padding-top: 0.9rem;
     position: relative;
     z-index: 1;
     background: url("../images/custom/customBanner.png") no-repeat;
@@ -16,6 +16,7 @@
     background: #fff;
     border-radius: 0.1rem;
     color: #411D45;
+    font-size: 0.28rem;
 }
 .custom-banner-title {
     margin-top: 2.1rem;

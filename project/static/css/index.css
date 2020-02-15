@@ -1,5 +1,5 @@
 .home-banner {
-    height: 12.64rem;
+    height: 12.44rem;
     margin-top: -0.9rem;
     padding-top: 0.9rem;
     position: relative;
@@ -8,7 +8,7 @@
     background-size: 100% auto;
 }
 .home-banner-title {
-    margin-top: 1.77rem;
+    margin-top: 1.42rem;
     margin-bottom: 0.54rem;
     font-size: 0.48rem;
     color: #fff;
@@ -42,7 +42,7 @@
 .home-banner-btn:nth-child(1) {
     float: left;
     background: #fff;
-    color: #00A4FF;
+    color: #4381FD;
 }
 .home-banner-btn:nth-child(2) {
     float: right;
@@ -50,7 +50,7 @@
 }
 .home-banner-img {
     position: absolute;
-    bottom: 1rem;
+    bottom: 1.2rem;
     left: 50%;
     transform: translate(-50%, 0);
     width: 5.2rem;

@@ -1,6 +1,15 @@
-/* 
-* @Author: anchen
-* @Date:   2020-02-14 10:37:10
-* @Last Modified by:   anchen
-* @Last Modified time: 2020-02-14 13:53:05
-*/
+.document-banner {
+	margin-top: 1rem;
+	background: url();
+	height: 12.64rem;
+    margin-top: -0.9rem;
+    padding-top: 0.9rem;
+    position: relative;
+    z-index: 1;
+    background: url("../images/home/homeBanner.png") no-repeat;
+    background-size: 100% auto;
+}
+.document-banner-title {
+	font-size: 0.48rem;
+	color: rgba(255,255,255,1);
+}

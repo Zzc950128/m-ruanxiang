@@ -1,7 +1,7 @@
 .mix-banner {
-    height: 7.78rem;
-    margin-top: -1rem;
-    padding-top: 1rem;
+    height: 7.88rem;
+    margin-top: -0.9rem;
+    padding-top: 0.9rem;
     position: relative;
     z-index: 1;
     background: url("../images/mix/mixBanner.png") no-repeat;
@@ -16,6 +16,7 @@
     background: #fff;
     border-radius: 0.1rem;
     color: #4573E2;
+    font-size: 0.28rem;
 }
 .mix-banner-title {
     margin-top: 2.1rem;
