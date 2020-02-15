@@ -160,9 +160,10 @@
     max-width: 0.46rem;
     max-height: 0.46rem;
     position: absolute;
-    left: 50%;
+    left: 52%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: auto;
 }
 .home-advantage-item-title {
     color: #333333;
@@ -246,7 +247,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40%;
+    max-width: 50%;
+    max-height: 50%;
+    width: auto;
 }
 .home-function-item-wrap {
     float: left;

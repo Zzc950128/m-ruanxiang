@@ -4,7 +4,7 @@ var freeService = {
 var freeHandler = {
     args: {},
     init: function() {
-        console.log("payfreeHandlerInit")
+        console.log("freeHandlerInit")
         // 载入menu
         loadPage($("#menu"), "../component/menu.html", function() {
             $(".menu li").eq(3).addClass("active")

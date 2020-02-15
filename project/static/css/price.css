@@ -218,11 +218,13 @@
 	position: relative;
 }
 .price-purchase-item-icon img {
-	position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
 }
 .price-purchse-item-content {
 	text-align: center;
