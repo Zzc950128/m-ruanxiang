@@ -1,0 +1,148 @@
+.internation-banner {
+    height: 12.3rem;
+    margin-top: -1rem;
+    padding-top: 1rem;
+    position: relative;
+    z-index: 1;
+    background: url("../images/internation/internationBanner.png") no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+}
+.internation-banner-btn {
+    margin: 0 auto;
+    width: 2.52rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 0.1rem;
+    color: #4D74E4;
+    margin-bottom: 0.9rem;
+}
+.internation-banner-title {
+    margin-top: 1.36rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.48rem;
+    color: #fff;
+}
+.internation-banner-desc {
+    width: 5.3rem;
+    margin: 0 auto 0.92rem;
+    font-size: 0.28rem;
+    line-height: 0.42rem;
+    color: #fff;
+}
+.internation-banner-img {
+    width: 5rem;
+    margin-bottom: 1.09rem;
+    margin: 0 auto;
+}
+.internation-basic {
+    padding-bottom: 0.08rem;
+    text-align: center;
+}
+.internation-basic-item {
+    box-shadow: 0rem 0.02rem 0.14rem 0rem rgba(0, 0, 0, 0.14);
+    margin: 0 0.3rem 0.72rem;
+    padding-top: 0.4rem;
+}
+.internation-basic-item-img {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 auto 0.3rem;
+    position: relative;
+}
+.internation-basic-item-img img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+}
+.internation-basic-item-title {
+    font-size: 0.28rem;
+    color: rgba(51,51,51,1);
+    line-height: 0.24rem;
+    margin-bottom: 0.3rem;
+}
+.internation-basic-item-desc {
+    font-size: 0.24rem;
+    color: rgba(153,153,153,1);
+    line-height: 0.36rem;
+    width: 4.8rem;
+    padding-bottom: 0.4rem;
+    margin: 0 auto;
+}
+.internation-change {
+    padding-bottom: 0.3rem;
+    background: #fbfbfb;
+    text-align: center;
+}
+.internation-change-title {
+    margin-top: 0px;
+    padding-top: 0.8rem;
+}
+.internation-change-img {
+    margin-bottom: 0.4rem;
+}
+.internation-change-item-title {
+    font-size: 0.28rem;
+    color: rgba(51,51,51,1);
+    margin-bottom: 0.3rem;
+}
+.internation-change-item-desc {
+    font-size: 0.24rem;
+    color: rgba(102,102,102,1);
+    line-height: 0.36rem;
+    width: 5.28rem;
+    margin: 0 auto 0.4rem;
+}
+.internation-case {
+    padding-bottom: 0.3rem;
+}
+.internation-case-title {
+    margin-top: 0px;
+    padding-top: 0.8rem;
+}
+.internation-case-item {
+    margin: 0 0.3rem 0.5rem;
+    padding: 0.45rem 0.3rem 0.4rem;
+    height: 3.37rem;
+    box-shadow: 0rem 0.06rem 0.14rem 0rem rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+.internation-case-item-image {
+    float: left;
+    width: 2.01rem;
+}
+.internation-case-item-content {
+    float: left;
+    width: 4.07rem;
+    margin-left: 0.2rem;
+    font-size: 0.24rem;
+    line-height:0.36rem;
+    color: #666666;
+    height: 2.65rem;
+    position: relative;
+}
+.internation-case-item-content p {
+    font-size: 0.24rem;
+    line-height: 0.34rem;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+.internation-case-item-author {
+    text-align: right;
+    position: absolute;
+    bottom: 0.05rem;
+    width: 4.07rem;
+    margin-top: 0.15rem;
+    font-size: 0.22rem;
+    color: #999999;
+}
