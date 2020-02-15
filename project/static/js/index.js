@@ -8,11 +8,13 @@ var homeHandler = {
         // 载入menu
         loadPage($("#menu"), "../component/menu.html", function() {
             $(".menu li").eq(0).addClass("active")
+            menuTouch()
         });
         var homeModeSwiper = new Swiper('.home-mode-swiper-container', {
             loop: true,
             autoplay: {
                 delay: 2000,
+                disableOnInteraction: false,
             },
             pagination: {
                 el: '.home-mode-swiper-pagination',
@@ -22,6 +24,7 @@ var homeHandler = {
             loop: true,
             autoplay: {
                 delay: 2000,
+                disableOnInteraction: false,
             },
             pagination: {
                 el: '.home-advantage-swiper-pagination',

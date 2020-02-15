@@ -8,11 +8,13 @@ var aboutHandler = {
         // 载入menu
         loadPage($("#menu"), "../component/menu.html", function() {
             $(".menu li").eq(10).addClass("active")
+            menuTouch()
         });
         var aboutAdvantageSwiper = new Swiper('.about-quality-swiper-container', {
             loop: true,
             autoplay: {
                 delay: 2000,
+                disableOnInteraction: false,
             },
             pagination: {
                 el: '.about-quality-swiper-pagination',

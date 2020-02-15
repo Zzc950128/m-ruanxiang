@@ -51,3 +51,54 @@ loadPage($("#header"), window.headerReverseFlag?"../component/headerReverse.html
 loadPage($("#footer"), "../component/footer.html", function() {
 
 });
+
+function menuTouch() {
+    var startX = 0
+    var endX = 0
+    $(".menu").on('touchstart',function(e) {
+        var _touch = e.originalEvent.targetTouches[0];
+        startX = _touch.pageX;
+    });
+    $(".menu").on('touchend',function(e) {
+        var _touch = e.originalEvent.changedTouches[0];
+        endX = _touch.pageX;
+        if(endX - startX > 20) {
+            $(".menu").removeClass("active")
+            $(".main-wrap").removeClass("is-menu-flod")
+            $(".header-reverse").removeClass("is-menu-flod")
+            $(".price-fixed").removeClass("is-menu-flod")
+            startX = 0
+            endX = 0
+        }
+    });
+}
+
+function ajaxGet(url, data, successfn, errorfn) {
+    $.ajax({
+        url: url,
+        type: 'get',
+        data: data,
+        dataType: 'json',
+        success: function(d){
+            successfn(d);
+        },
+        error: function(e){
+            errorfn(e);
+        }
+    })
+}
+function ajaxPost(url, data, successfn, errorfn) {
+    $.ajax({
+        url: url,
+        type: 'post',//FormData只能使用post方式
+        data: data,
+        contentType: "json",
+        dataType:'json',
+        success: function(d){
+            successfn(d);
+        },
+        error: function(e){
+            errorfn(e);
+        }
+    })
+}

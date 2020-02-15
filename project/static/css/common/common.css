@@ -2,7 +2,7 @@
 header {
     position: relative;
     z-index: 10;
-    height: 0.7rem;
+    height: 0.9rem;
 }
 .header-reverse {
     background: #fff;
@@ -20,7 +20,7 @@ header {
     float: left;
     margin-left: 0.32rem;
     width: 1.35rem;
-    height: 0.7rem;
+    height: 0.9rem;
 }
 .header-icon img {
     width: 100%;
@@ -33,7 +33,7 @@ header {
     position: relative;
     margin-right: 0.32rem;
     width: 0.48rem;
-    height: 0.7rem;
+    height: 0.9rem;
     cursor: pointer;
 }
 .header-menu img {
@@ -94,6 +94,10 @@ footer {
 }
 .footer-btn-group {
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
 }
 .footer-btn {
     float: left;
@@ -197,4 +201,7 @@ img {
     background: #00A4FF;
     margin-top: 0.6rem;
     text-align: center;
+}
+.swiper-pagination-bullet-active {
+    background: #00A4FF;
 }

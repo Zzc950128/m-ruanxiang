@@ -1,7 +1,7 @@
 .home-banner {
     height: 12.64rem;
-    margin-top: -0.7rem;
-    padding-top: 0.7rem;
+    margin-top: -0.9rem;
+    padding-top: 0.9rem;
     position: relative;
     z-index: 1;
     background: url("../images/home/homeBanner.png") no-repeat;
@@ -42,7 +42,7 @@
 .home-banner-btn:nth-child(1) {
     float: left;
     background: #fff;
-    color: #4381FD;
+    color: #00A4FF;
 }
 .home-banner-btn:nth-child(2) {
     float: right;
@@ -199,10 +199,12 @@
     font-size: 0.24rem;
     line-height:0.36rem;
     color: #666666;
+    height: 2.65rem;
+    position: relative;
 }
 .home-case-item-content p {
     font-size: 0.24rem;
-    line-height:0.36rem;
+    line-height: 0.34rem;
     color: #666666;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -212,8 +214,10 @@
 }
 .home-case-item-author {
     text-align: right;
+    position: absolute;
+    bottom: 0.05rem;
     width: 4.07rem;
-    margin-top: 0.2rem;
+    margin-top: 0.15rem;
     font-size: 0.22rem;
     color: #999999;
 }
@@ -252,7 +256,7 @@
 .home-function-item-title {
     color: #333333;
     font-size: 0.28rem;
-    margin-bottom: 0.24rem;
+    margin-bottom: 0.15rem;
 }
 .home-function-item-content {
     color: #999999;

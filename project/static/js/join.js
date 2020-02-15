@@ -8,11 +8,13 @@ var joinHandler = {
         // 载入menu
         loadPage($("#menu"), "../component/menu.html", function() {
             $(".menu li").eq(8).addClass("active")
+            menuTouch()
         });
         var joinadvantageSwiper = new Swiper('.join-advantage-swiper-container', {
             loop: true,
             autoplay: {
                 delay: 2000,
+                disableOnInteraction: false,
             },
             pagination: {
                 el: '.join-advantage-swiper-pagination',

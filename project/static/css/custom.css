@@ -1,6 +1,5 @@
 .custom-banner {
     height: 8.08rem;
-    background: green;
     margin-top: -1rem;
     padding-top: 1rem;
     position: relative;
@@ -133,10 +132,12 @@
     font-size: 0.24rem;
     line-height:0.36rem;
     color: #666666;
+    height: 2.65rem;
+    position: relative;
 }
 .custom-case-item-content p {
     font-size: 0.24rem;
-    line-height:0.36rem;
+    line-height: 0.34rem;
     color: #666666;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -146,8 +147,10 @@
 }
 .custom-case-item-tip {
     text-align: right;
+    position: absolute;
+    bottom: 0.05rem;
     width: 4.07rem;
-    margin-top: 0.2rem;
+    margin-top: 0.15rem;
     font-size: 0.22rem;
     color: #999999;
 }

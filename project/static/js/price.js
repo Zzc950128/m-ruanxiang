@@ -1,123 +1,12 @@
 var priceService = {
-    api: {},
+    api: {
+        getPrice: "../../api/price.json"
+    }
 }
 var priceHandler = {
     args: {
+        showMore: false,
     	tableData: [
-    		{
-    			cardTitle: "自选版",
-    			cardTip: ["多终端自由搭配", "部分加密授权"],
-    			cardList: ["原生IOS端APP", "原生安卓端APP", "公众号、分销体系、H5"],
-    			cardTable: [
-    				{
-    					type: "title", content: "内容管理",
-    				}, {
-    					type: "content", content: "小说、漫画管理", result: "true"
-    				}, {
-    					type: "content", content: "男女双频切换", result: "true"
-    				}, {
-    					type: "title", content: "运营管理"
-    				}, {
-    					type: "content", content: "阅读付费", result: "true"
-    				}, {
-    					type: "content", content: "章节试读", result: "true"
-    				}, {
-    					type: "content", content: "ASO", result: "联系销售"
-    				}, {
-    					type: "content", content: "其他定制需求", result: "联系销售"
-    				}
-    			]
-    		},{
-    			cardTitle: "APP版",
-    			cardTip: ["多终端自由搭配", "部分加密授权"],
-    			cardList: ["原生IOS端APP", "原生安卓端APP", "公众号、分销体系、H5"],
-    			cardTable: [
-    				{
-    					type: "title", content: "内容管理",
-    				}, {
-    					type: "content", content: "小说、漫画管理", result: ""
-    				}, {
-    					type: "content", content: "男女双频切换", result: "true"
-    				}, {
-    					type: "title", content: "运营管理"
-    				}, {
-    					type: "content", content: "阅读付费", result: "true"
-    				}, {
-    					type: "content", content: "章节试读", result: ""
-    				}, {
-    					type: "content", content: "ASO", result: "联系销售"
-    				}, {
-    					type: "content", content: "其他定制需求", result: "联系销售"
-    				}
-    			]
-    		},{
-    			cardTitle: "旗舰版",
-    			cardTip: ["多终端自由搭配", "部分加密授权"],
-    			cardList: ["原生IOS端APP", "原生安卓端APP", "公众号、分销体系、H5"],
-    			cardTable: [
-    				{
-    					type: "title", content: "内容管理",
-    				}, {
-    					type: "content", content: "小说、漫画管理", result: ""
-    				}, {
-    					type: "content", content: "男女双频切换", result: "true"
-    				}, {
-    					type: "title", content: "运营管理"
-    				}, {
-    					type: "content", content: "阅读付费", result: "true"
-    				}, {
-    					type: "content", content: "章节试读", result: "true"
-    				}, {
-    					type: "content", content: "ASO", result: "联系销售"
-    				}, {
-    					type: "content", content: "其他定制需求", result: "联系销售"
-    				}
-    			]
-    		},{
-    			cardTitle: "企业源码版",
-    			cardTip: ["多终端自由搭配", "部分加密授权"],
-    			cardList: ["原生IOS端APP", "原生安卓端APP", "公众号、分销体系、H5"],
-    			cardTable: [
-    				{
-    					type: "title", content: "内容管理",
-    				}, {
-    					type: "content", content: "小说、漫画管理", result: "true"
-    				}, {
-    					type: "content", content: "男女双频切换", result: "true"
-    				}, {
-    					type: "title", content: "运营管理"
-    				}, {
-    					type: "content", content: "阅读付费", result: "联系销售"
-    				}, {
-    					type: "content", content: "章节试读", result: ""
-    				}, {
-    					type: "content", content: "其他定制需求", result: "联系销售"
-    				}, {
-    					type: "title", content: "阅读付费"
-    				}
-    			]
-    		},{
-    			cardTitle: "源码定制版",
-    			cardTip: ["多终端自由搭配", "部分加密授权"],
-    			cardList: ["555", "555", "555"],
-    			cardTable: [
-    				{
-    					type: "title", content: "内容管理",
-    				}, {
-    					type: "content", content: "阅读付费", result: ""
-    				}, {
-    					type: "content", content: "其他定制需求", result: ""
-    				}, {
-    					type: "content", content: "阅读付费", result: "true"
-    				}, {
-    					type: "content", content: "章节试读", result: "true"
-    				}, {
-    					type: "content", content: "运营管理", result: "联系销售"
-    				}, {
-    					type: "content", content: "运营管理", result: "联系销售"
-    				}
-    			]
-    		}
     	]
     },
     init: function() {
@@ -125,16 +14,35 @@ var priceHandler = {
         // 载入menu
         loadPage($("#menu"), "../component/menu.html", function() {
             $(".menu li").eq(6).addClass("active")
+            menuTouch()
         });
         setTimeout(function() {
             $(".header-wrap").hide()
             $(".header-reverse-wrap").show()
         }, 0)
+        // 分类固定
+        $(window).scroll(function() {
+            // 达到按钮组切换固定
+            var h = $(this).scrollTop();
+            if(h + $(".header").height() > $(".price-category").offset().top){
+                $(".price-fixed").show()
+            }else {
+                $(".price-fixed").hide()
+            }
+        });
+        priceHandler.getPriceData()
     },
     initAction: function() {
     	$(".price-category-btn").click(function() {
     		var that = $(this)
             var index = that.attr("data-index")
+            var className = "price-card-wrap" + index
+            $(".price-card-wrap").removeClass("price-card-wrap0")
+            $(".price-card-wrap").removeClass("price-card-wrap1")
+            $(".price-card-wrap").removeClass("price-card-wrap2")
+            $(".price-card-wrap").removeClass("price-card-wrap3")
+            $(".price-card-wrap").removeClass("price-card-wrap4")
+            $(".price-card-wrap").addClass(className)
             $(".price-category-btn").removeClass("active")
             $(".price-category-btn").each(function(i, item) {
                 if($(this).attr("data-index") == index) {
@@ -164,22 +72,62 @@ var priceHandler = {
                     tableHtml += '<div class="price-table-title">'+item.content+'</div>'
                 }else {
                     tableHtml += '<div class="price-table-content">'+item.content+'</div>'
-                    tableHtml += '<div class="price-table-result '+(item.result==="true"?"active":"")+'">'+(item.result?item.result=="true"?"&#10003":item.result:" ")+'</div>'
+                    tableHtml += '<div class="price-table-result">'
+                    if(item.result === "true") {
+                        tableHtml += '<img src="../static/images/price/include.png" alt="支持">'
+                    }else if(item.result === "false") {
+                        tableHtml += '<img src="../static/images/price/not.png" alt="不支持">'
+                    }else {
+                        tableHtml += item.result
+                    }
+                    tableHtml += '</div>'
                 }
             })
             $(".price-table-border").html(tableHtml)
     	})
-        // 分类固定 
-        $(window).scroll(function() {
-            // 达到按钮组切换固定
-            var h = $(this).scrollTop();
-            if(h + $(".price-category-btn-group").height() - $(".header").height() > $(".price-category").offset().top){
-                $(".price-fixed").css("opacity", "1")
+        $(".price-table-show-more").click(function() {
+            if(!priceHandler.args.showMore) {
+                priceHandler.args.showMore = true
+                $(".price-table-border").addClass("flod")
+                $(".price-table-show-shadow").hide()
+                $(".price-table-show-more").html("收起")
+                $(".price-table-show-more").removeClass("flod")
             }else {
-                $(".price-fixed").css("opacity", "0")
+                priceHandler.args.showMore = false
+                $(".price-table-border").removeClass("flod")
+                $(".price-table-show-shadow").show()
+                $(".price-table-show-more").html("点击加载全部")
+                $(".price-table-show-more").addClass("flod")
             }
-        });
+        })
     },
+    getPriceData() {
+        ajaxGet(priceService.api.getPrice, "", function(res) {
+            console.log(res)
+            priceHandler.args.tableData = res
+            var tables = priceHandler.args.tableData[0].cardTable
+            var tableHtml = ""
+            tables.forEach(function(item) {
+                if(item.type == "title") {
+                    tableHtml += '<div class="price-table-title">'+item.content+'</div>'
+                }else {
+                    tableHtml += '<div class="price-table-content">'+item.content+'</div>'
+                    tableHtml += '<div class="price-table-result">'
+                    if(item.result === "true") {
+                        tableHtml += '<img src="../static/images/price/include.png" alt="支持">'
+                    }else if(item.result === "false") {
+                        tableHtml += '<img src="../static/images/price/not.png" alt="不支持">'
+                    }else {
+                        tableHtml += item.result
+                    }
+                    tableHtml += '</div>'
+                }
+            })
+            $(".price-table-border").html(tableHtml)
+        }, function(err) {
+
+        })
+    }
 }
 $(function() {
     priceHandler.init();

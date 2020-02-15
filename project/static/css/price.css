@@ -2,15 +2,15 @@
 	width: 100%;
 	padding-top: 0.36rem;
 	position: fixed;
-	top: 0.7rem;
+	top: 0.9rem;
 	left: 0rem;
 	box-shadow: 0rem 0.02rem 0.1rem 0rem rgba(0, 0, 0, 0.1);
 	background: #fff;
 	z-index: 20;
-	opacity: 0;
+	display: none;
 }
 .price-fixed.active {
-	opacity: 1;
+	display: block;
 }
 .price-fixed.is-menu-flod {
     left: -3.8rem;
@@ -69,10 +69,24 @@
 }
 .price-card-wrap {
 	height: 1.7rem;
-	background: linear-gradient(130deg, rgba(170,189,197,1), rgba(193,198,201,1));
 	border-top-left-radius: 0.1rem;
 	border-top-right-radius: 0.1rem;
 	margin-bottom: 0.4rem;
+}
+.price-card-wrap0 {
+    background: linear-gradient(130deg,rgba(170,189,197,1),rgba(193,198,201,1));
+}
+.price-card-wrap1 {
+	background: linear-gradient(130deg,rgba(4,151,255,1),rgba(94,182,245,1));
+}
+.price-card-wrap2 {
+	background: linear-gradient(130deg,rgba(97,77,246,1),rgba(183,181,247,1));
+}
+.price-card-wrap3 {
+	background: linear-gradient(133deg,rgba(255,175,64,1),rgba(255,234,161,1));
+}
+.price-card-wrap4 {
+	background: linear-gradient(130deg,rgba(244,86,81,1),rgba(255,138,136,1));
 }
 .price-card-title {
 	float: left;
@@ -113,6 +127,11 @@
 	border-left: 1px solid #EAEAEA;
 	border-right: 1px solid #EAEAEA;
 	line-height: 0.89rem;
+	height: 8.9rem;
+	overflow: hidden;
+}
+.price-table-border.flod {
+	height: auto;
 }
 .price-table-title {
 	float: left;
@@ -131,8 +150,12 @@
 	border-bottom: 1px solid #EAEAEA;
 	font-size: 0.28rem;
 	color: #333333;
-	text-indent: 0.3rem;
 	height: 0.89rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0rem 0.2rem;
+    box-sizing: border-box;
 }
 .price-table-result {
 	float: left;
@@ -142,9 +165,38 @@
 	font-size: 0.28rem;
 	color: #666666;
 	height: 0.89rem;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+	overflow: hidden;
+    padding: 0rem 0.2rem;
+    box-sizing: border-box;
+    position: relative;
 }
-.price-table-result.active {
-	color: #00A4FF;
+.price-table-result img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 0.3rem;
+}
+.price-table-show-shadow {
+    box-shadow: 0 -0.6rem 0.6rem 0.3rem #FCFCFC;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.price-table-show-more {
+    text-align: center;
+    color: #00A4FF;
+    font-size: 0.28rem;
+    margin: 0.2rem 0 0;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+.price-table-show-more.flod {
+	margin: 0.4rem 0 0;
 }
 .price-purchase {
 	margin: 0 0.3rem;
