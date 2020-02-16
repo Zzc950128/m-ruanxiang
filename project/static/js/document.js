@@ -50,17 +50,20 @@ var documentHandler = {
             }
         })
         $(".document-category-item").click(function() {
+            var that = $(this)
+            var index = that.attr("data-index")
+            if(index == 0) {
+                return
+            }
+            documentHandler.args.currentCategory = index
+            documentHandler.args.currentPage = 1
+            documentHandler.args.totalCount = 0
             $(".document-category-icon").removeClass("reverse")
             $(".document-category-title").hide()
             $(".document-category-all-list").css("display", "none")
             $(".document-category-list").show()
             $(".document-article-list-wrap").html("")
             $(".document-article-content").hide()
-            documentHandler.args.currentPage = 1
-            documentHandler.args.totalCount = 0
-            var that = $(this)
-            var index = that.attr("data-index")
-            documentHandler.args.currentCategory = index
             $(".document-category-item").removeClass("active")
             $(".document-category-item").each(function() {
                 if($(this).attr("data-index") == index) {
@@ -80,24 +83,32 @@ var documentHandler = {
             if(documentHandler.args.currentPage != 1) {
                 documentHandler.args.currentPage = 1
                 documentHandler.getArticleList()
+            }else {
+                console.log("已经是首页")
             }
         })
         $(".document-article-pagination-left").click(function() {
             if(documentHandler.args.currentPage != 1 && documentHandler.args.totalPage > 1) {
                 documentHandler.args.currentPage = documentHandler.args.currentPage - 1
                 documentHandler.getArticleList()
+            }else {
+                console.log("已经是首页")
             }
         })
         $(".document-article-pagination-right").click(function() {
             if(documentHandler.args.currentPage != documentHandler.args.totalPage && documentHandler.args.totalPage > 1) {
-                documentHandler.args.currentPage = documentHandler.args.totalPage
+                documentHandler.args.currentPage = parseInt(documentHandler.args.currentPage) + 1
                 documentHandler.getArticleList()
+            }else {
+                console.log("已经是尾页")
             }
         })
         $(".document-article-pagination-end").click(function() {
             if(documentHandler.args.currentPage != documentHandler.args.totalPage) {
                 documentHandler.args.currentPage = documentHandler.args.totalPage
                 documentHandler.getArticleList()
+            }else {
+                console.log("已经是尾页")
             }
         })
         $(".document-article-content-back").click(function() {
@@ -137,7 +148,43 @@ var documentHandler = {
                 })
                 var paginationHtml = ""
                 if(documentHandler.args.totalCount > 50) {
-
+                    var page = documentHandler.args.totalPage
+                    var currentPage = documentHandler.args.currentPage
+                    console.log(currentPage)
+                    var arr = []
+                    $(".document-article-pagination-item").each(function() {
+                        arr.push($(this).attr("data-index"))
+                    })
+                    console.log(arr)
+                    if(arr.indexOf(currentPage.toString()) == -1) {
+                        console.log("has not index")
+                        if(currentPage <= 3) {
+                            for(var i = 1; i <= 3; i++) {
+                                paginationHtml += '<div class="document-article-pagination-item ' + (i == documentHandler.args.currentPage?"active":"") + '" data-index="' + i + '">' + i + '</div>'
+                            }
+                            paginationHtml += '<div class="document-article-pagination-item" data-index="0">...</div>'
+                            paginationHtml += '<div class="document-article-pagination-item" data-index="' + page + '">' + page + '</div>'
+                        }else if(page - currentPage >= 3) {
+                            for(var i = currentPage - 2; i <= currentPage; i++) {
+                                paginationHtml += '<div class="document-article-pagination-item ' + (i == documentHandler.args.currentPage?"active":"") + '" data-index="' + i + '">' + i + '</div>'
+                            }
+                            paginationHtml += '<div class="document-article-pagination-item" data-index="0">...</div>'
+                            paginationHtml += '<div class="document-article-pagination-item" data-index="' + page + '">' + page + '</div>'
+                        }else {
+                            for(var i = page - 4; i <= page; i++) {
+                                paginationHtml += '<div class="document-article-pagination-item ' + (i == documentHandler.args.currentPage?"active":"") + '" data-index="' + i + '">' + i + '</div>'
+                            }
+                        }
+                    }else {
+                        console.log("has index")
+                        $(".document-article-pagination-item").removeClass("active")
+                        $(".document-article-pagination-item").each(function() {
+                            if($(this).attr("data-index") == documentHandler.args.currentPage && $(this).attr("data-index") != 0) {
+                                $(this).addClass("active")
+                            }
+                        })
+                        return
+                    }
                 }else {
                     var page = documentHandler.args.totalPage
                     for(var i = 1; i <= page; i++) {
@@ -148,8 +195,10 @@ var documentHandler = {
                 $(".document-article-pagination").show()
                 $(".document-article-pagination-item").click(function() {
                     var pageIndex = $(this).attr("data-index")
-                    documentHandler.args.currentPage = pageIndex;
-                    documentHandler.getArticleList()
+                    if(pageIndex != 0) {
+                        documentHandler.args.currentPage = pageIndex;
+                        documentHandler.getArticleList()
+                    }
                 })
             }
         }, function(err) {
@@ -164,8 +213,9 @@ var documentHandler = {
             var articleHtml = ""
             articleHtml += '<div class="document-article-content-title">' + res.title + '</div>'
             articleHtml += '<div class="document-article-content-date">' + res.date + '</div>'
-            articleHtml += '<div class="document-article-content-content">' + res.content + '</div>'
+            articleHtml += '<div class="document-article-content-content"></div>'
             $(".document-article-content-wrap").html(articleHtml)
+            $(".document-article-content-content").html(res.content)
             $(".document-article-list-wrap").hide()
             $(".document-article-pagination").hide()
             $(".document-article-content").show()
