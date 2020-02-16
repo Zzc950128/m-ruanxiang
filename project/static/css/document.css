@@ -206,3 +206,35 @@
 	z-index: 5;
 	display: none;
 }
+.document-article-content {
+	display: none;
+}
+.document-article-content-title {
+	text-align: center;
+	margin: 0.8rem 0.3rem 0.6rem;
+	color: #333333;
+	font-size: 0.42rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: nowrap;
+}
+.document-article-content-date {
+	text-align: right;
+	margin-right: 0.6rem;
+	font-size: 0.28rem;
+	color: #666666;
+	margin-bottom: 0.3rem;
+}
+.document-article-content-content {
+	margin: 0rem 0.3rem 0.3rem;
+	font-size: 0.28rem;
+	color: #333333;
+	text-indent: 0.56rem;
+	line-height: 0.42rem;
+}
+.document-article-content-back {
+	margin-left: 0.3rem;
+	font-size: 0.28rem;
+	color: #4381FD;
+	margin-bottom: 0.6rem;
+}

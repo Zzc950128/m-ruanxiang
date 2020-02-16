@@ -55,6 +55,7 @@ var documentHandler = {
             $(".document-category-all-list").css("display", "none")
             $(".document-category-list").show()
             $(".document-article-list-wrap").html("")
+            $(".document-article-content").hide()
             documentHandler.args.currentPage = 1
             documentHandler.args.totalCount = 0
             var that = $(this)
@@ -98,6 +99,11 @@ var documentHandler = {
                 documentHandler.args.currentPage = documentHandler.args.totalPage
                 documentHandler.getArticleList()
             }
+        })
+        $(".document-article-content-back").click(function() {
+            $(".document-article-content").hide()
+            $(".document-article-list-wrap").show()
+            $(".document-article-pagination").show()
         })
     },
     getArticleList() {
@@ -154,7 +160,15 @@ var documentHandler = {
         ajaxGet(documentService.api.getArticle, {
             id: articleId,
         }, function(res) {
-            console.log(res)
+            // console.log(res)
+            var articleHtml = ""
+            articleHtml += '<div class="document-article-content-title">' + res.title + '</div>'
+            articleHtml += '<div class="document-article-content-date">' + res.date + '</div>'
+            articleHtml += '<div class="document-article-content-content">' + res.content + '</div>'
+            $(".document-article-content-wrap").html(articleHtml)
+            $(".document-article-list-wrap").hide()
+            $(".document-article-pagination").hide()
+            $(".document-article-content").show()
         }, function(err) {
         })
     }
