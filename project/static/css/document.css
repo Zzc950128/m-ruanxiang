@@ -88,6 +88,9 @@
 .document-category-item.active .document-category-line {
 	background: rgba(0,164,255,1);
 }
+.document-list-desc {
+	/*display: none;*/
+}
 .document-list-desc-content {
 	margin: 0 0.3rem 0.8rem 0.5rem;
 	font-size: 0.24rem;
@@ -124,9 +127,72 @@
 	color: #666666;
 	text-align: center;
 	line-height: 6rem;
+	display: none;
 }
 .document-article-pagination {
-	/*display: none;*/
+	display: none;
+	margin: 0.8rem 1rem;
+	height: 0.5rem;
+}
+.document-article-pagination-head {
+	float: left;
+	width: 0.3rem;
+	height: 0.5rem;
+	position: relative;
+	margin-right: 0.3rem;
+}
+.document-article-pagination-left {
+	float: left;
+	width: 0.24rem;
+	height: 0.5rem;
+	position: relative;
+	margin-right: 0.3rem;
+}
+.document-article-pagination-right {
+	float: right;
+	width: 0.24rem;
+	height: 0.5rem;
+	position: relative;
+	margin-left: 0.3rem;
+}
+.document-article-pagination-end {
+	float: right;
+	width: 0.3rem;
+	height: 0.5rem;
+	position: relative;
+	margin-left: 0.3rem;
+}
+.document-article-pagination-head img, .document-article-pagination-left img, .document-article-pagination-right img, .document-article-pagination-end img {
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+.document-article-pagination-wrap {
+	float: left;
+	height: 0.5rem;
+	width: 3.22rem;
+}
+.document-article-pagination-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.document-article-pagination-item {
+	width: 0.5rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	text-align: center;
+	color: #666666;
+	font-size: 0.28rem;
+}
+.document-article-pagination-item+.document-article-pagination-item {
+	margin-left: 0.18rem;
+}
+.document-article-pagination-item.active {
+	color: #FFFFFF;
+	background: #00A4FF;
+	border-radius: 0.02rem;
 }
 .document-fixed {
 	width: calc(100% - 0.62rem);

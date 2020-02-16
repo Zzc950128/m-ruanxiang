@@ -1,13 +1,14 @@
 var documentService = {
     api: {
-        getArticle: "../../api/articleList.json",
-        getArticle2: "../../api/articleList2.json"
+        getArticleList: "../../api/articleList.json",
+        getArticle: "../../api/articleData.json"
     },
 }
 var documentHandler = {
     args: {
         currentPage: 1,
         totalCount: 0,
+        totalPage: 0,
         currentCategory: 0,
         articleList: [],
     },
@@ -74,18 +75,45 @@ var documentHandler = {
                 $(".document-article").show()
             }
         })
+        $(".document-article-pagination-head").click(function() {
+            if(documentHandler.args.currentPage != 1) {
+                documentHandler.args.currentPage = 1
+                documentHandler.getArticleList()
+            }
+        })
+        $(".document-article-pagination-left").click(function() {
+            if(documentHandler.args.currentPage != 1 && documentHandler.args.totalPage > 1) {
+                documentHandler.args.currentPage = documentHandler.args.currentPage - 1
+                documentHandler.getArticleList()
+            }
+        })
+        $(".document-article-pagination-right").click(function() {
+            if(documentHandler.args.currentPage != documentHandler.args.totalPage && documentHandler.args.totalPage > 1) {
+                documentHandler.args.currentPage = documentHandler.args.totalPage
+                documentHandler.getArticleList()
+            }
+        })
+        $(".document-article-pagination-end").click(function() {
+            if(documentHandler.args.currentPage != documentHandler.args.totalPage) {
+                documentHandler.args.currentPage = documentHandler.args.totalPage
+                documentHandler.getArticleList()
+            }
+        })
     },
     getArticleList() {
         console.log("getArticleList")
-        ajaxGet((documentHandler.args.currentPage == 1 ? documentService.api.getArticle : documentService.api.getArticle2), {
-            category: documentHandler.args.currentCategory
+        ajaxGet(documentService.api.getArticleList, {
+            category: documentHandler.args.currentCategory,
+            page: documentHandler.args.currentPage
         }, function(res) {
             console.log(res)
             documentHandler.args.totalCount = res.totalCount
+            documentHandler.args.totalPage = documentHandler.args.totalCount % 10 == 0 ? parseInt(documentHandler.args.totalCount / 10) : parseInt(documentHandler.args.totalCount / 10) + 1
             documentHandler.args.articleList = res.items
             if(documentHandler.args.totalCount == 0) {
                 $(".document-article-list-wrap").hide()
                 $(".document-article-none").show()
+                $(".document-article-pagination").hide()
             }else {
                 var articleHtml = ""
                 documentHandler.args.articleList.forEach((item, index) => {
@@ -97,10 +125,37 @@ var documentHandler = {
                 $(".document-article-list-wrap").html(articleHtml)
                 $(".document-article-list-wrap").show()
                 $(".document-article-none").hide()
+                $(".document-article-list").click(function() {
+                    var articleId = $(this).attr("data-id")
+                    documentHandler.getArticleById(articleId)
+                })
+                var paginationHtml = ""
+                if(documentHandler.args.totalCount > 50) {
+
+                }else {
+                    var page = documentHandler.args.totalPage
+                    for(var i = 1; i <= page; i++) {
+                        paginationHtml += '<div class="document-article-pagination-item ' + (i == documentHandler.args.currentPage?"active":"") + '" data-index="' + i + '">' + i + '</div>'
+                    }
+                }
+                $(".document-article-pagination-list").html(paginationHtml)
                 $(".document-article-pagination").show()
+                $(".document-article-pagination-item").click(function() {
+                    var pageIndex = $(this).attr("data-index")
+                    documentHandler.args.currentPage = pageIndex;
+                    documentHandler.getArticleList()
+                })
             }
         }, function(err) {
             console.log(err)
+        })
+    },
+    getArticleById: function(articleId) {
+        ajaxGet(documentService.api.getArticle, {
+            id: articleId,
+        }, function(res) {
+            console.log(res)
+        }, function(err) {
         })
     }
 }
