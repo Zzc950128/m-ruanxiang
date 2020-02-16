@@ -1,6 +1,6 @@
 var documentService = {
     api: {
-        getArticleList: "../../api/articleList.json",
+        getArticleList: "http://127.0.0.1:3000/getArticleList",
         getArticle: "../../api/articleData.json"
     },
 }
@@ -52,9 +52,6 @@ var documentHandler = {
         $(".document-category-item").click(function() {
             var that = $(this)
             var index = that.attr("data-index")
-            if(index == 0) {
-                return
-            }
             documentHandler.args.currentCategory = index
             documentHandler.args.currentPage = 1
             documentHandler.args.totalCount = 0
