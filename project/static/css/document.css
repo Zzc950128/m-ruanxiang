@@ -101,6 +101,9 @@
 	border-bottom: 1px solid #EEEEEE;
 	padding: 0 0.3rem;
 }
+.document-article-list-wrap {
+	display: none;
+}
 .document-article-list-content {
 	float: left;
 	line-height: 1.07rem;
@@ -111,7 +114,7 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-.document-article-list-date{
+.document-article-list-date {
 	float: right;
 	line-height: 1.07rem;
 	font-size: 0.22rem;
@@ -121,7 +124,9 @@
 	color: #666666;
 	text-align: center;
 	line-height: 6rem;
-	display: none;
+}
+.document-article-pagination {
+	/*display: none;*/
 }
 .document-fixed {
 	width: calc(100% - 0.62rem);

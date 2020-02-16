@@ -125,7 +125,7 @@ var priceHandler = {
             })
             $(".price-table-border").html(tableHtml)
         }, function(err) {
-
+            console.log(err)
         })
     }
 }

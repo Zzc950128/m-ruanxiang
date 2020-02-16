@@ -62,7 +62,7 @@ function menuTouch() {
     $(".menu").on('touchend',function(e) {
         var _touch = e.originalEvent.changedTouches[0];
         endX = _touch.pageX;
-        if(endX - startX > 20) {
+        if(endX - startX > 100) {
             $(".menu").removeClass("active")
             $(".main-wrap").removeClass("is-menu-flod")
             $(".header-reverse").removeClass("is-menu-flod")
@@ -90,7 +90,7 @@ function ajaxGet(url, data, successfn, errorfn) {
 function ajaxPost(url, data, successfn, errorfn) {
     $.ajax({
         url: url,
-        type: 'post',//FormData只能使用post方式
+        type: 'post',
         data: data,
         contentType: "json",
         dataType:'json',
