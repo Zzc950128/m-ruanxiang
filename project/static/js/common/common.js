@@ -1,3 +1,15 @@
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?a13011faf0a28bb07ae3b4b10e3e52ad";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+$(".shangqiao").click(function(event) {
+    if ($('#nb_icon_wrap').length > 0) {
+        $('#nb_icon_wrap').click();
+    }
+});
 // rem
 (function (doc, win) {
     var docEl = doc.documentElement,
