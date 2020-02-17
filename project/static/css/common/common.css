@@ -203,6 +203,16 @@ img {
     margin-top: 0.6rem;
     text-align: center;
 }
+.common-btn-wrap {
+    display: block;
+    width: 200%;
+    font-size: 200%;
+    transform: scale(0.5, 0.5);
+    transform-origin: 0 0;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    color: #fff;
+}
 .swiper-pagination-bullet-active {
     background: #00A4FF;
 }
