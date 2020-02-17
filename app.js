@@ -4,6 +4,13 @@ const fs = require('fs');
 
 app.use(express.static('project'))
 
+app.all('*', function (req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  res.header('Access-Control-Allow-Methods', '*');
+  res.header('Content-Type', 'application/json;charset=utf-8');
+  next();
+});
 
 app.get('/getArticleList',function(req,res){
 	let query = req.query

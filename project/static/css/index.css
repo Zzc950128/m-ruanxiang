@@ -35,17 +35,33 @@
     line-height: 0.8rem;
     font-size: 0.28rem;
     text-align: center;
-    border: 1px solid #fff;
     border-radius: 0.1rem;
     cursor: pointer;
 }
-.home-banner-btn:nth-child(1) {
+.home-banner-btn-wrap {
+    display: block;
+    width: 5.04rem;
+    height: 1.61rem;
+    line-height: 1.61rem;
+    font-size: 0.56rem;
+    transform: scale(0.5, 0.5);
+    transform-origin: 0 0;
+}
+.home-banner-btn.first {
+    border: 1px solid #fff;
+    border-radius: 0.1rem;
     float: left;
+}
+.home-banner-btn.second {
+    border: 1px solid #fff;
+    border-radius: 0.1rem;
+    float: right;
+}
+.home-banner-btn-wrap.first {
     background: #fff;
     color: #4381FD;
 }
-.home-banner-btn:nth-child(2) {
-    float: right;
+.home-banner-btn-wrap.second {
     color: #fff;
 }
 .home-banner-img {
@@ -81,6 +97,11 @@
     color: #666666;
     text-align: center;
     margin-bottom: 0.4rem;
+}
+.home-mode-more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .home-advantage {
     padding-bottom: 0.8rem;

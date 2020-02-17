@@ -1,3 +1,4 @@
+var vConsole = new VConsole();
 // rem
 (function (doc, win) {
     var docEl = doc.documentElement,
