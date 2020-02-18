@@ -179,12 +179,14 @@
 	align-items: center;
 }
 .document-article-pagination-item {
-	width: 0.5rem;
-	height: 0.5rem;
-	line-height: 0.5rem;
-	text-align: center;
-	color: #666666;
-	font-size: 0.28rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    /* line-height: 0.5rem; */
+    text-align: center;
+    color: #666666;
+    font-size: 0.28rem;
+    padding-top: 0.11rem;
+    box-sizing: border-box;
 }
 .document-article-pagination-item+.document-article-pagination-item {
 	margin-left: 0.18rem;
@@ -205,6 +207,9 @@
 	left: 0rem;
 	z-index: 5;
 	display: none;
+}
+.document-fixed.is-menu-flod {
+	left: -3.8rem;
 }
 .document-article-content {
 	display: none;

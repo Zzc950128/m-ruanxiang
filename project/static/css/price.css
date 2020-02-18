@@ -56,10 +56,15 @@
 	border-radius: 0.05rem;
 	margin-bottom: 0.36rem;
 }
+.price-category-btn-wrap {
+	color: #666666;
+	height: 1.2rem;
+	line-height: 1.2rem;
+}
 .price-category-btn-left {
 	margin-left: 1rem;
 }
-.price-category-btn.active {
+.price-category-btn.active .price-category-btn-wrap {
 	background: #00A4FF;
 	color: #fff;
 }

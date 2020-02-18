@@ -12,6 +12,7 @@ var documentHandler = {
         totalPage: 0,
         currentCategory: 0,
         articleList: [],
+        urlArgs: {}
     },
     init: function() {
         console.log("documentHandlerInit")
@@ -35,6 +36,20 @@ var documentHandler = {
                 $(".document-fixed").hide()
             }
         });
+        documentHandler.args.urlArgs.category = getUrlParam("category")
+        documentHandler.args.urlArgs.id = getUrlParam("id")
+        if(documentHandler.args.urlArgs.category) {
+            $(".document-category-item").removeClass("active")
+            $(".document-category-item").each(function() {
+                if($(this).attr("data-index") == documentHandler.args.urlArgs.category) {
+                    $(this).addClass("active")
+                }
+            })  
+            documentHandler.getArticleList(true)
+        }
+        if(documentHandler.args.urlArgs.id) {
+            documentHandler.getArticleById(documentHandler.args.urlArgs.id)
+        }
     },
     initAction: function() {
         $(".document-category-icon").click(function() {
@@ -115,7 +130,7 @@ var documentHandler = {
             $(".document-article-pagination").show()
         })
     },
-    getArticleList: function() {
+    getArticleList: function(flag) {
         console.log("getArticleList")
         ajaxGet(documentService.api.getArticleList, {
             category: documentHandler.args.currentCategory,
@@ -199,6 +214,10 @@ var documentHandler = {
                         documentHandler.getArticleList()
                     }
                 })
+            }
+            if(flag) {
+                $(".document-list-desc").hide()
+                $(".document-article").show()
             }
         }, function(err) {
             console.log(err)
