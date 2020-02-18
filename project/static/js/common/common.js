@@ -59,6 +59,11 @@ loadPage($("#header"), window.headerReverseFlag?"../component/headerReverse.html
         }else {
             $(".price-fixed").addClass("is-menu-flod")
         }
+        if($(".document-fixed").hasClass("is-menu-flod")) {
+            $(".document-fixed").removeClass("is-menu-flod")
+        }else {
+            $(".document-fixed").addClass("is-menu-flod")
+        }
     })
 });
 
@@ -82,6 +87,7 @@ function menuTouch() {
             $(".main-wrap").removeClass("is-menu-flod")
             $(".header-reverse").removeClass("is-menu-flod")
             $(".price-fixed").removeClass("is-menu-flod")
+            $(".document-fixed").removeClass("is-menu-flod")
             startX = 0
             endX = 0
         }
@@ -116,4 +122,10 @@ function ajaxPost(url, data, successfn, errorfn) {
             errorfn(e);
         }
     })
+}
+
+function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+    if (r != null) return unescape(r[2]); return null; //返回参数值
 }

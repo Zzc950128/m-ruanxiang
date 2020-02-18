@@ -126,6 +126,7 @@
     line-height: 0.36rem;
     color: #fff;
     padding: 0.4rem 0.2rem 0rem;
+    height: 2.88rem;
     display: none;
 }
 .home-advantage-item:nth-child(odd) {
@@ -142,29 +143,30 @@
     height: 1.14rem;
     border-radius: 50%;
     position: relative;
+    /*display: none;*/
 }
-.home-advantage-item-icon1 {
+.home-advantage-item-icon1, .home-advantage-item-desc1 {
     background: linear-gradient(133deg,rgba(9,153,255,1),rgba(171,220,255,1));
 }
-.home-advantage-item-icon2 {
+.home-advantage-item-icon2, .home-advantage-item-desc2 {
     background: linear-gradient(133deg,rgba(255,104,102,1),rgba(254,182,146,1));
 }
-.home-advantage-item-icon3 {
+.home-advantage-item-icon3, .home-advantage-item-desc3 {
     background: linear-gradient(133deg,rgba(255,175,64,1),rgba(255,234,161,1));
 }
-.home-advantage-item-icon4 {
+.home-advantage-item-icon4, .home-advantage-item-desc4 {
     background: linear-gradient(133deg,rgba(81,218,204,1),rgba(170,255,246,1));
 }
-.home-advantage-item-icon5 {
+.home-advantage-item-icon5, .home-advantage-item-desc5 {
     background: linear-gradient(133deg,rgba(52,206,121,1),rgba(129,251,184,1));
 }
-.home-advantage-item-icon6 {
+.home-advantage-item-icon6, .home-advantage-item-desc6 {
     background: linear-gradient(133deg,rgba(165,77,215,1),rgba(226,176,255,1));
 }
-.home-advantage-item-icon7 {
+.home-advantage-item-icon7, .home-advantage-item-desc7 {
     background: linear-gradient(133deg,rgba(246,82,115,1),rgba(255,246,183,1));
 }
-.home-advantage-item-icon8 {
+.home-advantage-item-icon8, .home-advantage-item-desc8 {
     background: linear-gradient(133deg,rgba(128,111,242,1),rgba(206,159,252,1));
 }
 .home-advantage-item-icon img {
@@ -181,14 +183,16 @@
     font-size: 0.28rem;
     text-align: center;
     margin-bottom: 0.21rem;
+    /*display: none;*/
 }
 .home-advantage-item-content {
     color: #999999;
     font-size: 0.22rem;
     line-height: 0.32rem;
     text-align: center;
-    width: 2.8rem;
+    width: 2.9rem;
     margin: 0 auto 0.4rem;
+    /*display: none;*/
 }
 .home-case {
     padding-bottom: 0.8rem;
@@ -354,6 +358,6 @@
     border-radius: 0.1rem;
     font-size: 0.28rem;
 }
-.home-advice-btn-warp {
+.home-advice-btn-wrap {
     color: #00A4FF;
 }

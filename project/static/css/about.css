@@ -18,6 +18,9 @@
     border-radius: 0.1rem;
     font-size: 0.28rem;
 }
+.about-banner-btn-wrap {
+    color: #141E28;
+}
 .about-banner-title {
     margin-top: 1.37rem;
     margin-bottom: 0.6rem;
@@ -161,4 +164,8 @@
     font-size: 0.28rem;
     text-align: center;
     cursor: pointer;
+    height: 0.8rem;
+}
+.about-help-more-btn-wrap {
+    color: #00A4FF;
 }

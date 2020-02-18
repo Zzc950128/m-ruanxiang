@@ -171,7 +171,12 @@ footer {
     font-size: 0.28rem;
     color: #fff;
 }
-.footer-btn a {
+.footer-btn-wrap {
+    color: #fff;
+    padding-top: 0.36rem;
+    box-sizing: border-box;
+}
+.footer-btn-wrap a {
     color: #fff;
 }
 .footer-btn:nth-child(1) {

@@ -2,7 +2,11 @@ var homeService = {
     api: {},
 }
 var homeHandler = {
-    args: {},
+    args: {
+        homeModeSwiper: null,
+        homeAdvantageSwiper: null,
+
+    },
     init: function() {
         console.log("homeHandlerInit")
         // 载入menu
@@ -10,7 +14,7 @@ var homeHandler = {
             $(".menu li").eq(0).addClass("active")
             menuTouch()
         });
-        var homeModeSwiper = new Swiper('.home-mode-swiper-container', {
+        homeHandler.args.homeModeSwiper = new Swiper('.home-mode-swiper-container', {
             loop: true,
             autoplay: {
                 delay: 2000,
@@ -21,7 +25,7 @@ var homeHandler = {
                 clickable: true,
             },
         })
-        var homeAdvantageSwiper = new Swiper('.home-advantage-swiper-container', {
+        homeHandler.args.homeAdvantageSwiper = new Swiper('.home-advantage-swiper-container', {
             loop: true,
             autoplay: {
                 delay: 2000,
@@ -35,26 +39,35 @@ var homeHandler = {
     },
     initAction: function() {
         $(".home-advantage-item").click(function() {
-            return
-            var that = $(this)
-            that.find(".home-advantage-item-desc").toggle()
-            that.find(".home-advantage-item-icon").toggle()
-            that.find(".home-advantage-item-title").toggle()
-            that.find(".home-advantage-item-content").toggle()
-            if(that.hasClass("active")) {
-                that.removeClass("active")
-                that.css("background", "#fff")
+            var index = $(this).attr("data-index")
+            var flag = false
+            $(".home-advantage-item").each(function() {    
+                if($(this).attr("data-index") == index) {
+                    if($(this).hasClass('active')) {
+                        $(this).removeClass('active')
+                        flag = true
+                    }else {
+                        $(this).addClass('active')
+                    }
+                    $(this).find(".home-advantage-item-desc").toggle()
+                    $(this).find(".home-advantage-item-icon").toggle()
+                    $(this).find(".home-advantage-item-title").toggle()
+                    $(this).find(".home-advantage-item-content").toggle()
+                }else {
+                    if($(this).hasClass('active')) {                    
+                        $(this).removeClass('active')
+                        $(this).find(".home-advantage-item-desc").toggle()
+                        $(this).find(".home-advantage-item-icon").toggle()
+                        $(this).find(".home-advantage-item-title").toggle()
+                        $(this).find(".home-advantage-item-content").toggle()
+                    }
+                }
+            })
+            // console.log(flag)
+            if(flag) {
+                homeHandler.args.homeAdvantageSwiper.autoplay.start()
             }else {
-                that.addClass("active")
-                that.css("background", that.find(".home-advantage-item-icon").css("background"))
-                setTimeout(function() {
-                    that.removeClass("active")
-                    that.css("background", "#fff")
-                    that.find(".home-advantage-item-desc").toggle()
-                    that.find(".home-advantage-item-icon").toggle()
-                    that.find(".home-advantage-item-title").toggle()
-                    that.find(".home-advantage-item-content").toggle()
-                }, 4000);
+                homeHandler.args.homeAdvantageSwiper.autoplay.stop()
             }
         })
     },

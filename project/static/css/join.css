@@ -18,6 +18,9 @@
     border-radius: 0.1rem;
     font-size: 0.28rem;
 }
+.join-banner-btn-wrap {
+    color: #3C3B3D;
+}
 .join-banner-title {
     margin-top: 2.3rem;
     margin-bottom: 0.5rem;
@@ -138,4 +141,3 @@
     color: #fff;
     font-size: 0.28rem;
 }
-
