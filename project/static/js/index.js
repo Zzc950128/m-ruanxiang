@@ -36,7 +36,7 @@ var homeHandler = {
     initAction: function() {
         $(".home-advantage-item").click(function() {
             return
-            let that = $(this)
+            var that = $(this)
             that.find(".home-advantage-item-desc").toggle()
             that.find(".home-advantage-item-icon").toggle()
             that.find(".home-advantage-item-title").toggle()

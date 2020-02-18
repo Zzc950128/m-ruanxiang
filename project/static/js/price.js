@@ -101,7 +101,7 @@ var priceHandler = {
             }
         })
     },
-    getPriceData() {
+    getPriceData: function() {
         ajaxGet(priceService.api.getPrice, "", function(res) {
             console.log(res)
             priceHandler.args.tableData = res

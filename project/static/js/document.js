@@ -1,6 +1,7 @@
 var documentService = {
     api: {
-        getArticleList: "http://127.0.0.1:3000/getArticleList",
+        getArticleList: "http://192.168.107.37:3000/getArticleList",
+        // getArticleList: "http://127.0.0.1:3000/getArticleList",
         getArticle: "../../api/articleData.json"
     },
 }
@@ -114,7 +115,7 @@ var documentHandler = {
             $(".document-article-pagination").show()
         })
     },
-    getArticleList() {
+    getArticleList: function() {
         console.log("getArticleList")
         ajaxGet(documentService.api.getArticleList, {
             category: documentHandler.args.currentCategory,
@@ -130,12 +131,13 @@ var documentHandler = {
                 $(".document-article-pagination").hide()
             }else {
                 var articleHtml = ""
-                documentHandler.args.articleList.forEach((item, index) => {
-                    articleHtml += '<div class="document-article-list clearfix" data-id="' + item.id + '">' +
-                                        '<div class="document-article-list-content">' + item.title + '</div>' +
-                                        '<div class="document-article-list-date">' + item.date + '</div>' +
+                // documentHandler.args.articleList.forEach((item, index) => {})
+                for(var i = 0; i < documentHandler.args.articleList.length; i++) {
+                    articleHtml += '<div class="document-article-list clearfix" data-id="' + documentHandler.args.articleList[i].id + '">' +
+                                        '<div class="document-article-list-content">' + documentHandler.args.articleList[i].title + '</div>' +
+                                        '<div class="document-article-list-date">' + documentHandler.args.articleList[i].date + '</div>' +
                                     '</div>'
-                })
+                }
                 $(".document-article-list-wrap").html(articleHtml)
                 $(".document-article-list-wrap").show()
                 $(".document-article-none").hide()

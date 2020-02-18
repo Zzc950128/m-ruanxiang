@@ -35,17 +35,28 @@
     line-height: 0.8rem;
     font-size: 0.28rem;
     text-align: center;
-    border: 1px solid #fff;
     border-radius: 0.1rem;
     cursor: pointer;
 }
-.home-banner-btn:nth-child(1) {
+.home-banner-btn.first {
+    border: 1px solid #fff;
+    border-radius: 0.1rem;
     float: left;
+}
+.home-banner-btn.second {
+    border: 1px solid #fff;
+    border-radius: 0.1rem;
+    float: right;
+}
+.home-banner-btn-wrap.first {
+    height: 1.61rem;
+    line-height: 1.61rem;
     background: #fff;
     color: #4381FD;
 }
-.home-banner-btn:nth-child(2) {
-    float: right;
+.home-banner-btn-wrap.second {
+    height: 1.61rem;
+    line-height: 1.61rem;
     color: #fff;
 }
 .home-banner-img {
@@ -342,4 +353,7 @@
     text-align: center;
     border-radius: 0.1rem;
     font-size: 0.28rem;
+}
+.home-advice-btn-warp {
+    color: #00A4FF;
 }
