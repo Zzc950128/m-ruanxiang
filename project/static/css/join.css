@@ -61,8 +61,11 @@
 }
 .join-advantage {
     background: #FBFBFB;
-    padding-top: 0.8rem;
     padding-bottom: 0.8rem;
+}
+.join-advantage-title {
+    padding-top: 0.8rem;
+    margin-top: 0rem;
 }
 .join-advantage-swiper-container {
     margin: 0 0.3rem;

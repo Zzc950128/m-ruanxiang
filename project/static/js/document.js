@@ -1,7 +1,7 @@
 var documentService = {
     api: {
-        getArticleList: "http://192.168.107.37:3000/getArticleList",
-        // getArticleList: "http://127.0.0.1:3000/getArticleList",
+        // getArticleList: "http://192.168.107.37:3000/getArticleList",
+        getArticleList: "http://192.168.0.106:3000/getArticleList",
         getArticle: "../../api/articleData.json"
     },
 }
@@ -12,7 +12,8 @@ var documentHandler = {
         totalPage: 0,
         currentCategory: 0,
         articleList: [],
-        urlArgs: {}
+        urlArgs: {},
+        offsetTop: null,
     },
     init: function() {
         console.log("documentHandlerInit")
@@ -25,17 +26,20 @@ var documentHandler = {
             $(".header-wrap").hide()
             $(".header-reverse-wrap").show()
         }, 0)
+        documentHandler.args.offsetTop = $(".document-category").offset().top
         // 分类固定
         $(window).scroll(function() {
             // 达到按钮组切换固定
             var h = $(this).scrollTop();
-            // console.log(h, $(".document-category").offset().top)
-            if(h + $(".header").height() > $(".document-category").offset().top) {
-                $(".document-fixed").show()
+            if(h + $(".header").height() > documentHandler.args.offsetTop) {
+                $(".document-category").addClass("fixed")
             }else {
-                $(".document-fixed").hide()
+                $(".document-category").removeClass("fixed")
             }
         });
+        var documentCategorySwiper = new Swiper('.document-category-swiper-container', {
+            slidesPerView: 4
+        })
         documentHandler.args.urlArgs.category = getUrlParam("category")
         documentHandler.args.urlArgs.id = getUrlParam("id")
         if(documentHandler.args.urlArgs.category) {
@@ -44,7 +48,7 @@ var documentHandler = {
                 if($(this).attr("data-index") == documentHandler.args.urlArgs.category) {
                     $(this).addClass("active")
                 }
-            })  
+            })
             documentHandler.getArticleList(true)
         }
         if(documentHandler.args.urlArgs.id) {

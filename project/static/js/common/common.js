@@ -48,10 +48,10 @@ loadPage($("#header"), window.headerReverseFlag?"../component/headerReverse.html
             $(".main-wrap").addClass("is-menu-flod")
         }
         // 固定header
-        if($(".header-reverse").hasClass("is-menu-flod")) {
-            $(".header-reverse").removeClass("is-menu-flod")
+        if($(".header").hasClass("is-menu-flod")) {
+            $(".header").removeClass("is-menu-flod")
         }else {
-            $(".header-reverse").addClass("is-menu-flod")
+            $(".header").addClass("is-menu-flod")
         }
         // 价格种类
         if($(".price-fixed").hasClass("is-menu-flod")) {
@@ -59,10 +59,10 @@ loadPage($("#header"), window.headerReverseFlag?"../component/headerReverse.html
         }else {
             $(".price-fixed").addClass("is-menu-flod")
         }
-        if($(".document-fixed").hasClass("is-menu-flod")) {
-            $(".document-fixed").removeClass("is-menu-flod")
+        if($(".document-category").hasClass("is-menu-flod")) {
+            $(".document-category").removeClass("is-menu-flod")
         }else {
-            $(".document-fixed").addClass("is-menu-flod")
+            $(".document-category").addClass("is-menu-flod")
         }
     })
 });
@@ -85,9 +85,10 @@ function menuTouch() {
         if(endX - startX > 100) {
             $(".menu").removeClass("active")
             $(".main-wrap").removeClass("is-menu-flod")
+            $(".header").removeClass("is-menu-flod")
             $(".header-reverse").removeClass("is-menu-flod")
             $(".price-fixed").removeClass("is-menu-flod")
-            $(".document-fixed").removeClass("is-menu-flod")
+            $(".document-category").removeClass("is-menu-flod")
             startX = 0
             endX = 0
         }

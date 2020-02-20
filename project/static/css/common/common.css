@@ -61,8 +61,17 @@ img {
 /* header样式 */
 header {
     position: relative;
-    z-index: 10;
+    z-index: 20;
     height: 0.9rem;
+}
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.header.is-menu-flod {
+    left: -3.8rem;
 }
 .header-reverse {
     background: #fff;
