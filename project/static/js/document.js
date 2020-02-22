@@ -1,7 +1,6 @@
 var documentService = {
     api: {
-        // getArticleList: "http://192.168.107.37:3000/getArticleList",
-        getArticleList: "http://192.168.0.106:3000/getArticleList",
+        getArticleList: "/getArticleList",
         getArticle: "../../api/articleData.json"
     },
 }
