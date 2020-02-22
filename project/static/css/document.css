@@ -238,7 +238,7 @@
 	display: none;
 }
 .document-article-content-title {
-    text-align: center;
+    text-align: left;
     margin: 0.8rem 0.3rem 0.3rem;
     color: #333333;
     font-size: 0.34rem;
@@ -247,10 +247,10 @@
     white-space: nowrap;*/
 }
 .document-article-content-date {
-    text-align: right;
-    margin-right: 0.3rem;
+    text-align: left;
+    margin: 0rem 0.3rem;
     font-size: 0.28rem;
-    color: #666666;
+    color: #999999;
 }
 .document-article-content-content {
 	margin: 0.3rem;
