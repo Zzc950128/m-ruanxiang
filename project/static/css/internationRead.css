@@ -1,5 +1,5 @@
 .internation-banner {
-    height: 12.5rem;
+    height: 12.4rem;
     margin-top: -0.9rem;
     padding-top: 0.9rem;
     position: relative;
@@ -19,9 +19,6 @@
     color: #4D74E4;
     margin-bottom: 0.9rem;
     font-size: 0.28rem;
-}
-.internation-banner-btn-wrap {
-    color: #4D74E4;
 }
 .internation-banner-title {
     margin-top: 1.36rem;
@@ -80,7 +77,7 @@
     margin: 0 auto;
 }
 .internation-change {
-    padding-bottom: 0.3rem;
+    padding-bottom: 0.4rem;
     background: #fbfbfb;
     text-align: center;
 }

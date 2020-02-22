@@ -111,8 +111,13 @@
 .document-list-desc {
 	/*display: none;*/
 }
+.document-list-desc-title {
+	margin-left: 0.3rem;
+	margin-bottom: 0.3rem;
+	text-align: left;
+}
 .document-list-desc-content {
-	margin: 0 0.3rem 0.8rem 0.5rem;
+	margin: 0 0.3rem 0.8rem 0.3rem;
 	font-size: 0.24rem;
 	color: rgba(102,102,102,1);
 	line-height: 0.36rem;
@@ -201,12 +206,10 @@
 .document-article-pagination-item {
     width: 0.5rem;
     height: 0.5rem;
-    /* line-height: 0.5rem; */
+    line-height: 0.5rem;
     text-align: center;
     color: #666666;
     font-size: 0.28rem;
-    padding-top: 0.11rem;
-    box-sizing: border-box;
 }
 .document-article-pagination-item+.document-article-pagination-item {
 	margin-left: 0.18rem;
@@ -235,31 +238,29 @@
 	display: none;
 }
 .document-article-content-title {
-	text-align: center;
-	margin: 0.8rem 0.3rem 0.6rem;
-	color: #333333;
-	font-size: 0.42rem;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	word-wrap: nowrap;
+    text-align: center;
+    margin: 0.8rem 0.3rem 0.3rem;
+    color: #333333;
+    font-size: 0.34rem;
+    /*overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;*/
 }
 .document-article-content-date {
-	text-align: right;
-	margin-right: 0.6rem;
-	font-size: 0.28rem;
-	color: #666666;
-	margin-bottom: 0.3rem;
+    text-align: right;
+    margin-right: 0.3rem;
+    font-size: 0.28rem;
+    color: #666666;
 }
 .document-article-content-content {
-	margin: 0rem 0.3rem 0.3rem;
+	margin: 0.3rem;
 	font-size: 0.28rem;
 	color: #333333;
-	/*text-indent: 0.56rem;*/
 	line-height: 0.42rem;
 }
 .document-article-content-back {
 	margin-left: 0.3rem;
 	font-size: 0.28rem;
-	color: #4381FD;
-	margin-bottom: 0.6rem;
+	color: #00A4FF;
+	margin-bottom: 0.8rem;
 }

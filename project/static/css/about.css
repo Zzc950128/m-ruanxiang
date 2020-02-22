@@ -1,5 +1,5 @@
 .about-banner {
-    height: 6.96rem;
+    height: 6.56rem;
     margin-top: -0.9rem;
     padding-top: 0.9rem;
     position: relative;
@@ -56,7 +56,7 @@
     margin-bottom: 0.4rem;
 }
 .about-service {
-    padding-bottom: 0.8rem;
+    padding-bottom: 0.4rem;
 }
 .about-service-item-wrap {
     margin: 0 0.3rem 0.4rem;
@@ -101,8 +101,8 @@
 }
 .about-quality-swiper-container {
     margin: 0 0.3rem;
-    height: 9.56rem;
-    padding-bottom: 1rem;
+    height: 9.76rem;
+    padding-bottom: 0.8rem;
 }
 .about-quality-swiper-pagination {
     position: relative;
@@ -164,7 +164,6 @@
     font-size: 0.28rem;
     text-align: center;
     cursor: pointer;
-    height: 0.8rem;
 }
 .about-help-more-btn-wrap {
     color: #00A4FF;

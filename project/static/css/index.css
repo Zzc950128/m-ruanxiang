@@ -1,5 +1,13 @@
+.video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+}
 .home-banner {
-    height: 12.44rem;
+    height: 12.4rem;
     margin-top: -0.9rem;
     padding-top: 0.9rem;
     position: relative;
@@ -42,21 +50,13 @@
     border: 1px solid #fff;
     border-radius: 0.1rem;
     float: left;
+    background: #fff;
+    color: #4381FD;
 }
 .home-banner-btn.second {
     border: 1px solid #fff;
     border-radius: 0.1rem;
     float: right;
-}
-.home-banner-btn-wrap.first {
-    height: 1.61rem;
-    line-height: 1.61rem;
-    background: #fff;
-    color: #4381FD;
-}
-.home-banner-btn-wrap.second {
-    height: 1.61rem;
-    line-height: 1.61rem;
     color: #fff;
 }
 .home-banner-img {
@@ -71,18 +71,20 @@
 }
 .home-mode-swiper-container {
     margin: 0 0.3rem;
-    height: 6.8rem;
-    padding-bottom: 1rem;
+    height: 6.5rem;
+    padding-bottom: 0.8rem;
 }
 .home-mode-swiper-pagination {
     position: relative;
     top: 0.5rem;
 }
 .swiper-slide-title {
+    height: 0.28rem;
+    line-height: 0.28rem;
     font-size: 0.28rem;
     margin-bottom: 0.3rem;
     text-align: center;
-}   
+}
 .swiper-slide-content {
     margin: 0 auto;
     width: 5.3rem;
@@ -103,8 +105,8 @@
 }
 .home-advantage-swiper-container {
     margin: 0 0.3rem;
-    height: 13.57rem;
-    padding-bottom: 1rem;
+    height: 13.27rem;
+    padding-bottom: 0.8rem;
 }
 .home-advantage-swiper-pagination {
     position: relative;
@@ -173,7 +175,7 @@
     max-width: 0.46rem;
     max-height: 0.46rem;
     position: absolute;
-    left: 52%;
+    left: 51%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: auto;
@@ -195,7 +197,7 @@
     /*display: none;*/
 }
 .home-case {
-    padding-bottom: 0.8rem;
+    padding-bottom: 0.3rem;
 }
 .home-case-item {
     margin: 0 0.3rem 0.5rem;
@@ -352,12 +354,9 @@
     height: 0.8rem;
     line-height: 0.8rem;
     background: #fff;
-    margin: 0 auto;
+    margin: 0 auto 0.8rem;
     color: #00A4FF;
     text-align: center;
     border-radius: 0.1rem;
     font-size: 0.28rem;
-}
-.home-advice-btn-wrap {
-    color: #00A4FF;
 }

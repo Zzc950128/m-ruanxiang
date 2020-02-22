@@ -34,8 +34,16 @@ var aboutHandler = {
             },
         })
     },
-    initAction: function() {},
+    initAction: function() {
+        $(".about-help-more-btn").click(function() {
+            window.location.href = window.location.origin+"/page/document.html"
+        })
+        $(".about-help-question-item, .about-help-trends-content").click(function() {
+            window.location.href = window.location.origin+"/page/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+        })
+    },
 }
 $(function() {
     aboutHandler.init();
+    aboutHandler.initAction()
 })

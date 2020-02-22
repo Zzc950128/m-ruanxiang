@@ -1,5 +1,5 @@
 .custom-banner {
-    height: 8.18rem;
+    height: 7.88rem;
     margin-top: -0.9rem;
     padding-top: 0.9rem;
     position: relative;
@@ -18,9 +18,6 @@
     color: #411D45;
     font-size: 0.28rem;
 }
-.custom-banner-btn-wrap {
-    color: #411D45;
-}
 .custom-banner-title {
     margin-top: 2.1rem;
     margin-bottom: 0.5rem;
@@ -37,7 +34,7 @@
     text-align: center; 
 }
 .custom-demand {
-    padding-bottom: 0.6rem;
+    padding-bottom: 0.75rem;
 }
 .custom-demand-desc {
     color: #666666;
@@ -49,7 +46,7 @@
 }
 .custom-custom {
     background: #FBFBFB;
-    padding-bottom: 0.8rem;
+    padding-bottom: 0.23rem;
 }
 .custom-common-title {
     padding-top: 0.8rem;
@@ -90,7 +87,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     text-align: center;
 }
 .custom-service-item {

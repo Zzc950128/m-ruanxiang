@@ -50,10 +50,22 @@ var homeHandler = {
         })
     },
     initAction: function() {
+        $(".home-banner-btn.second").click(function() {
+            console.log("video")
+        })
+        $(".home-help-more-btn").click(function() {
+            window.location.href = window.location.origin+"/page/document.html"
+        })
+        $(".home-function-more-btn").click(function() {
+            window.location.href = window.location.origin+"/page/price.html"
+        })
+        $(".home-help-question-item, .home-help-trends-content").click(function() {
+            window.location.href = window.location.origin+"/page/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+        })
         $(".home-advantage-item").click(function() {
             var index = $(this).attr("data-index")
             var flag = false
-            $(".home-advantage-item").each(function() {    
+            $(".home-advantage-item").each(function() {
                 if($(this).attr("data-index") == index) {
                     if($(this).hasClass('active')) {
                         $(this).removeClass('active')
@@ -66,7 +78,7 @@ var homeHandler = {
                     $(this).find(".home-advantage-item-title").toggle()
                     $(this).find(".home-advantage-item-content").toggle()
                 }else {
-                    if($(this).hasClass('active')) {                    
+                    if($(this).hasClass('active')) {
                         $(this).removeClass('active')
                         $(this).find(".home-advantage-item-desc").toggle()
                         $(this).find(".home-advantage-item-icon").toggle()

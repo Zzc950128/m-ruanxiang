@@ -18,9 +18,6 @@
     color: #3E4ECD;
     font-size: 0.28rem;
 }
-.pay-banner-btn-wrap {
-    color: #3E4ECD;
-}
 .pay-banner-title {
     margin-top: 2.1rem;
     margin-bottom: 0.5rem;
@@ -34,10 +31,10 @@
     font-size: 0.28rem;
     line-height: 0.42rem;
     color: #fff;
-    text-align: center; 
+    text-align: center;
 }
 .pay-solve {
-    padding-bottom: 0.8rem;
+    padding-bottom: 0.4rem;
 }
 .pay-solve-title  {
     margin-bottom: 0.3rem;
@@ -70,15 +67,17 @@
 .pay-system {
     background: #fbfbfb;
     text-align: center;
-    padding-bottom: 0.6rem;
+    padding-bottom: 0.8rem;
 }
 .pay-system-title {
     margin-top: 0px;
     padding-top: 0.8rem;
+    margin-bottom: 0.5rem;
 }
 .swiper-slide-title {
-    margin-bottom: 0.3rem;
+    padding-top: 0.1rem;
     font-size: 0.28rem;
+    margin-bottom: 0.3rem;
     color: #333333;
 }
 .swiper-slide-content {
@@ -93,7 +92,7 @@
 }
 .pay-system-swiper-container {
     height: 6.7rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.8rem;
 }
 .pay-system-swiper-pagination {
     position: relative;
@@ -101,7 +100,7 @@
 }
 .pay-function {
     text-align: center;
-    padding-bottom: 0.6rem;
+    padding-bottom: 0.8rem;
 }
 .pay-function-title {
     margin-bottom: 0.3rem;
@@ -114,7 +113,7 @@
 }
 .pay-function-swiper-container {
     height: 6.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.8rem;
 }
 .pay-function-swiper-pagination {
     position: relative;
@@ -142,7 +141,7 @@
     text-align: center;
     margin-top: 0px;
     padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding-bottom: 0.4rem;
 }
 .pay-scene-title {
     margin-top: 0px;
@@ -198,7 +197,7 @@
     text-align: left;
 }
 .pay-case {
-    padding-bottom: 0.2rem;
+    padding-bottom: 0.4rem;
 }
 .pay-case-item {
     margin: 0 0.3rem 0.5rem;

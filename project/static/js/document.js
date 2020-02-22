@@ -42,6 +42,7 @@ var documentHandler = {
         documentHandler.args.urlArgs.category = getUrlParam("category")
         documentHandler.args.urlArgs.id = getUrlParam("id")
         if(documentHandler.args.urlArgs.category) {
+            documentHandler.args.currentCategory = documentHandler.args.urlArgs.category
             $(".document-category-item").removeClass("active")
             $(".document-category-item").each(function() {
                 if($(this).attr("data-index") == documentHandler.args.urlArgs.category) {
@@ -194,6 +195,7 @@ var documentHandler = {
                         }
                     }else {
                         console.log("has index")
+                        $(".document-article-pagination").show()
                         $(".document-article-pagination-item").removeClass("active")
                         $(".document-article-pagination-item").each(function() {
                             if($(this).attr("data-index") == documentHandler.args.currentPage && $(this).attr("data-index") != 0) {

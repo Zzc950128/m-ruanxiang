@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="en"> -->
+<html lang="zh-cmn-Hans">
     <head>
         <meta charset="utf-8">
         <title>软象 —— 首页</title>
@@ -14,6 +15,12 @@
     <body>
         <section class="main-wrap">
             <div id="header"></div>
+            <!-- <div class="video">
+                <div class="video-close">x</div>
+                <video id="video" src="../static/video/video.mp4" muted webkit-playsinline playsinline x5-playsinline style="width:100%;">
+                    您的浏览器不支持Video标签
+                 </video>
+            </div> -->
             <div class="home">
                 <section class="home-banner">
                     <div class="home-banner-title">数字阅读一站式服务</div>
@@ -22,8 +29,8 @@
                         <p>个性化定制，覆盖全行业需求</p>
                     </div>
                     <div class="home-banner-btn-group clearfix">
-                        <div class="home-banner-btn first"><span class="common-btn-wrap home-banner-btn-wrap first">免费体验</span></div>
-                        <div class="home-banner-btn second"><span class="common-btn-wrap home-banner-btn-wrap second">电话咨询</span></div>
+                        <div class="home-banner-btn first shangqiao">免费体验</div>
+                        <div class="home-banner-btn second">视频演示</div>
                     </div>
                     <div class="home-banner-img">
                         <img src="../static/images/home/homeBanner2.png" alt="" />
@@ -71,7 +78,7 @@
                         </div>
                         <div class="swiper-pagination home-mode-swiper-pagination"></div>
                     </div>
-                    <div class="home-mode-more-btn common-btn"><span class="common-btn-wrap">免费体验</span></div>
+                    <div class="home-mode-more-btn common-btn shangqiao">免费体验</div>
                 </section>
                 <section class="home-advantage">
                     <div class="home-advantage-title common-title">硬核优势</div>
@@ -292,43 +299,45 @@
                             <div class="home-function-item-content">用户分析、阅读分析、多维度数据监控分析等，全面满足业务需求</div>
                         </div>
                     </div>
-                    <div class="home-function-more-btn common-btn"><span class="common-btn-wrap">查看详情</span></div>
+                    <div class="home-function-more-btn common-btn">查看详情</div>
                 </section>
                 <section class="home-help">
                     <div class="home-help-title common-title">帮助中心</div>
                     <div class="home-help-question-title"><span>——</span> 常见问题 <span>——</span></div>
                     <div class="home-help-question-content">
                         <div class="home-help-question-item">被窝读书简介</div>
-                        <div class="home-help-question-item">产品适合什么内容？</div>
-                        <div class="home-help-question-item">版权问题如何解决？</div>
-                        <div class="home-help-question-item">怎么启动运营？</div>
-                        <div class="home-help-question-item">系统抗压能力如何？</div>
-                        <div class="home-help-question-item">什么是公众号分销系统</div>
-                        <div class="home-help-question-item">已经有小说网站，怎么与软象产品合并数据呢？</div>
-                        <div class="home-help-question-item">系统搭建好需要多少钱？有什么增值服务？</div>
+                        <div class="home-help-question-item" data-category="2" data-id="2">产品适合什么内容？</div>
+                        <div class="home-help-question-item" data-category="2" data-id="3">版权问题如何解决？</div>
+                        <div class="home-help-question-item" data-category="2" data-id="4">怎么启动运营？</div>
+                        <div class="home-help-question-item" data-category="2" data-id="5">系统抗压能力如何？</div>
+                        <div class="home-help-question-item" data-category="2" data-id="6">什么是公众号分销系统</div>
+                        <div class="home-help-question-item" data-category="2" data-id="7">已经有小说网站，怎么与软象产品合并数据呢？</div>
+                        <div class="home-help-question-item" data-category="2" data-id="8">系统搭建好需要多少钱？有什么增值服务？</div>
                     </div>
                     <div class="home-help-trends-title"><span>——</span> 软象动态 <span>——</span></div>
-                    <div class="home-help-trends-content-wrap clearfix">
-                        <div class="home-help-trends-content">被窝读书小说版权计划正式启动</div>
-                        <div class="home-help-trends-date">2019-01-09</div>
-                    </div>
-                    <div class="home-help-trends-content-wrap clearfix">
-                        <div class="home-help-trends-content">支持杰奇小说系统数据一键导入</div>
-                        <div class="home-help-trends-date">2010-01-01</div>
-                    </div>
-                    <div class="home-help-trends-content-wrap clearfix">
-                        <div class="home-help-trends-content">公众号分销系统强势登陆</div>
-                        <div class="home-help-trends-date">2010-01-01</div>
-                    </div>
-                    <div class="home-help-trends-content-wrap clearfix">
-                        <div class="home-help-trends-content">从第二届中国“网络文学+”大会看从第二届中国“网络文学+”大会看</div>
-                        <div class="home-help-trends-date">2010-01-01</div>
+                    <div class="home-help-trends">
+                        <div class="home-help-trends-content-wrap clearfix">
+                            <div class="home-help-trends-content" data-category="4" data-id="1">被窝读书小说版权计划正式启动</div>
+                            <div class="home-help-trends-date">2019-01-09</div>
+                        </div>
+                        <div class="home-help-trends-content-wrap clearfix">
+                            <div class="home-help-trends-content" data-category="4" data-id="2">支持杰奇小说系统数据一键导入</div>
+                            <div class="home-help-trends-date">2010-01-01</div>
+                        </div>
+                        <div class="home-help-trends-content-wrap clearfix">
+                            <div class="home-help-trends-content" data-category="4" data-id="3">公众号分销系统强势登陆</div>
+                            <div class="home-help-trends-date">2010-01-01</div>
+                        </div>
+                        <div class="home-help-trends-content-wrap clearfix">
+                            <div class="home-help-trends-content" data-category="4" data-id="4">从第二届中国“网络文学+”大会看从第二届中国“网络文学+”大会看</div>
+                            <div class="home-help-trends-date">2010-01-01</div>
+                        </div>
                     </div>
                     <div class="home-help-more-btn">查看详情</div>
                 </section>
                 <section class="home-advice">
                     <div class="home-advice-title">专业咨询顾问，为您提供1对1专属服务</div>
-                    <div class="home-advice-btn"><span class="home-advice-btn-wrap common-btn-wrap">立刻咨询</span></div>
+                    <div class="home-advice-btn shangqiao">立刻咨询</div>
                 </section>
             </div>
             <div id="footer"></div>
@@ -338,7 +347,6 @@
     <script type="text/javascript" src="../static/js/common/jquery.min.js"></script>
     <script type="text/javascript" src="../static/js/common/vconsole.min.js"></script>
     <script type="text/javascript" src="../static/js/common/swiper.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/utils.js"></script>
     <script type="text/javascript" src="../static/js/common/common.js"></script>
     <script type="text/javascript" src="../static/js/index.js"></script>
 </html>
