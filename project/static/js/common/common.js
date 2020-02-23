@@ -40,6 +40,7 @@ function menuTouch() {
             $(".header-reverse").removeClass("is-menu-flod")
             $(".price-fixed").removeClass("is-menu-flod")
             $(".document-category").removeClass("is-menu-flod")
+            $(".cover").removeClass("is-menu-flod")
             startX = 0
             endX = 0
         }
@@ -119,6 +120,11 @@ loadPage($("#header"), window.headerReverseFlag?"../component/headerReverse.html
             $(".document-category").removeClass("is-menu-flod")
         }else {
             $(".document-category").addClass("is-menu-flod")
+        }
+        if($(".cover").hasClass("is-menu-flod")) {
+            $(".cover").removeClass("is-menu-flod")
+        }else {
+            $(".cover").addClass("is-menu-flod")
         }
     })
 });

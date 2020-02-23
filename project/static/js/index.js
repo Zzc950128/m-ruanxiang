@@ -50,8 +50,12 @@ var homeHandler = {
         })
     },
     initAction: function() {
+        $(".video").click(function() {
+            $("#video")[0].pause()
+            $(".video").hide()
+        })
         $(".home-banner-btn.second").click(function() {
-            console.log("video")
+            $(".video").show()
         })
         $(".home-help-more-btn").click(function() {
             window.location.href = window.location.origin+"/page/document.html"

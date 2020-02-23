@@ -254,9 +254,9 @@
 }
 .document-article-content-content {
 	margin: 0.3rem;
-	font-size: 0.28rem;
-	color: #333333;
-	line-height: 0.42rem;
+    font-size: 0.24rem;
+    color: rgba(102,102,102,1);
+    line-height: 0.36rem;
 }
 .document-article-content-back {
 	margin-left: 0.3rem;

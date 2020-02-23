@@ -234,8 +234,15 @@
     top: 0.1rem;
     width: 0.1rem;
     height: 0.1rem;
-    background: #00A4FF;
-    border-radius: 0.1rem;
+    /*background: #00A4FF;*/
+    /*border-radius: 0.1rem;*/
+}
+.free-advantage-item-point img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.1rem;
+    height: 0.1rem;
 }
 .free-advantage-item-title {
     font-size: 0.28rem;
