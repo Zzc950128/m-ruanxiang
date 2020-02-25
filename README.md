@@ -10,7 +10,7 @@ npm install
 node app.js
 
 # 浏览器访问
-127.0.0.1:3000/page
+127.0.0.1:3000/index
 
 # 代码自动压缩
 # 需要全局安装gulp指令

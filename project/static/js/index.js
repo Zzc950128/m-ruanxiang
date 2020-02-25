@@ -104,7 +104,7 @@ var homeHandler = {
             }
         })
     },
-    getQuestionList() {
+    getQuestionList: function() {
         ajaxGet(homeService.api.getQuestion, {}, function(res) {
             var items = res.items
             var questionHtml = ""
@@ -120,7 +120,7 @@ var homeHandler = {
             console.log(err)
         })
     },
-    getTrendList() {
+    getTrendList: function() {
         ajaxGet(homeService.api.getTrend, {}, function(res) {
             var items = res.items
             var trendHtml = ""

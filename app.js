@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 const fs = require('fs');
 
-app.use('/', express.static('project/about.html'))
 app.use('/about', express.static('project/about.html'))
 app.use('/custom', express.static('project/custom.html'))
 app.use('/document', express.static('project/document.html'))

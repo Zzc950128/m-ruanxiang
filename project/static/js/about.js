@@ -44,7 +44,7 @@ var aboutHandler = {
             window.location.href = window.location.origin+"/document"
         })
     },
-    getQuestionList() {
+    getQuestionList: function() {
         ajaxGet(aboutService.api.getQuestion, {}, function(res) {
             var items = res.items
             var questionHtml = ""
@@ -60,7 +60,7 @@ var aboutHandler = {
             console.log(err)
         })
     },
-    getTrendList() {
+    getTrendList: function() {
         ajaxGet(aboutService.api.getTrend, {}, function(res) {
             var items = res.items
             var trendHtml = ""
