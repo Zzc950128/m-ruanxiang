@@ -73,6 +73,9 @@ function getUrlParam(name) {
 
 // 载入header
 loadPage($("#header"), window.headerReverseFlag?"../component/headerReverse.html":"../component/header.html", function() {
+    $(".header-icon").click(function() {
+        window.location.href = window.location.origin+"/page/index.html"
+    })
     $(".header-menu, .header-menu-reverse").click(function() {
         console.log("menuClick")
         // menu展开标识

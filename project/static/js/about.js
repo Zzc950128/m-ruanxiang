@@ -39,7 +39,7 @@ var aboutHandler = {
             window.location.href = window.location.origin+"/page/document.html"
         })
         $(".about-help-question-item, .about-help-trends-content").click(function() {
-            window.location.href = window.location.origin+"/page/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+            window.location.href = window.location.origin+"/page/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")+"#"+$(this).attr("data-category")):"")
         })
     },
 }

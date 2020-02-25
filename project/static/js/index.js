@@ -50,9 +50,12 @@ var homeHandler = {
         })
     },
     initAction: function() {
-        $(".video").click(function() {
+        $(".video").click(function(e) {
             $("#video")[0].pause()
             $(".video").hide()
+        })
+        $(".video-wrap").click(function(e) {
+            e.stopPropagation()
         })
         $(".home-banner-btn.second").click(function() {
             $(".video").show()
@@ -64,7 +67,7 @@ var homeHandler = {
             window.location.href = window.location.origin+"/page/price.html"
         })
         $(".home-help-question-item, .home-help-trends-content").click(function() {
-            window.location.href = window.location.origin+"/page/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+            window.location.href = window.location.origin+"/page/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")+"#"+$(this).attr("data-category")):"")
         })
         $(".home-advantage-item").click(function() {
             var index = $(this).attr("data-index")

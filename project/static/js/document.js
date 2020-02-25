@@ -37,7 +37,8 @@ var documentHandler = {
             }
         });
         var documentCategorySwiper = new Swiper('.document-category-swiper-container', {
-            slidesPerView: 4
+            slidesPerView: 4,
+            hashNavigation: true,
         })
         documentHandler.args.urlArgs.category = getUrlParam("category")
         documentHandler.args.urlArgs.id = getUrlParam("id")
