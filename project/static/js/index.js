@@ -1,5 +1,8 @@
 var homeService = {
-    api: {},
+    api: {
+        getQuestion: "/api/question.json",
+        getTrend: "/api/trend.json"
+    },
 }
 var homeHandler = {
     args: {
@@ -48,6 +51,8 @@ var homeHandler = {
                 clickable: true,
             },
         })
+        this.getQuestionList()
+        this.getTrendList()
     },
     initAction: function() {
         $(".video").click(function() {
@@ -62,9 +67,6 @@ var homeHandler = {
         })
         $(".home-function-more-btn").click(function() {
             window.location.href = window.location.origin+"/page/price.html"
-        })
-        $(".home-help-question-item, .home-help-trends-content").click(function() {
-            window.location.href = window.location.origin+"/page/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
         })
         $(".home-advantage-item").click(function() {
             var index = $(this).attr("data-index")
@@ -99,6 +101,41 @@ var homeHandler = {
             }
         })
     },
+    getQuestionList() {
+        ajaxGet(homeService.api.getQuestion, {}, function(res) {
+            var items = res.items
+            var questionHtml = ""
+            questionHtml += '<div class="home-help-question-item">被窝读书简介</div>'
+            for(var i = 0; i < items.length; i++) {
+                questionHtml += '<div class="home-help-question-item" data-category="'+items[i].category+'" data-id="'+items[i].id+'">'+items[i].title+'</div>'
+            }
+            $(".home-help-question-content").html(questionHtml)
+            $(".home-help-question-item").click(function() {
+                window.location.href = window.location.origin+"/page/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+            })
+        }, function(err) {
+            console.log(err)
+        })
+    },
+    getTrendList() {
+        ajaxGet(homeService.api.getTrend, {}, function(res) {
+            var items = res.items
+            var trendHtml = ""
+            for(var i = 0; i < items.length; i++) {
+                trendHtml += '<div class="home-help-trends-content-wrap clearfix">' +
+                                '<div class="home-help-trends-content" data-category="'+items[i].category+'" data-id="'+items[i].id+'">'+items[i].title+'</div>' +
+                                '<div class="home-help-trends-date">'+items[i].date+'</div>' +
+                            '</div>'
+            }
+            $(".home-help-trends").html(trendHtml)
+            $(".home-help-trends").click(function() {
+                window.location.href = window.location.origin+"/page/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+            })
+
+        }, function(err) {
+            console.log(err)
+        })
+    }
 }
 $(function() {
     homeHandler.init();

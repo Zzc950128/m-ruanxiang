@@ -1,6 +1,6 @@
 var priceService = {
     api: {
-        getPrice: "../../api/price.json"
+        getPrice: "/api/price.json"
     }
 }
 var priceHandler = {

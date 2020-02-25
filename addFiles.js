@@ -4,7 +4,9 @@ const path = require('path')
 function copy(originPath, targetPath) {
 	let paths = fs.readdirSync(originPath)
 	paths.forEach(function (item, index) {
-		if(item != "api") {
+		// 控制不进行转移的文件夹
+		// if(item != "api") {
+		if(true) {
 			let _origin = path.join(originPath, item)
 			let _target = path.join(targetPath, item)
 			let stat = fs.lstatSync(_origin);
