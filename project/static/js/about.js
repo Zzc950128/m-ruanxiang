@@ -6,7 +6,7 @@ var aboutHandler = {
     init: function() {
         console.log("aboutHandlerInit")
         // 载入menu
-        loadPage($("#menu"), "../component/menu.html", function() {
+        loadPage($("#menu"), "/component/menu.html", function() {
             $(".menu li").eq(10).addClass("active")
             menuTouch()
         });
@@ -14,12 +14,12 @@ var aboutHandler = {
         $(window).scroll(function() {
             if($(this).scrollTop() == 0) {
                 $(".header").css("background", "transparent")
-                $(".header-icon img").attr("src", "../static/images/header/icon.png")
-                $(".header-menu img").attr("src", "../static/images/header/menu.png")
+                $(".header-icon img").attr("src", "/static/images/header/icon.png")
+                $(".header-menu img").attr("src", "/static/images/header/menu.png")
             }else {
                 $(".header").css("background", "#ffffff")
-                $(".header-icon img").attr("src", "../static/images/header/icon-reverse.png")
-                $(".header-menu img").attr("src", "../static/images/header/menu-reverse.png")
+                $(".header-icon img").attr("src", "/static/images/header/icon-reverse.png")
+                $(".header-menu img").attr("src", "/static/images/header/menu-reverse.png")
             }
         });
         var aboutAdvantageSwiper = new Swiper('.about-quality-swiper-container', {
@@ -36,10 +36,10 @@ var aboutHandler = {
     },
     initAction: function() {
         $(".about-help-more-btn").click(function() {
-            window.location.href = window.location.origin+"/page/document.html"
+            window.location.href = window.location.origin+"/page/document"
         })
         $(".about-help-question-item, .about-help-trends-content").click(function() {
-            window.location.href = window.location.origin+"/page/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")+"#"+$(this).attr("data-category")):"")
+            window.location.href = window.location.origin+"/page/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")+"#"+$(this).attr("data-category")):"")
         })
     },
 }

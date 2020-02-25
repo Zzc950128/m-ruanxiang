@@ -1,6 +1,6 @@
 var priceService = {
     api: {
-        getPrice: "../../api/price.json"
+        getPrice: "/api/price.json"
     }
 }
 var priceHandler = {
@@ -12,7 +12,7 @@ var priceHandler = {
     init: function() {
         console.log("priceHandlerInit")
         // 载入menu
-        loadPage($("#menu"), "../component/menu.html", function() {
+        loadPage($("#menu"), "/component/menu.html", function() {
             $(".menu li").eq(6).addClass("active")
             menuTouch()
         });
@@ -74,9 +74,9 @@ var priceHandler = {
                     tableHtml += '<div class="price-table-content">'+item.content+'</div>'
                     tableHtml += '<div class="price-table-result">'
                     if(item.result === "true") {
-                        tableHtml += '<img src="../static/images/price/include.png" alt="支持">'
+                        tableHtml += '<img src="/static/images/price/include.png" alt="支持">'
                     }else if(item.result === "false") {
-                        tableHtml += '<img src="../static/images/price/not.png" alt="不支持">'
+                        tableHtml += '<img src="/static/images/price/not.png" alt="不支持">'
                     }else {
                         tableHtml += item.result
                     }
@@ -114,9 +114,9 @@ var priceHandler = {
                     tableHtml += '<div class="price-table-content">'+item.content+'</div>'
                     tableHtml += '<div class="price-table-result">'
                     if(item.result === "true") {
-                        tableHtml += '<img src="../static/images/price/include.png" alt="支持">'
+                        tableHtml += '<img src="/static/images/price/include.png" alt="支持">'
                     }else if(item.result === "false") {
-                        tableHtml += '<img src="../static/images/price/not.png" alt="不支持">'
+                        tableHtml += '<img src="/static/images/price/not.png" alt="不支持">'
                     }else {
                         tableHtml += item.result
                     }

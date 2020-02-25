@@ -72,9 +72,9 @@ function getUrlParam(name) {
 }
 
 // 载入header
-loadPage($("#header"), window.headerReverseFlag?"../component/headerReverse.html":"../component/header.html", function() {
+loadPage($("#header"), window.headerReverseFlag?"/component/headerReverse.html":"/component/header.html", function() {
     $(".header-icon").click(function() {
-        window.location.href = window.location.origin+"/page/index.html"
+        window.location.href = window.location.origin+"/page/index"
     })
     $(".header-menu, .header-menu-reverse").click(function() {
         console.log("menuClick")
@@ -116,7 +116,7 @@ loadPage($("#header"), window.headerReverseFlag?"../component/headerReverse.html
 });
 
 // 载入footer
-loadPage($("#footer"), "../component/footer.html", function() {
+loadPage($("#footer"), "/component/footer.html", function() {
     $(".footer-btn-free").click(function() {
         if ($('#nb_icon_wrap').length > 0) {
             $('#nb_icon_wrap').click();

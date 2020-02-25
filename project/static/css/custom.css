@@ -4,7 +4,7 @@
     padding-top: 0.9rem;
     position: relative;
     z-index: 1;
-    background: url("../images/custom/customBanner.png") no-repeat;
+    background: url("/static/images/custom/customBanner.png") no-repeat;
     background-size: 100% auto;
 }
 .custom-banner-btn {
