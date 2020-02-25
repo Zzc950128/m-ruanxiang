@@ -6,10 +6,28 @@
         <meta name="keywords" content="软象"/>
         <meta name="description" content="软象"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
-        <link rel="stylesheet" type="text/css" href="../static/css/common/reset.min.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/common/swiper.min.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/common/common.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/document.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/reset.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/swiper.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/common.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/document.css" />
+        <script type="text/javascript">
+            (function (doc, win) {
+                var docEl = doc.documentElement,
+                        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                        recalc = function () {
+                            var clientWidth = docEl.clientWidth;
+                            if (!clientWidth) return;
+                            if (clientWidth >= 750) {
+                                docEl.style.fontSize = '100px';
+                            } else {
+                                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                            }
+                        };
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                recalc()
+            })(document, window);
+        </script>
     </head>
     <body>
         <section class="main-wrap">
@@ -21,42 +39,42 @@
                     <div class="document-category-title">分类</div>
                     <div class="swiper-container document-category-swiper-container">
                         <div class="swiper-wrapper document-category-list">
-                            <div class="swiper-slide document-category-item active" data-index="0">
+                            <div class="swiper-slide document-category-item active" data-index="0" data-hash="0">
                                 软象简介
                                 <div class="document-category-line"></div>
                             </div>
-                            <div class="swiper-slide document-category-item" data-index="1">
+                            <div class="swiper-slide document-category-item" data-index="1" data-hash="1">
                                 常见问题
                                 <div class="document-category-line"></div>
                             </div>
-                            <div class="swiper-slide document-category-item" data-index="2">
+                            <div class="swiper-slide document-category-item" data-index="2" data-hash="2">
                                 产品介绍
                                 <div class="document-category-line"></div>
                             </div>
-                            <div class="swiper-slide document-category-item" data-index="3">
+                            <div class="swiper-slide document-category-item" data-index="3" data-hash="3">
                                 特色功能
                                 <div class="document-category-line"></div>
                             </div>
-                            <div class="swiper-slide document-category-item" data-index="4">
+                            <div class="swiper-slide document-category-item" data-index="4" data-hash="4">
                                 基础配置
                                 <div class="document-category-line"></div>
                             </div>
-                            <div class="swiper-slide document-category-item" data-index="5">
+                            <div class="swiper-slide document-category-item" data-index="5" data-hash="5">
                                 产品更新
                                 <div class="document-category-line"></div>
                             </div>
-                            <div class="swiper-slide document-category-item" data-index="6">
+                            <div class="swiper-slide document-category-item" data-index="6" data-hash="6">
                                 被窝动态
                                 <div class="document-category-line"></div>
                             </div>
-                            <div class="swiper-slide document-category-item" data-index="7">
+                            <div class="swiper-slide document-category-item" data-index="7" data-hash="7">
                                 版本记录
                                 <div class="document-category-line"></div>
                             </div>
                         </div>
                     </div>
                     <div class="document-category-icon">
-                        <img src="../static/images/document/documentFlod.png" alt="">
+                        <img src="/static/images/document/documentFlod.png" alt="">
                     </div>
                     <div class="document-category-all-list clearfix">
                         <div class="document-category-item active" data-index="0">软象简介</div>
@@ -124,10 +142,10 @@
                         </div>
                         <div class="document-article-pagination clearfix">
                             <div class="document-article-pagination-head">
-                                <img src="../static/images/document/headArrow.png" alt="">
+                                <img src="/static/images/document/headArrow.png" alt="">
                             </div>
                             <div class="document-article-pagination-left">
-                                <img src="../static/images/document/leftArrow.png" alt="">
+                                <img src="/static/images/document/leftArrow.png" alt="">
                             </div>
                             <div class="document-article-pagination-wrap">
                                 <div class="document-article-pagination-list">
@@ -139,10 +157,10 @@
                                 </div>
                             </div>
                             <div class="document-article-pagination-end">
-                                <img src="../static/images/document/endArrow.png" alt="">
+                                <img src="/static/images/document/endArrow.png" alt="">
                             </div>
                             <div class="document-article-pagination-right">
-                                <img src="../static/images/document/rightArrow.png" alt="">
+                                <img src="/static/images/document/rightArrow.png" alt="">
                             </div>
                         </div>
                         <div class="document-article-content">
@@ -163,9 +181,9 @@
     <script type="text/javascript">
         window.headerReverseFlag = true;
     </script>
-    <script type="text/javascript" src="../static/js/common/jquery.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/swiper.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/vconsole.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/common.js"></script>
-    <script type="text/javascript" src="../static/js/document.js"></script>
+    <script type="text/javascript" src="/static/js/common/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/swiper.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/vconsole.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/common.js"></script>
+    <script type="text/javascript" src="/static/js/document.js"></script>
 </html>

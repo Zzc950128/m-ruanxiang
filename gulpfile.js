@@ -26,7 +26,7 @@ gulp.task("miniCss",function() {
 })
 
 gulp.task("miniHtml",function() {
-	return gulp.src("./project/page/*.html").pipe(minifyHtml()).pipe(gulp.dest("./dist/page"));
+	return gulp.src("./project/*.html").pipe(minifyHtml()).pipe(gulp.dest("./dist"));
 })
 
 gulp.task("miniComponent",function() {

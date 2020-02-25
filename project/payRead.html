@@ -6,10 +6,28 @@
         <meta name="keywords" content="软象"/>
         <meta name="description" content="软象"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
-        <link rel="stylesheet" type="text/css" href="../static/css/common/reset.min.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/common/swiper.min.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/common/common.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/payRead.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/reset.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/swiper.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/common.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/payRead.css" />
+        <script type="text/javascript">
+            (function (doc, win) {
+                var docEl = doc.documentElement,
+                        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                        recalc = function () {
+                            var clientWidth = docEl.clientWidth;
+                            if (!clientWidth) return;
+                            if (clientWidth >= 750) {
+                                docEl.style.fontSize = '100px';
+                            } else {
+                                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                            }
+                        };
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                recalc()
+            })(document, window);
+        </script>
     </head>
     <body>
         <section class="main-wrap">
@@ -24,7 +42,7 @@
                     <div class="pay-solve-title common-title">阅读变现一站式解决方式</div>
                     <div class="pay-solve-desc">内容付费、裂变营销、集成管理、数据分析全面打造付费阅读生态闭环</div>
                     <div class="pay-solve-img">
-                        <img src="../static/images/pay/paySolve.png" alt="">
+                        <img src="/static/images/pay/paySolve.png" alt="">
                     </div>
                     <div class="pay-solve-item-title">多种变现形式</div>
                     <div class="pay-solve-item-desc">结合内容付费阅读、会员免费书库、限免书籍等元素，构建完善的阅读付费体系</div>
@@ -42,22 +60,22 @@
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">内容付费</div>
                                 <div class="swiper-slide-content">支持APP、公众号、H5随时随地阅览书籍，合理利用时间碎片化优势，打造多元化付费体系</div>
-                                <img src="../static/images/pay/paySystemSwiper1.png" alt="" />
+                                <img src="/static/images/pay/paySystemSwiper1.png" alt="" />
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">付费会员</div>
                                 <div class="swiper-slide-content">结合会员免费书库、去广告、身份铭牌、专属活动等特权元素，打造完善的会员付费体系</div>
-                                <img src="../static/images/pay/paySystemSwiper2.png" alt="" />
+                                <img src="/static/images/pay/paySystemSwiper2.png" alt="" />
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">移动支付</div>
                                 <div class="swiper-slide-content">支持微信、支付宝、苹果等主流支付方式 支持第四方支付 </div>
-                                <img src="../static/images/pay/paySystemSwiper3.png" alt="" />
+                                <img src="/static/images/pay/paySystemSwiper3.png" alt="" />
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">两种货币搭配</div>
                                 <div class="swiper-slide-content">充值金币赠送书券，可设置任意汇率，促进付费，灵活运营</div>
-                                <img src="../static/images/pay/paySystemSwiper4.png" alt="" />
+                                <img src="/static/images/pay/paySystemSwiper4.png" alt="" />
                             </div>
                         </div>
                         <div class="swiper-pagination pay-system-swiper-pagination"></div>
@@ -69,22 +87,22 @@
                     <div class="swiper-container pay-function-swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide pay-function-swiper-slide">
-                                <img src="../static/images/pay/payFunctionSwiper1.png" alt="" />
+                                <img src="/static/images/pay/payFunctionSwiper1.png" alt="" />
                                 <div class="pay-function-swiper-slide-title">内容付费</div>
                                 <div class="pay-function-swiper-slide-content">支持APP、公众号、H5随时随地阅览书籍，合理利用时间碎片化优势，打造多元化付费体系</div>
                             </div>
                             <div class="swiper-slide pay-function-swiper-slide">
-                                <img src="../static/images/pay/payFunctionSwiper2.png" alt="" />
+                                <img src="/static/images/pay/payFunctionSwiper2.png" alt="" />
                                 <div class="pay-function-swiper-slide-title">付费会员</div>
                                 <div class="pay-function-swiper-slide-content">结合会员免费书库、去广告、身份铭牌、专属活动等特权元素，打造完善的会员付费体系</div>
                             </div>
                             <div class="swiper-slide pay-function-swiper-slide">
-                                <img src="../static/images/pay/payFunctionSwiper3.png" alt="" />
+                                <img src="/static/images/pay/payFunctionSwiper3.png" alt="" />
                                 <div class="pay-function-swiper-slide-title">移动支付</div>
                                 <div class="pay-function-swiper-slide-content">支持微信、支付宝、苹果等主流支付方式 支持第四方支付 </div>
                             </div>
                             <div class="swiper-slide pay-function-swiper-slide">
-                                <img src="../static/images/pay/payFunctionSwiper4.png" alt="" />
+                                <img src="/static/images/pay/payFunctionSwiper4.png" alt="" />
                                 <div class="pay-function-swiper-slide-title">两种货币搭配</div>
                                 <div class="pay-function-swiper-slide-content">充值金币赠送书券，可设置任意汇率，促进付费，灵活运营</div>
                             </div>
@@ -96,21 +114,21 @@
                     <div class="pay-scene-title common-title">多终端配合，相得益彰</div>
                     <div class="pay-scene-desc">全面覆盖移动阅读场景</div>
                     <div class="pay-scene-item clearfix">
-                        <div class="pay-scene-item-image"><img src="../static/images/pay/payScene1.png" alt="" /></div>
+                        <div class="pay-scene-item-image"><img src="/static/images/pay/payScene1.png" alt="" /></div>
                         <div class="pay-scene-item-wrap">
                             <div class="pay-scene-item-title">公众号引流</div>
                             <div class="pay-scene-item-content">轻松获取微信生态流量，支持分销、活动优惠等营销方式，快速获客</div>
                         </div>
                     </div>
                     <div class="pay-scene-item clearfix">
-                        <div class="pay-scene-item-image"><img src="../static/images/pay/payScene2.png" alt="" /></div>
+                        <div class="pay-scene-item-image"><img src="/static/images/pay/payScene2.png" alt="" /></div>
                         <div class="pay-scene-item-wrap">
                             <div class="pay-scene-item-title">APP互动营销</div>
                             <div class="pay-scene-item-content">完善用户管理，拥有用户激励体系，增加用户黏性，交易方便可靠，易于互动</div>
                         </div>
                     </div>
                     <div class="pay-scene-item clearfix">
-                        <div class="pay-scene-item-image"><img src="../static/images/pay/payScene3.png" alt="" /></div>
+                        <div class="pay-scene-item-image"><img src="/static/images/pay/payScene3.png" alt="" /></div>
                         <div class="pay-scene-item-wrap">
                             <div class="pay-scene-item-title">H5快速获客</div>
                             <div class="pay-scene-item-content">多元化推广形式，承担着推广媒介与用户之间的桥梁，让营销真正落地</div>
@@ -120,14 +138,14 @@
                 <section class="pay-case">
                     <div class="pay-case-title common-title">客户案例</div>
                     <div class="pay-case-item clearfix">
-                        <div class="pay-case-item-image"><img src="../static/images/pay/payCase1.png" alt="" /></div>
+                        <div class="pay-case-item-image"><img src="/static/images/pay/payCase1.png" alt="" /></div>
                         <div class="pay-case-item-content">
                             <p>很看好阅读付费前景，没有过多考虑，就着手去做了。与被窝团队合作感觉很稳，功能覆盖面挺广的，也提出了一些二次开发的需求，很满意交付结果。要怎么做，准备什么一切都规划的很好，让我更有信心，开始自己的运！</p>
                             <div class="pay-case-item-author">—— 北京旗舰版客户宋总</div>
                         </div>
                     </div>
                     <div class="pay-case-item clearfix">
-                        <div class="pay-case-item-image"><img src="../static/images/pay/payCase2.png" alt="" /></div>
+                        <div class="pay-case-item-image"><img src="/static/images/pay/payCase2.png" alt="" /></div>
                         <div class="pay-case-item-content">
                             <p>自己很喜欢看小说，感觉知识付费这块很有前景，于是开始寻找切入点，准备创业，开始做小说APP，选择了被窝读书，他们做的很棒，之后提了很多二次开发需求，团队很负责，常常忙到十二点，有种踏实的感觉，为你们点赞。</p>
                             <div class="pay-case-item-author">—— 成都旗舰版客户张总</div>
@@ -139,9 +157,9 @@
         </section>
         <section id="menu"></section>
     </body>
-    <script type="text/javascript" src="../static/js/common/jquery.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/vconsole.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/swiper.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/common.js"></script>
-    <script type="text/javascript" src="../static/js/payRead.js"></script>
+    <script type="text/javascript" src="/static/js/common/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/vconsole.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/swiper.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/common.js"></script>
+    <script type="text/javascript" src="/static/js/payRead.js"></script>
 </html>

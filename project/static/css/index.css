@@ -31,7 +31,7 @@
     padding-top: 0.9rem;
     position: relative;
     z-index: 1;
-    background: url("../images/home/homeBanner.png") no-repeat;
+    background: url("/static/images/home/homeBanner.png") no-repeat;
     background-size: 100% auto;
 }
 .home-banner-title {

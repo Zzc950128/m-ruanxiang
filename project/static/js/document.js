@@ -1,6 +1,10 @@
 var documentService = {
     api: {
+<<<<<<< HEAD
         getArticleList: "/api/getArticleList.json",
+=======
+        getArticleList: "/api/getArticleList",
+>>>>>>> d527dec931529d5dde67f537b6f55d3232242fa5
         getArticle: "/api/articleData.json"
     },
 }
@@ -17,7 +21,7 @@ var documentHandler = {
     init: function() {
         console.log("documentHandlerInit")
         // 载入menu
-        loadPage($("#menu"), "../component/menu.html", function() {
+        loadPage($("#menu"), "/component/menu.html", function() {
             $(".menu li").eq(9).addClass("active")
             menuTouch()
         });
@@ -37,7 +41,8 @@ var documentHandler = {
             }
         });
         var documentCategorySwiper = new Swiper('.document-category-swiper-container', {
-            slidesPerView: 4
+            slidesPerView: 4,
+            hashNavigation: true,
         })
         documentHandler.args.urlArgs.category = getUrlParam("category")
         documentHandler.args.urlArgs.id = getUrlParam("id")

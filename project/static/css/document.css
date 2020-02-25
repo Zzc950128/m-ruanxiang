@@ -2,7 +2,7 @@
     margin-top: 0.9rem;
     position: relative;
     z-index: 1;
-    background: url("../images/document/documentBanner.png") no-repeat;
+    background: url("/static/images/document/documentBanner.png") no-repeat;
     background-size: 100% auto;
     height: 3rem;
 }

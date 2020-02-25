@@ -6,23 +6,6 @@ var _hmt = _hmt || [];
     s.parentNode.insertBefore(hm, s);
 })();
 
-(function (doc, win) {
-    var docEl = doc.documentElement,
-            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-            recalc = function () {
-                var clientWidth = docEl.clientWidth;
-                if (!clientWidth) return;
-                if (clientWidth >= 750) {
-                    docEl.style.fontSize = '100px';
-                } else {
-                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
-                }
-            };
-    if (!doc.addEventListener) return;
-    win.addEventListener(resizeEvt, recalc, false);
-    recalc()
-})(document, window);
-
 function menuTouch() {
     var startX = 0
     var endX = 0
@@ -89,7 +72,10 @@ function getUrlParam(name) {
 }
 
 // 载入header
-loadPage($("#header"), window.headerReverseFlag?"../component/headerReverse.html":"../component/header.html", function() {
+loadPage($("#header"), window.headerReverseFlag?"/component/headerReverse.html":"/component/header.html", function() {
+    $(".header-icon").click(function() {
+        window.location.href = window.location.origin+"/page/index"
+    })
     $(".header-menu, .header-menu-reverse").click(function() {
         console.log("menuClick")
         // menu展开标识
@@ -130,7 +116,7 @@ loadPage($("#header"), window.headerReverseFlag?"../component/headerReverse.html
 });
 
 // 载入footer
-loadPage($("#footer"), "../component/footer.html", function() {
+loadPage($("#footer"), "/component/footer.html", function() {
     $(".footer-btn-free").click(function() {
         if ($('#nb_icon_wrap').length > 0) {
             $('#nb_icon_wrap').click();

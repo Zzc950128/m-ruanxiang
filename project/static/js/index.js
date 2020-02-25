@@ -13,7 +13,7 @@ var homeHandler = {
     init: function() {
         console.log("homeHandlerInit")
         // 载入menu
-        loadPage($("#menu"), "../component/menu.html", function() {
+        loadPage($("#menu"), "/component/menu.html", function() {
             $(".menu li").eq(0).addClass("active")
             menuTouch()
         });
@@ -21,12 +21,12 @@ var homeHandler = {
         $(window).scroll(function() {
             if($(this).scrollTop() == 0) {
                 $(".header").css("background", "transparent")
-                $(".header-icon img").attr("src", "../static/images/header/icon.png")
-                $(".header-menu img").attr("src", "../static/images/header/menu.png")
+                $(".header-icon img").attr("src", "/static/images/header/icon.png")
+                $(".header-menu img").attr("src", "/static/images/header/menu.png")
             }else {
                 $(".header").css("background", "#ffffff")
-                $(".header-icon img").attr("src", "../static/images/header/icon-reverse.png")
-                $(".header-menu img").attr("src", "../static/images/header/menu-reverse.png")
+                $(".header-icon img").attr("src", "/static/images/header/icon-reverse.png")
+                $(".header-menu img").attr("src", "/static/images/header/menu-reverse.png")
             }
         });
         homeHandler.args.homeModeSwiper = new Swiper('.home-mode-swiper-container', {
@@ -55,18 +55,21 @@ var homeHandler = {
         this.getTrendList()
     },
     initAction: function() {
-        $(".video").click(function() {
+        $(".video").click(function(e) {
             $("#video")[0].pause()
             $(".video").hide()
+        })
+        $(".video-wrap").click(function(e) {
+            e.stopPropagation()
         })
         $(".home-banner-btn.second").click(function() {
             $(".video").show()
         })
         $(".home-help-more-btn").click(function() {
-            window.location.href = window.location.origin+"/page/document.html"
+            window.location.href = window.location.origin+"/page/document"
         })
         $(".home-function-more-btn").click(function() {
-            window.location.href = window.location.origin+"/page/price.html"
+            window.location.href = window.location.origin+"/page/price"
         })
         $(".home-advantage-item").click(function() {
             var index = $(this).attr("data-index")

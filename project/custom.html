@@ -6,9 +6,27 @@
         <meta name="keywords" content="软象"/>
         <meta name="description" content="软象"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
-        <link rel="stylesheet" type="text/css" href="../static/css/common/reset.min.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/common/common.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/reset.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/common.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/custom.css" />
+        <script type="text/javascript">
+            (function (doc, win) {
+                var docEl = doc.documentElement,
+                        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                        recalc = function () {
+                            var clientWidth = docEl.clientWidth;
+                            if (!clientWidth) return;
+                            if (clientWidth >= 750) {
+                                docEl.style.fontSize = '100px';
+                            } else {
+                                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                            }
+                        };
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                recalc()
+            })(document, window);
+        </script>
     </head>
     <body>
         <section class="main-wrap">
@@ -22,27 +40,27 @@
                 <section class="custom-demand">
                     <div class="custom-demand-title common-title">全面覆盖数字阅读需求场景</div>
                     <div class="custom-demand-desc">丰富软件案例经验，打造适合您的移动阅读应用</div>
-                    <div class="custom-demand-img"><img src="../static/images/custom/customDemond.png" alt=""></div>
+                    <div class="custom-demand-img"><img src="/static/images/custom/customDemond.png" alt=""></div>
                 </section>
                 <section class="custom-custom">
                     <div class="custom-common-title common-title">定制服务流程</div>
                     <div class="custom-custom-wrap">
-                        <div class="custom-custom-icon"><img src="../static/images/custom/customCustom1.png" alt=""></div>
+                        <div class="custom-custom-icon"><img src="/static/images/custom/customCustom1.png" alt=""></div>
                         <div class="custom-custom-title">提交需求</div>
                         <div class="custom-custom-content">您是否已有文学PC网站，介绍您的业务需求</div>
                     </div>
                         <div class="custom-custom-wrap">
-                        <div class="custom-custom-icon"><img src="../static/images/custom/customCustom2.png" alt=""></div>
+                        <div class="custom-custom-icon"><img src="/static/images/custom/customCustom2.png" alt=""></div>
                         <div class="custom-custom-title">对接资深顾问</div>
                         <div class="custom-custom-content">为您选择合适顾问，了解业务场景，介绍软象服务</div>
                     </div>
                         <div class="custom-custom-wrap">
-                        <div class="custom-custom-icon"><img src="../static/images/custom/customCustom3.png" alt=""></div>
+                        <div class="custom-custom-icon"><img src="/static/images/custom/customCustom3.png" alt=""></div>
                         <div class="custom-custom-title">需求调研，确定方案</div>
                         <div class="custom-custom-content">深入调研需求场景，与您确认需求细节与痛点，指定解决方案</div>
                     </div>
                         <div class="custom-custom-wrap">
-                        <div class="custom-custom-icon"><img src="../static/images/custom/customCustom4.png" alt=""></div>
+                        <div class="custom-custom-icon"><img src="/static/images/custom/customCustom4.png" alt=""></div>
                         <div class="custom-custom-title">开发、测试、上线</div>
                         <div class="custom-custom-content">进入开发阶段，快速搭建，全面测试，上线运营</div>
                     </div>
@@ -51,32 +69,32 @@
                     <div class="common-title">服务优势</div>
                     <div class="custom-service-wrap clearfix">
                         <div class="custom-service-item">
-                            <div class="custom-service-icon"><img src="../static/images/custom/customService1.png" alt=""></div>
+                            <div class="custom-service-icon"><img src="/static/images/custom/customService1.png" alt=""></div>
                             <div class="custom-service-title">原生开发</div>
                             <div class="custom-service-content">坚持原生开发<br>测试成熟 抗压稳定</div>
                         </div>
                         <div class="custom-service-item">
-                            <div class="custom-service-icon"><img src="../static/images/custom/customService2.png" alt=""><img src="../static/images/custom/customService7.png" alt=""></div>
+                            <div class="custom-service-icon"><img src="/static/images/custom/customService2.png" alt=""><img src="/static/images/custom/customService7.png" alt=""></div>
                             <div class="custom-service-title">快速搭建</div>
                             <div class="custom-service-content">最快一天搭建调试<br>快速上线运营</div>
                         </div>
                         <div class="custom-service-item">
-                            <div class="custom-service-icon"><img src="../static/images/custom/customService3.png" alt=""></div>
+                            <div class="custom-service-icon"><img src="/static/images/custom/customService3.png" alt=""></div>
                             <div class="custom-service-title">稳定扛负载</div>
                             <div class="custom-service-content">通过专业功能测试<br>兼容测试、性能测试</div>
                         </div>
                         <div class="custom-service-item">
-                            <div class="custom-service-icon"><img src="../static/images/custom/customService4.png" alt=""></div>
+                            <div class="custom-service-icon"><img src="/static/images/custom/customService4.png" alt=""></div>
                             <div class="custom-service-title">上架专家</div>
                             <div class="custom-service-content">专业过审团队<br>大量上架经验案例</div>
                         </div>
                         <div class="custom-service-item">
-                            <div class="custom-service-icon"><img src="../static/images/custom/customService5.png" alt=""></div>
+                            <div class="custom-service-icon"><img src="/static/images/custom/customService5.png" alt=""></div>
                             <div class="custom-service-title">产品运营指导</div>
                             <div class="custom-service-content">特聘行业资深专家<br>免费交流答疑</div>
                         </div>
                         <div class="custom-service-item">
-                            <div class="custom-service-icon"><img src="../static/images/custom/customService6.png" alt=""></div>
+                            <div class="custom-service-icon"><img src="/static/images/custom/customService6.png" alt=""></div>
                             <div class="custom-service-title">售后服务</div>
                             <div class="custom-service-content">7*24小时售后，专业交付，管家式服务</div>
                         </div>
@@ -85,14 +103,14 @@
                 <section class="custom-case">
                     <div class="custom-case-title common-title">客户案例</div>
                     <div class="custom-case-item clearfix">
-                        <div class="custom-case-item-icon"><img src="../static/images/custom/customCase1.png" alt=""></div>
+                        <div class="custom-case-item-icon"><img src="/static/images/custom/customCase1.png" alt=""></div>
                         <div class="custom-case-item-content">
                             <p>我也是互联网老兵了，从用"某奇"开始做免费小说开始到现在转做正版付费阅读，经历了很多坎坷。买过几次软件没有任何维护，打水漂了。</p>
                             <div class="custom-case-item-tip">—— 上海旗舰版客户宋总</div>
                         </div>
                     </div>
                     <div class="custom-case-item clearfix">
-                        <div class="custom-case-item-icon"><img src="../static/images/custom/customCase2.png" alt=""></div>
+                        <div class="custom-case-item-icon"><img src="/static/images/custom/customCase2.png" alt=""></div>
                         <div class="custom-case-item-content">
                             <p>去年开始做小说分销，被平台扣量，目前顺利上架了公众号和APP，这次做总站虽然损失了一部分已有客户，但我相信APP始终是高留存的</p>
                             <div class="custom-case-item-tip">—— 湖南旗舰版客户李总</div>
@@ -104,8 +122,8 @@
         </section>
         <section id="menu"></section>
     </body>
-    <script type="text/javascript" src="../static/js/common/jquery.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/vconsole.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/common.js"></script>
-    <script type="text/javascript" src="../static/js/custom.js"></script>
+    <script type="text/javascript" src="/static/js/common/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/vconsole.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/common.js"></script>
+    <script type="text/javascript" src="/static/js/custom.js"></script>
 </html>

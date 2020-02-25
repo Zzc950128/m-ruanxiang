@@ -7,17 +7,35 @@
         <meta name="keywords" content="软象"/>
         <meta name="description" content="软象"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-        <link rel="stylesheet" type="text/css" href="../static/css/common/reset.min.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/common/swiper.min.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/common/common.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/index.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/reset.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/swiper.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/common.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/index.css" />
+        <script type="text/javascript">
+            (function (doc, win) {
+                var docEl = doc.documentElement,
+                        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                        recalc = function () {
+                            var clientWidth = docEl.clientWidth;
+                            if (!clientWidth) return;
+                            if (clientWidth >= 750) {
+                                docEl.style.fontSize = '100px';
+                            } else {
+                                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                            }
+                        };
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                recalc()
+            })(document, window);
+        </script>
     </head>
     <body>
         <section class="main-wrap">
             <div id="header"></div>
             <div class="video">
                 <div class="video-wrap">
-                    <video id="video" src="../static/video/video.mp4" autoplay controls style="width:100%;" poster="../static/video/video.jpg">
+                    <video id="video" src="/static/video/video.mp4" autoplay controls style="width:100%;" poster="/static/video/video.jpg">
                         您的浏览器不支持Video标签
                      </video>
                 </div>
@@ -34,7 +52,7 @@
                         <div class="home-banner-btn second">视频演示</div>
                     </div>
                     <div class="home-banner-img">
-                        <img src="../static/images/home/homeBanner2.png" alt="" />
+                        <img src="/static/images/home/homeBanner2.png" alt="" />
                     </div>
                 </section>
                 <section class="home-mode">
@@ -44,37 +62,37 @@
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">阅读付费</div>
                                 <div class="swiper-slide-content">APP、公众号、H5多终端均为主流展现形式，阅读内容页、个人中心均可实现移动支付，流畅的阅读体验，实现营收</div>
-                                <img src="../static/images/home/homeModeSwiper1.png" alt="" />
+                                <img src="/static/images/home/homeModeSwiper1.png" alt="" />
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">会员体系</div>
                                 <div class="swiper-slide-content">结合会员免费书库、去广告、身份铭牌、专属活动等特权元素，打造完善的会员体系，助力用户沉淀</div>
-                                <img src="../static/images/home/homeModeSwiper2.png" alt="" />
+                                <img src="/static/images/home/homeModeSwiper2.png" alt="" />
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">三级分销</div>
                                 <div class="swiper-slide-content">支持公众号和App的分销，轻松生成推广链接分享好友，与渠道、代理合作，形成三级分销，渠道代理分红，快速获取流量，达到分裂式推广 </div>
-                                <img src="../static/images/home/homeModeSwiper3.png" alt="" />
+                                <img src="/static/images/home/homeModeSwiper3.png" alt="" />
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">邀请提现</div>
                                 <div class="swiper-slide-content">阅读小说章节和邀请好友都可以赚金币，金币可以兑换提现，仿趣头条、今日头条、七猫小说网赚模式疯狂裂变，低成本迅速裂变新增用户。</div>
-                                <img src="../static/images/home/homeModeSwiper4.png" alt="" />
+                                <img src="/static/images/home/homeModeSwiper4.png" alt="" />
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">福利任务</div>
                                 <div class="swiper-slide-content">新手任务、日常任务、邀请奖励等构成成熟的用户激励体系，实现激励式自主推广效果，提升用户留存</div>
-                                <img src="../static/images/home/homeModeSwiper5.png" alt="" />
+                                <img src="/static/images/home/homeModeSwiper5.png" alt="" />
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">广告配置</div>
                                 <div class="swiper-slide-content">支持开屏、信息流等多种广告形式，可接入指定广告平台，配合福利激励任务加强视频广告等收益，支持自定义图片广告，后台轻松配置，协同全面数据统计，实时掌控数据走向</div>
-                                <img src="../static/images/home/homeModeSwiper6.png" alt="" />
+                                <img src="/static/images/home/homeModeSwiper6.png" alt="" />
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">国际版本</div>
                                 <div class="swiper-slide-content">帮助解决版权改编问题，支持海外支付，拥有海外流量资源，支持国际化多语种版本及语言切换，全面面向海外市场</div>
-                                <img src="../static/images/home/homeModeSwiper7.png" alt="" />
+                                <img src="/static/images/home/homeModeSwiper7.png" alt="" />
                             </div>
                         </div>
                         <div class="swiper-pagination home-mode-swiper-pagination"></div>
@@ -90,7 +108,7 @@
                                     <div class="home-advantage-item" data-index="1">
                                         <div class="home-advantage-item-desc home-advantage-item-desc1">杜绝用h5、react native、apicloud等低成本打包开发，经过功能、兼容崩溃、并发性能多重测试</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon1">
-                                            <img src="../static/images/home/homeAdvantage1.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage1.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">原生开发</div>
                                         <div class="home-advantage-item-content">坚持原生开发<br>测试成熟 抗压稳定</div>
@@ -98,7 +116,7 @@
                                     <div class="home-advantage-item" data-index="2">
                                     <div class="home-advantage-item-desc home-advantage-item-desc2">小说漫画等类型app上架存在很多资质及其他方面上架难度，我们有专业过审团队和绝对策略技术优势</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon2">
-                                            <img src="../static/images/home/homeAdvantage2.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage2.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">上架专家</div>
                                         <div class="home-advantage-item-content">专业过审团队<br>大量上架经验案例</div>
@@ -106,7 +124,7 @@
                                     <div class="home-advantage-item" data-index="3">
                                         <div class="home-advantage-item-desc home-advantage-item-desc3">支持公众号和app的分销，轻松生成推广链接分享好友，不仅有成熟的三级分销也有趣头条模式、七猫小说模式等裂变网赚提现模式</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon3">
-                                            <img src="../static/images/home/homeAdvantage3.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage3.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">裂变营销</div>
                                         <div class="home-advantage-item-content">三级分销、分享裂变 多种裂变推广 低成本获客</div>
@@ -114,7 +132,7 @@
                                     <div class="home-advantage-item" data-index="4">
                                         <div class="home-advantage-item-desc home-advantage-item-desc4">集成主流广告sdk也支持自定义图片广告，配合福利激励加强了视频广告等收益，后台轻松设置广告位置和形式，自带统计数据</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon4">
-                                            <img src="../static/images/home/homeAdvantage4.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage4.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">广告变现</div>
                                         <div class="home-advantage-item-content">集成主流广告sdk<br>灵活控制广告位</div>
@@ -122,7 +140,7 @@
                                     <div class="home-advantage-item" data-index="5">
                                         <div class="home-advantage-item-desc home-advantage-item-desc5">强大的技术产品交付能力，从客户资料准备到交付上架有成熟的流程，以及强大勤奋的技术服务对接群，为您保驾护航。</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon5">
-                                            <img src="../static/images/home/homeAdvantage5.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage5.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">推送激活</div>
                                         <div class="home-advantage-item-content">支持配置推送指定<br>阅读内容</div>
@@ -130,7 +148,7 @@
                                     <div class="home-advantage-item" data-index="6">
                                         <div class="home-advantage-item-desc home-advantage-item-desc6">我们有成熟的适应各种模式的软件案例，可与您详细沟通二次开发需求，大大节省人力和时间成本。</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon6">
-                                            <img src="../static/images/home/homeAdvantage6.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage6.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">定制化需求</div>
                                         <div class="home-advantage-item-content">全面覆盖行业<br>需求场景 量身定制</div>
@@ -138,7 +156,7 @@
                                     <div class="home-advantage-item" data-index="7">
                                         <div class="home-advantage-item-desc home-advantage-item-desc7">我们丰富的签到等新手任务、日常任务、广告激励任务等多方位增加变现、留存、激活。支持用户免费阅读赚金币提现的裂变模式。</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon7">
-                                            <img src="../static/images/home/homeAdvantage7.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage7.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">福利任务</div>
                                         <div class="home-advantage-item-content">新手任务 激励任务<br>刺激裂变 提高活跃留存</div>
@@ -146,7 +164,7 @@
                                     <div class="home-advantage-item" data-index="8">
                                         <div class="home-advantage-item-desc home-advantage-item-desc8">支持主流的支付宝、微信、苹果支付、第四方的支付通道，也可协助二次开发接入指定支付通道。</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon8">
-                                            <img src="../static/images/home/homeAdvantage8.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage8.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">移动支付</div>
                                         <div class="home-advantage-item-content">支持主流支付方式<br>支持第四方支付</div>
@@ -158,7 +176,7 @@
                                     <div class="home-advantage-item" data-index="9">
                                         <div class="home-advantage-item-desc home-advantage-item-desc1">集成主流推送sdk，并考虑到安卓各厂商的通道大大提高了到达率。支持更新章节推送、直达app详情页。</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon1">
-                                            <img src="../static/images/home/homeAdvantage9.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage9.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">快速搭建</div>
                                         <div class="home-advantage-item-content">最快一天搭建调试<br>快速上线运营</div>
@@ -166,7 +184,7 @@
                                     <div class="home-advantage-item" data-index="10">
                                         <div class="home-advantage-item-desc home-advantage-item-desc2">阅读行业从免费到付费、内容签约、软件系统架构、流量运营、裂变启动、变现模式等等方面的耐心解答，全方位主力。</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon2">
-                                            <img src="../static/images/home/homeAdvantage10.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage10.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">产品运营指导</div>
                                         <div class="home-advantage-item-content">特聘行业资深专家<br>免费交流答疑</div>
@@ -174,7 +192,7 @@
                                     <div class="home-advantage-item" data-index="11">
                                         <div class="home-advantage-item-desc home-advantage-item-desc3">多维度指标监测，洞察数据趋势，辅助决策，实现精准营销</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon3">
-                                            <img src="../static/images/home/homeAdvantage11.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage11.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">强大后台</div>
                                         <div class="home-advantage-item-content">APP、公众号、H5多终端<br>统一管理，实时跟进</div>
@@ -182,7 +200,7 @@
                                     <div class="home-advantage-item" data-index="12">
                                         <div class="home-advantage-item-desc home-advantage-item-desc4">分布式服务器集群、全程数据加密、自动备份集群等一流的安全保障，权利保护核心资产</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon4">
-                                            <img src="../static/images/home/homeAdvantage12.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage12.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">数据安全</div>
                                         <div class="home-advantage-item-content">私有二进制通讯协议，数据全程加密监测防护</div>
@@ -190,7 +208,7 @@
                                     <div class="home-advantage-item" data-index="13">
                                         <div class="home-advantage-item-desc home-advantage-item-desc5">针对不同的运营模式有不同的模板推荐，原生开发，速度流畅，扩展性强，方便二次开发</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon5">
-                                            <img src="../static/images/home/homeAdvantage13.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage13.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">精致UI</div>
                                         <div class="home-advantage-item-content">主流界面，精致设计<br>体验流畅，各种模板</div>
@@ -198,7 +216,7 @@
                                     <div class="home-advantage-item" data-index="14">
                                         <div class="home-advantage-item-desc home-advantage-item-desc6">程序方面配合合理的服务器架构，可以轻松应对千万级别访问压力，全面测试，体验保障</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon6">
-                                            <img src="../static/images/home/homeAdvantage14.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage14.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">稳定抗负载</div>
                                         <div class="home-advantage-item-content">通过专业功能测试<br>兼容测试、性能测试</div>
@@ -206,7 +224,7 @@
                                     <div class="home-advantage-item" data-index="15">
                                         <div class="home-advantage-item-desc home-advantage-item-desc7">专业的产品、研发、测试、交付、运营指导团队，流程化、管家式的服务，对接群回复耐心及时</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon7">
-                                            <img src="../static/images/home/homeAdvantage15.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage15.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">售后服务</div>
                                         <div class="home-advantage-item-content">7*24小时售后<br>专业交付，管家式服务</div>
@@ -214,7 +232,7 @@
                                     <div class="home-advantage-item" data-index="16">
                                         <div class="home-advantage-item-desc home-advantage-item-desc8">持续、自动的构建/测试软件项目、监控外部任务的运行</div>
                                         <div class="home-advantage-item-icon home-advantage-item-icon8">
-                                            <img src="../static/images/home/homeAdvantage16.png" alt="">
+                                            <img src="/static/images/home/homeAdvantage16.png" alt="">
                                         </div>
                                         <div class="home-advantage-item-title">高级技术支持</div>
                                         <div class="home-advantage-item-content">jenkins自主打包等专业技术服务，感受优质体验</div>
@@ -228,42 +246,42 @@
                 <section class="home-case">
                     <div class="home-case-title common-title">客户案例</div>
                     <div class="home-case-item clearfix">
-                        <div class="home-case-item-image"><img src="../static/images/home/homeCase1.png" alt="" /></div>
+                        <div class="home-case-item-image"><img src="/static/images/home/homeCase1.png" alt="" /></div>
                         <div class="home-case-item-content">
                             <p>我也是互联网老兵了，从用"某奇"开始做免费小说开始到现在转做正版付费阅读，经历了很多坎坷。买过几次软件没有任何维护，打水漂了。</p>
                             <div class="home-case-item-author">—— 上海旗舰版客户宋总</div>
                         </div>
                     </div>
                     <div class="home-case-item clearfix">
-                        <div class="home-case-item-image"><img src="../static/images/home/homeCase2.png" alt="" /></div>
+                        <div class="home-case-item-image"><img src="/static/images/home/homeCase2.png" alt="" /></div>
                         <div class="home-case-item-content">
                             <p>去年开始做小说分销，被平台扣量，目前顺利上架了公众号和APP，这次做总站虽然损失了一部分已有客户，但我相信APP始终是高留存的王牌，感谢被窝读书快速帮我搭建了这套系统。</p>
                             <div class="home-case-item-author">—— 上海旗舰版客户宋总</div>
                         </div>
                     </div>
                     <div class="home-case-item clearfix">
-                        <div class="home-case-item-image"><img src="../static/images/home/homeCase3.png" alt="" /></div>
+                        <div class="home-case-item-image"><img src="/static/images/home/homeCase3.png" alt="" /></div>
                         <div class="home-case-item-content">
                             <p>我是做免费小说的，最少在A5上买了3个小说程序，上架困扰了我好久，尝试了被窝读书软件没想到他们团队在上架过审方面有很强的技术对抗能力，比我自己找上包团队成本要节省了好多。</p>
                             <div class="home-case-item-author">—— 上海旗舰版客户宋总</div>
                         </div>
                     </div>
                     <div class="home-case-item clearfix">
-                        <div class="home-case-item-image"><img src="../static/images/home/homeCase4.png" alt="" /></div>
+                        <div class="home-case-item-image"><img src="/static/images/home/homeCase4.png" alt="" /></div>
                         <div class="home-case-item-content">
                             <p>早上收到苹果上架信息我立马在技术大大群里发了一个红包，感谢被窝在运营上的指导，数据支撑和介绍好的版权。在对接流程、上架能力、行业认知、运营资源，被窝读书团队都很优秀。</p>
                             <div class="home-case-item-author">—— 上海旗舰版客户宋总</div>
                         </div>
                     </div>
                     <div class="home-case-item clearfix">
-                        <div class="home-case-item-image"><img src="../static/images/home/homeCase5.png" alt="" /></div>
+                        <div class="home-case-item-image"><img src="/static/images/home/homeCase5.png" alt="" /></div>
                         <div class="home-case-item-content">
                             <p>我是做免费小说的，最少在A5上买了3个小说程序，上架困扰了我好久，尝试了被窝读书软件没想到他们团队在上架过审方面有很强的技术对抗能力，比我自己找上包团队成本要节省了好多。</p>
                             <div class="home-case-item-author">—— 上海旗舰版客户宋总</div>
                         </div>
                     </div>
                     <div class="home-case-item clearfix">
-                        <div class="home-case-item-image"><img src="../static/images/home/homeCase6.png" alt="" /></div>
+                        <div class="home-case-item-image"><img src="/static/images/home/homeCase6.png" alt="" /></div>
                         <div class="home-case-item-content">
                             <p>我是做免费小说的，最少在A5上买了3个小说程序，上架困扰了我好久，尝试了被窝读书软件没想到他们团队在上架过审方面有很强的技术对抗能力，比我自己找上包团队成本要节省了好多。</p>
                             <div class="home-case-item-author">—— 上海旗舰版客户宋总</div>
@@ -273,28 +291,28 @@
                 <section class="home-function">
                     <div class="home-function-title common-title">更多功能介绍</div>
                     <div class="home-function-item clearfix">
-                        <div class="home-function-item-image"><img src="../static/images/home/homeHelp1.png" alt="" /></div>
+                        <div class="home-function-item-image"><img src="/static/images/home/homeHelp1.png" alt="" /></div>
                         <div class="home-function-item-wrap">
                             <div class="home-function-item-title">内容展现</div>
                             <div class="home-function-item-content">小说、漫画等主流展现形式，付费、免费阅读运营模式，自由配置，提高转化率</div>
                         </div>
                     </div>
                     <div class="home-function-item clearfix">
-                        <div class="home-function-item-image"><img src="../static/images/home/homeHelp2.png" alt="" /></div>
+                        <div class="home-function-item-image"><img src="/static/images/home/homeHelp2.png" alt="" /></div>
                         <div class="home-function-item-wrap">
                             <div class="home-function-item-title">用户运营</div>
                             <div class="home-function-item-content">用户激励体系、会员管理、消息推送、精准画像等多样化运营，提高用户活跃度</div>
                         </div>
                     </div>
                     <div class="home-function-item clearfix">
-                        <div class="home-function-item-image"><img src="../static/images/home/homeHelp3.png" alt="" /></div>
+                        <div class="home-function-item-image"><img src="/static/images/home/homeHelp3.png" alt="" /></div>
                         <div class="home-function-item-wrap">
                             <div class="home-function-item-title">营销推广</div>
                             <div class="home-function-item-content">裂变式营销功能，激励式自主推广，快速获客，达到分裂式效应</div>
                         </div>
                     </div>
                     <div class="home-function-item clearfix">
-                        <div class="home-function-item-image"><img src="../static/images/home/homeHelp4.png" alt="" /></div>
+                        <div class="home-function-item-image"><img src="/static/images/home/homeHelp4.png" alt="" /></div>
                         <div class="home-function-item-wrap">
                             <div class="home-function-item-title">数据分析</div>
                             <div class="home-function-item-content">用户分析、阅读分析、多维度数据监控分析等，全面满足业务需求</div>
@@ -317,20 +335,25 @@
                     </div>
                     <div class="home-help-trends-title"><span>——</span> 软象动态 <span>——</span></div>
                     <div class="home-help-trends">
+<<<<<<< HEAD:project/page/index.html
                         <!-- <div class="home-help-trends-content-wrap clearfix">
                             <div class="home-help-trends-content" data-category="4" data-id="1">被窝读书小说版权计划正式启动</div>
+=======
+                        <div class="home-help-trends-content-wrap clearfix">
+                            <div class="home-help-trends-content" data-category="6" data-id="1">被窝读书小说版权计划正式启动</div>
+>>>>>>> d527dec931529d5dde67f537b6f55d3232242fa5:project/index.html
                             <div class="home-help-trends-date">2019-01-09</div>
                         </div>
                         <div class="home-help-trends-content-wrap clearfix">
-                            <div class="home-help-trends-content" data-category="4" data-id="2">支持杰奇小说系统数据一键导入</div>
+                            <div class="home-help-trends-content" data-category="6" data-id="2">支持杰奇小说系统数据一键导入</div>
                             <div class="home-help-trends-date">2010-01-01</div>
                         </div>
                         <div class="home-help-trends-content-wrap clearfix">
-                            <div class="home-help-trends-content" data-category="4" data-id="3">公众号分销系统强势登陆</div>
+                            <div class="home-help-trends-content" data-category="6" data-id="3">公众号分销系统强势登陆</div>
                             <div class="home-help-trends-date">2010-01-01</div>
                         </div>
                         <div class="home-help-trends-content-wrap clearfix">
-                            <div class="home-help-trends-content" data-category="4" data-id="4">从第二届中国“网络文学+”大会看从第二届中国“网络文学+”大会看</div>
+                            <div class="home-help-trends-content" data-category="6" data-id="4">从第二届中国“网络文学+”大会看从第二届中国“网络文学+”大会看</div>
                             <div class="home-help-trends-date">2010-01-01</div>
                         </div> -->
                     </div>
@@ -345,9 +368,9 @@
         </section>
         <section id="menu"></section>
     </body>
-    <script type="text/javascript" src="../static/js/common/jquery.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/vconsole.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/swiper.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/common.js"></script>
-    <script type="text/javascript" src="../static/js/index.js"></script>
+    <script type="text/javascript" src="/static/js/common/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/vconsole.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/swiper.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/common.js"></script>
+    <script type="text/javascript" src="/static/js/index.js"></script>
 </html>

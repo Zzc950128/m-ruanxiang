@@ -6,9 +6,27 @@
         <meta name="keywords" content="软象"/>
         <meta name="description" content="软象"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
-        <link rel="stylesheet" type="text/css" href="../static/css/common/reset.min.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/common/common.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/internationRead.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/reset.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/common.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/internationRead.css" />
+        <script type="text/javascript">
+            (function (doc, win) {
+                var docEl = doc.documentElement,
+                        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                        recalc = function () {
+                            var clientWidth = docEl.clientWidth;
+                            if (!clientWidth) return;
+                            if (clientWidth >= 750) {
+                                docEl.style.fontSize = '100px';
+                            } else {
+                                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                            }
+                        };
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                recalc()
+            })(document, window);
+        </script>
     </head>
     <body>
         <section class="main-wrap">
@@ -19,28 +37,28 @@
                     <div class="internation-banner-desc">丰富功能，解决海外支付、版权等问题，全面进军海外市场</div>
                     <div class="internation-banner-btn shangqiao">免费体验</div>
                     <div class="internation-banner-img">
-                        <img src="../static/images/internation/internationBanner2.png" alt="">
+                        <img src="/static/images/internation/internationBanner2.png" alt="">
                     </div>
                 </section>
                 <section class="internation-basic">
                     <div class="internation-basic-title common-title">奠定国际化基础</div>
                     <div class="internation-basic-item">
                         <div class="internation-basic-item-img">
-                            <img src="../static/images/internation/internationBasic1.png" alt="">
+                            <img src="/static/images/internation/internationBasic1.png" alt="">
                         </div>
                         <div class="internation-basic-item-title">书籍版权</div>
                         <div class="internation-basic-item-desc">国际化版本需要对书籍内容进行翻译，需要获得书籍的改编权。软象多年行业经验，具备一定版权资源，同时协助与版权方签约</div>
                     </div>
                     <div class="internation-basic-item">
                         <div class="internation-basic-item-img">
-                            <img src="../static/images/internation/internationBasic2.png" alt="">
+                            <img src="/static/images/internation/internationBasic2.png" alt="">
                         </div>
                         <div class="internation-basic-item-title">海外流量</div>
                         <div class="internation-basic-item-desc">协助海外推广，选择合适的营销途径，了解海外平台运作，合理利用Twitter、Facebook等社交平台及谷歌搜索引擎，制定营销方案</div>
                     </div>
                     <div class="internation-basic-item">
                         <div class="internation-basic-item-img">
-                            <img src="../static/images/internation/internationBasic3.png" alt="">
+                            <img src="/static/images/internation/internationBasic3.png" alt="">
                         </div>
                         <div class="internation-basic-item-title">国际支付</div>
                         <div class="internation-basic-item-desc">支持多种货币收款，支持国际信用卡支付，支持多样的海外本地支付方式接入，赋能国际化运营</div>
@@ -49,7 +67,7 @@
                 <section class="internation-change">
                     <div class="internation-change-title common-title">国际化版本转化</div>
                     <div class="internation-change-img">
-                        <img src="../static/images/internation/internationChange.png" alt="">
+                        <img src="/static/images/internation/internationChange.png" alt="">
                     </div>
                     <div class="internation-change-item-title">多语种阅读</div>
                     <div class="internation-change-item-desc">支持APP、公众号、H5随时随地阅览书籍，合理利用时间碎片化优势，打造多元化付费体系</div>
@@ -61,14 +79,14 @@
                 <section class="internation-case">
                     <div class="internation-case-title common-title">客户案例</div>
                     <div class="internation-case-item clearfix">
-                        <div class="internation-case-item-image"><img src="../static/images/internation/internationCase1.png" alt="" /></div>
+                        <div class="internation-case-item-image"><img src="/static/images/internation/internationCase1.png" alt="" /></div>
                         <div class="internation-case-item-content">
                             <p>早上收到各应用平台上架信息我立马在辛苦的技术大大群里发了红包，感谢被窝在运营上的指导、数据支撑还介绍好版权。因为爱看小说才做的小说系统，在对接流程、上架能力、行业认知、运营资源，被窝读书团队都很优秀。</p>
                             <div class="internation-case-item-author">—— 北京旗舰版客户王总</div>
                         </div>
                     </div>
                     <div class="internation-case-item clearfix">
-                        <div class="internation-case-item-image"><img src="../static/images/internation/internationCase2.png" alt="" /></div>
+                        <div class="internation-case-item-image"><img src="/static/images/internation/internationCase2.png" alt="" /></div>
                         <div class="internation-case-item-content">
                             <p>去年开始做小说分销，被平台扣量，后悔没早点购买被窝读书软件，目前顺利上架了公众号和APP，这次做总站虽然损失了一部分已有客户，但我相信APP始终是高留存的王牌，感谢被窝读书快速帮我搭建了这套系统。</p>
                             <div class="internation-case-item-author">—— 湖南旗舰版客户李总</div>
@@ -80,8 +98,8 @@
         </section>
         <section id="menu"></section>
     </body>
-    <script type="text/javascript" src="../static/js/common/jquery.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/utils.js"></script>
-    <script type="text/javascript" src="../static/js/common/common.js"></script>
-    <script type="text/javascript" src="../static/js/internationRead.js"></script>
+    <script type="text/javascript" src="/static/js/common/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/utils.js"></script>
+    <script type="text/javascript" src="/static/js/common/common.js"></script>
+    <script type="text/javascript" src="/static/js/internationRead.js"></script>
 </html>

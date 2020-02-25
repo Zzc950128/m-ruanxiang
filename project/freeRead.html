@@ -6,10 +6,28 @@
         <meta name="keywords" content="软象"/>
         <meta name="description" content="软象"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
-        <link rel="stylesheet" type="text/css" href="../static/css/common/reset.min.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/common/swiper.min.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/common/common.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/freeRead.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/reset.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/swiper.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/common/common.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/freeRead.css" />
+        <script type="text/javascript">
+            (function (doc, win) {
+                var docEl = doc.documentElement,
+                        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                        recalc = function () {
+                            var clientWidth = docEl.clientWidth;
+                            if (!clientWidth) return;
+                            if (clientWidth >= 750) {
+                                docEl.style.fontSize = '100px';
+                            } else {
+                                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                            }
+                        };
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                recalc()
+            })(document, window);
+        </script>
     </head>
     <body>
         <section class="main-wrap">
@@ -25,56 +43,56 @@
                     <div class="free-business-warp clearfix">
                         <div class="free-business-item">
                             <div class="free-business-item-img">
-                                <img src="../static/images/free/freeBusiness1.png" alt="">
+                                <img src="/static/images/free/freeBusiness1.png" alt="">
                             </div>
                             <div class="free-business-item-title">多种广告形式</div>
                             <div class="free-business-item-desc">可指定广告接入系统，支持开屏、信息流等多种广告样式</div>
                         </div>
                         <div class="free-business-item">
                             <div class="free-business-item-img">
-                                <img src="../static/images/free/freeBusiness2.png" alt="">
+                                <img src="/static/images/free/freeBusiness2.png" alt="">
                             </div>
                             <div class="free-business-item-title">红包奖励</div>
                             <div class="free-business-item-desc">小说永久免费+红包奖励运营模式多样化，快速获取用户流量</div>
                         </div>
                         <div class="free-business-item">
                             <div class="free-business-item-img">
-                                <img src="../static/images/free/freeBusiness3.png" alt="">
+                                <img src="/static/images/free/freeBusiness3.png" alt="">
                             </div>
                             <div class="free-business-item-title">福利任务</div>
                             <div class="free-business-item-desc">成熟的用户激励体系，丰富平台功能，提高用户留存，满足个性化运营需求</div>
                         </div>
                         <div class="free-business-item">
                             <div class="free-business-item-img">
-                                <img src="../static/images/free/freeBusiness4.png" alt="">
+                                <img src="/static/images/free/freeBusiness4.png" alt="">
                             </div>
                             <div class="free-business-item-title">裂变营销</div>
                             <div class="free-business-item-desc">搭建渠道、代理三级分销体系，快速获得流量，实现分裂式推广</div>
                         </div>
                         <div class="free-business-item">
                             <div class="free-business-item-img">
-                                <img src="../static/images/free/freeBusiness5.png" alt="">
+                                <img src="/static/images/free/freeBusiness5.png" alt="">
                             </div>
                             <div class="free-business-item-title">付费会员</div>
                             <div class="free-business-item-desc">去广告、尊贵标识、专属活动等特权，提升留存，刺激转化</div>
                         </div>
                         <div class="free-business-item">
                             <div class="free-business-item-img">
-                                <img src="../static/images/free/freeBusiness6.png" alt="">
+                                <img src="/static/images/free/freeBusiness6.png" alt="">
                             </div>
                             <div class="free-business-item-title">移动支付</div>
                             <div class="free-business-item-desc">支持主流支付方式及第四方支付，实现快捷交易</div>
                         </div>
                         <div class="free-business-item">
                             <div class="free-business-item-img">
-                                <img src="../static/images/free/freeBusiness7.png" alt="">
+                                <img src="/static/images/free/freeBusiness7.png" alt="">
                             </div>
                             <div class="free-business-item-title">消息推送</div>
                             <div class="free-business-item-desc">支持自定义内容、书籍作品推送，指定推送时间及用户群，精准、稳定推送</div>
                         </div>
                         <div class="free-business-item">
                             <div class="free-business-item-img">
-                                <img src="../static/images/free/freeBusiness8.png" alt="">
+                                <img src="/static/images/free/freeBusiness8.png" alt="">
                             </div>
                             <div class="free-business-item-title">数据统计</div>
                             <div class="free-business-item-desc">实时跟进用户状态，多维度指标监测，满足业务管理需求，辅助决策</div>
@@ -87,23 +105,23 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide free-system-swiper-slide">
                                 <div class="free-system-desc">激励分享</div>
-                                <img src="../static/images/free/freeSystemSwiper1.png" alt="" />
+                                <img src="/static/images/free/freeSystemSwiper1.png" alt="" />
                             </div>
                             <div class="swiper-slide free-system-swiper-slide">
                                 <div class="free-system-desc">邀请好友领红包</div>
-                                <img src="../static/images/free/freeSystemSwiper2.png" alt="" />
+                                <img src="/static/images/free/freeSystemSwiper2.png" alt="" />
                             </div>
                             <div class="swiper-slide free-system-swiper-slide">
                                 <div class="free-system-desc">赏赚记录</div>
-                                <img src="../static/images/free/freeSystemSwiper3.png" alt="" />
+                                <img src="/static/images/free/freeSystemSwiper3.png" alt="" />
                             </div>
                             <div class="swiper-slide free-system-swiper-slide">
                                 <div class="free-system-desc">现金明细</div>
-                                <img src="../static/images/free/freeSystemSwiper4.png" alt="" />
+                                <img src="/static/images/free/freeSystemSwiper4.png" alt="" />
                             </div>
                             <div class="swiper-slide free-system-swiper-slide">
                                 <div class="free-system-desc">账户提现</div>
-                                <img src="../static/images/free/freeSystemSwiper5.png" alt="" />
+                                <img src="/static/images/free/freeSystemSwiper5.png" alt="" />
                             </div>
                         </div>
                         <div class="swiper-pagination free-system-swiper-pagination"></div>
@@ -112,22 +130,22 @@
                 <section class="free-advantage">
                     <div class="free-advantage-title common-title">系统优势</div>
                     <div class="free-advantage-item">
-                        <div class="free-advantage-item-point"><img src="../static/images/free/freePoint.png" alt=""></div>
+                        <div class="free-advantage-item-point"><img src="/static/images/free/freePoint.png" alt=""></div>
                         <div class="free-advantage-item-title">原生开发</div>
                         <div class="free-advantage-item-desc">功能丰富，流畅体验，测试成熟，性能稳定，杜绝H5、react native等低成本打包开发</div>
                     </div>
                     <div class="free-advantage-item">
-                        <div class="free-advantage-item-point"><img src="../static/images/free/freePoint.png" alt=""></div>
+                        <div class="free-advantage-item-point"><img src="/static/images/free/freePoint.png" alt=""></div>
                         <div class="free-advantage-item-title">多终端支持</div>
                         <div class="free-advantage-item-desc">APP、公众号、H5配合，相得益彰，全方位覆盖行业需求，打造一站式免费阅读系统</div>
                     </div>
                     <div class="free-advantage-item">
-                        <div class="free-advantage-item-point"><img src="../static/images/free/freePoint.png" alt=""></div>
+                        <div class="free-advantage-item-point"><img src="/static/images/free/freePoint.png" alt=""></div>
                         <div class="free-advantage-item-title">个性化运营</div>
                         <div class="free-advantage-item-desc">优质阅读体验、完善的会员机制、用户激励体系、广告配置、分销系统等功能，全面打造个性化运营</div>
                     </div>
                     <div class="free-advantage-item">
-                        <div class="free-advantage-item-point"><img src="../static/images/free/freePoint.png" alt=""></div>
+                        <div class="free-advantage-item-point"><img src="/static/images/free/freePoint.png" alt=""></div>
                         <div class="free-advantage-item-title">裂变营销方式</div>
                         <div class="free-advantage-item-desc">与渠道、代理合作，形成三级分销，配合激励式自主推广方式，快速获取流量，达到分裂式效应</div>
                     </div>
@@ -136,21 +154,21 @@
                     <div class="free-scene-title common-title">多终端终端互通，覆盖全场景阅读</div>
                     <div class="free-scene-desc">全面覆盖移动阅读场景</div>
                     <div class="free-scene-item clearfix">
-                        <div class="free-scene-item-image"><img src="../static/images/free/freeScene1.png" alt="" /></div>
+                        <div class="free-scene-item-image"><img src="/static/images/free/freeScene1.png" alt="" /></div>
                         <div class="free-scene-item-wrap">
                             <div class="free-scene-item-title">公众号引流</div>
                             <div class="free-scene-item-content">轻松获取微信生态流量，支持分销、活动优惠等营销方式，快速获客</div>
                         </div>
                     </div>
                     <div class="free-scene-item clearfix">
-                        <div class="free-scene-item-image"><img src="../static/images/free/freeScene2.png" alt="" /></div>
+                        <div class="free-scene-item-image"><img src="/static/images/free/freeScene2.png" alt="" /></div>
                         <div class="free-scene-item-wrap">
                             <div class="free-scene-item-title">APP互动营销</div>
                             <div class="free-scene-item-content">完善用户管理，拥有用户激励体系，增加用户黏性，交易方便可靠，易于互动</div>
                         </div>
                     </div>
                     <div class="free-scene-item clearfix">
-                        <div class="free-scene-item-image"><img src="../static/images/free/freeScene3.png" alt="" /></div>
+                        <div class="free-scene-item-image"><img src="/static/images/free/freeScene3.png" alt="" /></div>
                         <div class="free-scene-item-wrap">
                             <div class="free-scene-item-title">H5快速获客</div>
                             <div class="free-scene-item-content">多元化推广形式，承担着推广媒介与用户之间的桥梁，让营销真正落地</div>
@@ -160,14 +178,14 @@
                 <section class="free-case">
                     <div class="free-case-title common-title">客户案例</div>
                     <div class="free-case-item clearfix">
-                        <div class="free-case-item-image"><img src="../static/images/free/freeCase1.png" alt="" /></div>
+                        <div class="free-case-item-image"><img src="/static/images/free/freeCase1.png" alt="" /></div>
                         <div class="free-case-item-content">
                             <p>我是做免费小说的，最少在A5上买了3个小说程序，没有一个能上架App Store的，这个上架困扰了我好久，尝试了被窝读书软件没想到他们团队在上架过审方面有很强的技术对抗能力，比我自己找上包团队成本要节省了好多。</p>
                             <div class="free-case-item-author">—— 湖北旗舰版客户肖总</div>
                         </div>
                     </div>
                     <div class="free-case-item clearfix">
-                        <div class="free-case-item-image"><img src="../static/images/free/freeCase2.png" alt="" /></div>
+                        <div class="free-case-item-image"><img src="/static/images/free/freeCase2.png" alt="" /></div>
                         <div class="free-case-item-content">
                             <p>这两年网赚模式走红，下沉市场的实力是个不可小觑，我也参与其中，手中有些小说版权。刚刚启动时有些茫然，很感谢被窝团队指导，APP上架很顺利，提供的服务也很全面，下一步想再增加书籍版权，丰富内容，我们一起加油！</p>
                             <div class="free-case-item-author">—— 湖北旗舰版客户肖总</div>
@@ -179,9 +197,9 @@
         </section>
         <section id="menu"></section>
     </body>
-    <script type="text/javascript" src="../static/js/common/jquery.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/vconsole.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/swiper.min.js"></script>
-    <script type="text/javascript" src="../static/js/common/common.js"></script>
-    <script type="text/javascript" src="../static/js/freeRead.js"></script>
+    <script type="text/javascript" src="/static/js/common/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/vconsole.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/swiper.min.js"></script>
+    <script type="text/javascript" src="/static/js/common/common.js"></script>
+    <script type="text/javascript" src="/static/js/freeRead.js"></script>
 </html>
