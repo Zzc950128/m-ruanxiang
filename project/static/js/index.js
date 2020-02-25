@@ -51,8 +51,8 @@ var homeHandler = {
                 clickable: true,
             },
         })
-        this.getQuestionList()
-        this.getTrendList()
+        homeHandler.getQuestionList()
+        homeHandler.getTrendList()
     },
     initAction: function() {
         $(".video").click(function(e) {
@@ -66,10 +66,10 @@ var homeHandler = {
             $(".video").show()
         })
         $(".home-help-more-btn").click(function() {
-            window.location.href = window.location.origin+"/page/document"
+            window.location.href = window.location.origin+"/document"
         })
         $(".home-function-more-btn").click(function() {
-            window.location.href = window.location.origin+"/page/price"
+            window.location.href = window.location.origin+"/price"
         })
         $(".home-advantage-item").click(function() {
             var index = $(this).attr("data-index")
@@ -114,7 +114,7 @@ var homeHandler = {
             }
             $(".home-help-question-content").html(questionHtml)
             $(".home-help-question-item").click(function() {
-                window.location.href = window.location.origin+"/page/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+                window.location.href = window.location.origin+"/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
             })
         }, function(err) {
             console.log(err)
@@ -132,7 +132,7 @@ var homeHandler = {
             }
             $(".home-help-trends").html(trendHtml)
             $(".home-help-trends-content").click(function() {
-                window.location.href = window.location.origin+"/page/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+                window.location.href = window.location.origin+"/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
             })
 
         }, function(err) {

@@ -36,37 +36,32 @@ var aboutHandler = {
                 clickable: true,
             },
         })
+        aboutHandler.getQuestionList()
+        aboutHandler.getTrendList()
     },
     initAction: function() {
         $(".about-help-more-btn").click(function() {
-            window.location.href = window.location.origin+"/page/document"
+            window.location.href = window.location.origin+"/document"
         })
     },
     getQuestionList() {
-        ajaxGet(documentService.api.getArticleList, {
-            category: documentHandler.args.currentCategory,
-            page: documentHandler.args.currentPage
-        }, function(res) {
+        ajaxGet(aboutService.api.getQuestion, {}, function(res) {
             var items = res.items
             var questionHtml = ""
             questionHtml += '<div class="about-help-question-item">被窝读书简介</div>'
             for(var i = 0; i < items.length; i++) {
-                data-category="2" data-id="2"
                 questionHtml += '<div class="about-help-question-item" data-category="'+items[i].category+'" data-id="'+items[i].id+'">'+items[i].title+'</div>'
             }
             $(".about-help-question-content").html(questionHtml)
             $(".about-help-question-item").click(function() {
-                window.location.href = window.location.origin+"/page/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+                window.location.href = window.location.origin+"/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
             })
         }, function(err) {
             console.log(err)
         })
     },
     getTrendList() {
-        ajaxGet(documentService.api.getArticleList, {
-            category: documentHandler.args.currentCategory,
-            page: documentHandler.args.currentPage
-        }, function(res) {
+        ajaxGet(aboutService.api.getTrend, {}, function(res) {
             var items = res.items
             var trendHtml = ""
             for(var i = 0; i < items.length; i++) {
@@ -75,9 +70,9 @@ var aboutHandler = {
                                 '<div class="about-help-trends-date">'+items[i].date+'</div>' +
                             '</div>'
             }
-            $(".about-help-trends").html()
+            $(".about-help-trends").html(trendHtml)
             $(".about-help-trends-content").click(function() {
-                window.location.href = window.location.origin+"/page/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+                window.location.href = window.location.origin+"/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
             })
         }, function(err) {
             console.log(err)
