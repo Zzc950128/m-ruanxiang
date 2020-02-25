@@ -1,10 +1,6 @@
 var documentService = {
     api: {
-<<<<<<< HEAD
-        getArticleList: "/api/getArticleList.json",
-=======
-        getArticleList: "/api/getArticleList",
->>>>>>> d527dec931529d5dde67f537b6f55d3232242fa5
+        getArticleList: "/api/articleList.json",
         getArticle: "/api/articleData.json"
     },
 }

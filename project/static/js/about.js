@@ -56,7 +56,7 @@ var aboutHandler = {
             }
             $(".about-help-question-content").html(questionHtml)
             $(".about-help-question-item").click(function() {
-                window.location.href = window.location.origin+"/page/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+                window.location.href = window.location.origin+"/page/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
             })
         }, function(err) {
             console.log(err)
@@ -76,8 +76,8 @@ var aboutHandler = {
                             '</div>'
             }
             $(".about-help-trends").html()
-            $(".about-help-trends").click(function() {
-                window.location.href = window.location.origin+"/page/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+            $(".about-help-trends-content").click(function() {
+                window.location.href = window.location.origin+"/page/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
             })
         }, function(err) {
             console.log(err)
