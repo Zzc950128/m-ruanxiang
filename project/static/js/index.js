@@ -23,10 +23,12 @@ var homeHandler = {
         $(window).scroll(function() {
             if($(this).scrollTop() == 0) {
                 $(".header").css("background", "transparent")
+                $(".header").removeClass("shadow")
                 $(".header-icon img").attr("src", "/static/images/header/icon.png")
                 $(".header-menu img").attr("src", "/static/images/header/menu.png")
             }else {
                 $(".header").css("background", "#ffffff")
+                $(".header").addClass("shadow")
                 $(".header-icon img").attr("src", "/static/images/header/icon-reverse.png")
                 $(".header-menu img").attr("src", "/static/images/header/menu-reverse.png")
             }

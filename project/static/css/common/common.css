@@ -55,6 +55,9 @@ header {
     z-index: 20;
     height: 0.9rem;
 }
+.shadow {
+    box-shadow: 0rem 0.02rem 0.1rem 0rem rgba(0, 0, 0, 0.1);
+}
 .header {
     position: fixed;
     left: 0;
