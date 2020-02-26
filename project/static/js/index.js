@@ -2,8 +2,8 @@ var homeService = {
     api: {
         // getQuestion: "/api/question.json",
         // getTrend: "/api/trend.json"
-        getQuestion: "/site/article-list",
-        getTrend: "/site/article-list"
+        getQuestion: "/api/site/article-list",
+        getTrend: "/api/site/article-list"
     },
 }
 var homeHandler = {

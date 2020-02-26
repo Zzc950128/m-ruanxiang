@@ -1,12 +1,13 @@
 var priceService = {
     api: {
-        getPrice: "/api/price.json"
+        // getPrice: "/api/price.json"
+        getPrice: "/api/site/price"
     }
 }
 var priceHandler = {
     args: {
         showMore: false,
-    	tableData: [
+        tableData: [
     	]
     },
     init: function() {
