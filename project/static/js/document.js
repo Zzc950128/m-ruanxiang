@@ -1,7 +1,9 @@
 var documentService = {
     api: {
-        getArticleList: "/api/articleList.json",
-        getArticle: "/api/articleData.json"
+        // getArticleList: "/api/articleList.json",
+        // getArticle: "/api/articleData.json"
+        getArticleList: "/site/article-list",
+        getArticle: "/site/article-data"
     },
 }
 var documentHandler = {

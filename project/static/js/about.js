@@ -1,7 +1,9 @@
 var aboutService = {
     api: {
-        getQuestion: "/api/question.json",
-        getTrend: "/api/trend.json"
+        // getQuestion: "/api/question.json",
+        // getTrend: "/api/trend.json"
+        getQuestion: "/site/article-list",
+        getTrend: "/site/article-list"
     },
 }
 var aboutHandler = {
@@ -41,11 +43,14 @@ var aboutHandler = {
     },
     initAction: function() {
         $(".about-help-more-btn").click(function() {
-            window.location.href = window.location.origin+"/document"
+            window.location.href = window.location.origin+"/document.html"
         })
     },
     getQuestionList: function() {
-        ajaxGet(aboutService.api.getQuestion, {}, function(res) {
+        ajaxGet(aboutService.api.getQuestion, {
+            page: 1,
+            category: 1
+        }, function(res) {
             var items = res.items
             var questionHtml = ""
             questionHtml += '<div class="about-help-question-item">被窝读书简介</div>'
@@ -54,14 +59,17 @@ var aboutHandler = {
             }
             $(".about-help-question-content").html(questionHtml)
             $(".about-help-question-item").click(function() {
-                window.location.href = window.location.origin+"/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+                window.location.href = window.location.origin+"/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
             })
         }, function(err) {
             console.log(err)
         })
     },
     getTrendList: function() {
-        ajaxGet(aboutService.api.getTrend, {}, function(res) {
+        ajaxGet(aboutService.api.getTrend, {
+            page: 1,
+            category: 6
+        }, function(res) {
             var items = res.items
             var trendHtml = ""
             for(var i = 0; i < items.length; i++) {
@@ -72,7 +80,7 @@ var aboutHandler = {
             }
             $(".about-help-trends").html(trendHtml)
             $(".about-help-trends-content").click(function() {
-                window.location.href = window.location.origin+"/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+                window.location.href = window.location.origin+"/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
             })
         }, function(err) {
             console.log(err)

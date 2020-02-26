@@ -1,7 +1,9 @@
 var homeService = {
     api: {
-        getQuestion: "/api/question.json",
-        getTrend: "/api/trend.json"
+        // getQuestion: "/api/question.json",
+        // getTrend: "/api/trend.json"
+        getQuestion: "/site/article-list",
+        getTrend: "/site/article-list"
     },
 }
 var homeHandler = {
@@ -66,10 +68,10 @@ var homeHandler = {
             $(".video").show()
         })
         $(".home-help-more-btn").click(function() {
-            window.location.href = window.location.origin+"/document"
+            window.location.href = window.location.origin+"/document.html"
         })
         $(".home-function-more-btn").click(function() {
-            window.location.href = window.location.origin+"/price"
+            window.location.href = window.location.origin+"/price.html"
         })
         $(".home-advantage-item").click(function() {
             var index = $(this).attr("data-index")
@@ -105,7 +107,10 @@ var homeHandler = {
         })
     },
     getQuestionList: function() {
-        ajaxGet(homeService.api.getQuestion, {}, function(res) {
+        ajaxGet(homeService.api.getQuestion, {
+            page: 1,
+            category: 1
+        }, function(res) {
             var items = res.items
             var questionHtml = ""
             questionHtml += '<div class="home-help-question-item">被窝读书简介</div>'
@@ -114,14 +119,17 @@ var homeHandler = {
             }
             $(".home-help-question-content").html(questionHtml)
             $(".home-help-question-item").click(function() {
-                window.location.href = window.location.origin+"/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+                window.location.href = window.location.origin+"/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
             })
         }, function(err) {
             console.log(err)
         })
     },
     getTrendList: function() {
-        ajaxGet(homeService.api.getTrend, {}, function(res) {
+        ajaxGet(homeService.api.getTrend, {
+            page: 1,
+            category: 6
+        }, function(res) {
             var items = res.items
             var trendHtml = ""
             for(var i = 0; i < items.length; i++) {
@@ -132,7 +140,7 @@ var homeHandler = {
             }
             $(".home-help-trends").html(trendHtml)
             $(".home-help-trends-content").click(function() {
-                window.location.href = window.location.origin+"/document"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+                window.location.href = window.location.origin+"/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
             })
 
         }, function(err) {
