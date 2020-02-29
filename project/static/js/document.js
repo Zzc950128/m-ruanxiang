@@ -225,6 +225,9 @@ var documentHandler = {
             }
             if(flag) {
                 $(".document-list-desc").hide()
+                $(".document-article-list-wrap").hide()
+                $(".document-article-pagination").hide()
+                $(".document-article-none").hide()
                 $(".document-article").show()
             }
         }, function(err) {
@@ -244,6 +247,7 @@ var documentHandler = {
             $(".document-article-content-content").html(res.content)
             $(".document-article-list-wrap").hide()
             $(".document-article-pagination").hide()
+            $(".document-article-none").hide()
             $(".document-article-content").show()
         }, function(err) {
         })
