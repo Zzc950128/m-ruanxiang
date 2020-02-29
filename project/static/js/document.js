@@ -15,6 +15,7 @@ var documentHandler = {
         articleList: [],
         urlArgs: {},
         offsetTop: null,
+        documentCategorySwiper: null,
     },
     init: function() {
         console.log("documentHandlerInit")
@@ -38,9 +39,9 @@ var documentHandler = {
                 $(".document-category").removeClass("fixed")
             }
         });
-        var documentCategorySwiper = new Swiper('.document-category-swiper-container', {
+        documentHandler.args.documentCategorySwiper = new Swiper('.document-category-swiper-container', {
             slidesPerView: 4,
-            hashNavigation: true,
+            hashNavigation: true
         })
         documentHandler.args.urlArgs.category = getUrlParam("category")
         documentHandler.args.urlArgs.id = getUrlParam("id")
@@ -75,6 +76,7 @@ var documentHandler = {
         $(".document-category-item").click(function() {
             var that = $(this)
             var index = that.attr("data-index")
+            documentHandler.args.documentCategorySwiper.slideTo(index)
             documentHandler.args.currentCategory = index
             documentHandler.args.currentPage = 1
             documentHandler.args.totalCount = 0

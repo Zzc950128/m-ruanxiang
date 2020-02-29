@@ -121,7 +121,7 @@ var homeHandler = {
             }
             $(".home-help-question-content").html(questionHtml)
             $(".home-help-question-item").click(function() {
-                window.location.href = window.location.origin+"/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+                window.location.href = window.location.origin+"/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")+"#"+$(this).attr("data-category")):"")
             })
         }, function(err) {
             console.log(err)
@@ -142,7 +142,7 @@ var homeHandler = {
             }
             $(".home-help-trends").html(trendHtml)
             $(".home-help-trends-content").click(function() {
-                window.location.href = window.location.origin+"/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")):"")
+                window.location.href = window.location.origin+"/document.html"+($(this).attr("data-category")?("?category="+$(this).attr("data-category")+"&id="+$(this).attr("data-id")+"#"+$(this).attr("data-category")):"")
             })
 
         }, function(err) {
