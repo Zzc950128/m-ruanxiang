@@ -278,3 +278,67 @@ footer {
 #newBridge {
     display: none !important;
 }
+/* 动画 */
+.loading-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    transform: translate(-50%, -50%);
+}
+.loading-item  {
+    width: 0.04rem;
+    height: 0.0rem;
+    border-radius: 0.02rem;
+    background: #00A4FF;
+    position: absolute;
+    animation: loading linear 0.8s infinite;
+    -webkit-animation: loading linear 0.8s infinite;
+}
+.loading-item:nth-child(1) {
+    left: 0.24rem;
+    top: 0.02rem;
+    animation-delay: 0s;
+}
+.loading-item:nth-child(2) {
+    left: 0.4rem;
+    top: 0.08rem;
+    animation-delay: 0.1s;
+}
+.loading-item:nth-child(3) {
+    left: 0.47rem;
+    top: 0.24rem;
+    animation-delay: 0.1s;
+}
+.loading-item:nth-child(4) {
+    left: 0.4rem;
+    top: 0.4rem;
+    animation-delay: 0.2s;
+}
+.loading-item:nth-child(5) {
+    left: 0.24rem;
+    top: 0.47rem;
+    animation-delay: 0.4s;
+}
+.loading-item:nth-child(6) {
+    left: 0.08rem;
+    top: 0.4rem;
+    animation-delay: 0.5s;
+}
+.loading-item:nth-child(7) {
+    left: 0.02rem;
+    top: 0.24rem;
+    animation-delay: 0.6s;
+}
+.loading-item:nth-child(8) {
+    left: 0.08rem;
+    top: 0.08rem;
+    animation-delay: 0.7s;
+}
+
+@keyframes loading 
+{
+    0%, 40%, 100% { transform: scale(1); }
+    20% { transform: scale(3); }
+}

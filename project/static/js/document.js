@@ -136,7 +136,9 @@ var documentHandler = {
         $(".document-article-content-back").click(function() {
             $(".document-article-content").hide()
             $(".document-article-list-wrap").show()
-            $(".document-article-pagination").show()
+            if(documentHandler.args.totalCount > 10) {
+                $(".document-article-pagination").show()
+            }
         })
     },
     getArticleList: function(flag) {
@@ -224,6 +226,9 @@ var documentHandler = {
                         documentHandler.getArticleList()
                     }
                 })
+                if(documentHandler.args.totalCount <= 10) {
+                    $(".document-article-pagination").hide()  
+                }
             }
             if(flag) {
                 $(".document-list-desc").hide()
