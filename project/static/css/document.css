@@ -260,6 +260,9 @@
     color: rgba(102,102,102,1);
     line-height: 0.36rem;
 }
+.document-article-content-content b, .document-article-content-content optgroup, .document-article-content-content strong {
+    font-weight: 700;
+}
 .document-article-content-back {
 	margin-left: 0.3rem;
 	font-size: 0.28rem;
